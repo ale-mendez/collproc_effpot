@@ -87,20 +87,21 @@ and electron capture. To this end, several simplifications were made:
 (1) The calculation is restrained to Hamiltonians describing only
 the moving projectile, the target and the active 
 electron. (2) The transition matrix elements are only considered in  
-first perturbative order. If the first order description fails, certainly
-it would not have any sense to extend the calculation to higher terms of 
-the series.
+first perturbative order. If the first order description fails, 
+indeed it would not have any sense to extend the calculation to 
+higher terms of the series.
 A wide variety of {\it ab initio} methods have been 
 implemented to compute the scattering cross sections for atomic targets, 
 from the early implementations of the first Born 
-approximation (FBA)~\cite{BatesBook,McDowell1961,photoion}, to the much 
+approximation (FBA)~\cite{BatesBook,McDowell1961}, to the much 
 more sophisticated time--dependent close--coupling 
-methods~\cite{LeePindzola2011,Ionization999}. For simplicity, we will 
+methods~\cite{LeePindzola2011,Pindzola2016}. For simplicity, we will 
 restrict our calculations only to the FBA framework, 
 which is known to give reasonable agreement with 
 the experimental cross section in the intermediate--high projectile 
-energy range. Moreover, in this energy range, the Hartree--Fock orbitals
-are known to provide the correct high energy limit.
+energy range. Moreover, within this energy range and approximation 
+order, the Hartree--Fock orbitals are known to provide the correct 
+high energy limit.
 
 In Section~\ref{sec:colproc}, we examine the above mentioned 
 inelastic processes for two atoms with a single outer electron: 
@@ -111,8 +112,8 @@ Furthermore, these effects have been previously studied in other
 perturbative approaches, i.e. the continuum distorted wave 
 eikonal--initial--state (CDW-EIS), for various targets (for example,
 see~\cite{Kirchner1998,Fiori2001}).
-Finally, the DIM photoionisation cross sections of many--electron 
-atoms are compared with experimental measurements. 
+Finally, our first--order DIM photoionisation cross sections for 
+many--electron atoms are compared with experimental measurements. 
 
 On the other hand, the description of molecular systems constitutes 
 a real challenge due to their nonspherical symmetry and multicenter 
@@ -123,7 +124,7 @@ In this work, we present an extension of the DIM method for simple
 molecular systems, providing a new parametric expression for the 
 potentials. 
 The target description is once again tested by examination of its 
-performance in first order collisional processes. 
+performance in first--order collisional processes. 
 An implementation example is given for the methane molecule.
 
 
@@ -193,10 +194,6 @@ can still be readily described by the pseudopotential
 approximation. The hydrogen pseudopotentials from 
 (\ref{eq:pseudosources}) reproduce the exact orbitals very 
 accurately. 
-%!!!!!!!!!!
-\textcolor{blue}{\bf Ref2: A physical interpretation on the H 
-pseudopotential is missing (?).}
-%!!!!!!!!!!
 
 We will now proceed to examine the pseudo--charges and its 
 one--electron solutions for the lithium atom closely. 
@@ -651,7 +648,7 @@ neon.}
 The depurated inversion method described above is extended to determine 
 effective potentials for molecules. The theoretical methods are 
 established in this Section, and results for methane are given. 
-Furthermore, the molecular description of methane given by DIM is 
+Furthermore, the molecular description of CH$_4$ given by DIM is 
 tested by computing two collisional processes within the FBA.
 
 \subsection{Theory}
@@ -988,8 +985,18 @@ Ionization of Lithium by Fast Protons and Electrons.
 
 \bibitem{LeePindzola2011}
 Lee, T.-G.; Pindzola, M. S.
-Proton-impact excitation of lithium using a time-dependent close-coupling method.
+Proton-impact excitation of lithium using a time--dependent 
+close--coupling method.
 {\it Phys. Rev. A} {\bf 2011}, 84, 052712.
+
+\bibitem{Pindzola2016}
+Pindzola, M. S.; Colgan, J.; Robicheaux, F.; Lee, T.-G.; Ciappina, M. F.;
+Foster, M.; Ludlow, J. A.; Abdel-Naby, S. A.
+Time-Dependent Close--Coupling Calculations for Ion--Impact Ionization 
+of Atoms and Molecules. 
+In {\it Advances In Atomic, Molecular, and Optical Physics};
+Arimondo, E.; Lin, C. C.; Yelin, S. F., Ed,;
+Academic Press, 2016; Vol. 65,; pp 291--319.
 
 \bibitem{Kirchner1998}
 Kirchner, T.; Guly\'as, L.; L\"udde, H. J.; Engel, E.; Dreizler, R. M. 
