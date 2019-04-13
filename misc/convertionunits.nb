@@ -1,0 +1,728 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     25383,        719]
+NotebookOptionsPosition[     22221,        609]
+NotebookOutlinePosition[     22559,        624]
+CellTagsIndexPosition[     22516,        621]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[StyleBox["Convert projectile (proton) energy in atomic units to \
+eV with velocity in a.u.", "Section"]], "Input",
+ CellChangeTimes->{{3.7634030107967443`*^9, 3.76340304238962*^9}, {
+  3.7634644861853313`*^9, 3.7634644952567377`*^9}, {3.763466812271962*^9, 
+  3.763466833014699*^9}, {3.76346797081425*^9, 3.763467974314233*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Me", "=", "1."}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"electron", " ", "mass"}], " ", "*)"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Mp", "=", 
+   RowBox[{"1.83615", " ", 
+    SuperscriptBox["10", "3"], " ", "Me"}]}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"projectile", " ", "mass"}], " ", "=", " ", "proton"}], " ", 
+   "*)"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"MHm", "=", "1."}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"proton", " ", "mass"}], " ", "*)"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.7634678815555696`*^9, 3.763467919071279*^9}, {
+  3.763473530440233*^9, 3.7634735613914013`*^9}, {3.763473626112604*^9, 
+  3.763473696225417*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"mp", "=", 
+    FractionBox["Mp", "MHm"]}], " ", ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"projectile", " ", "mass", " ", "in", " ", 
+    RowBox[{"a", ".", "u", "."}]}], " ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"vp", "=", "0.2"}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"projectile", " ", "velocity", " ", "in", " ", 
+    RowBox[{"a", ".", "u", "."}]}], " ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"convEhtoeV", "=", "27.211385"}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "convertion", " ", "factor", " ", "for", " ", "energy", " ", "from", " ", 
+    "hartree", " ", "to", " ", "eV"}], " ", "*)"}], " "}]}], "Input",
+ CellChangeTimes->{{3.7634026955570374`*^9, 3.763402744084406*^9}, {
+   3.7634029930957212`*^9, 3.7634029936790657`*^9}, {3.763403581182219*^9, 
+   3.763403582131054*^9}, {3.763403883186392*^9, 3.763403883598361*^9}, {
+   3.7634049243218393`*^9, 3.763404924446239*^9}, 3.763405079501266*^9, {
+   3.763464806118702*^9, 3.763464873614887*^9}, {3.763467855752461*^9, 
+   3.763467873495556*^9}, {3.7634679234340982`*^9, 3.7634679575290337`*^9}, {
+   3.763468053356204*^9, 3.763468066113785*^9}, {3.7634736559326353`*^9, 
+   3.763473672525619*^9}, 3.76347373276658*^9}],
+
+Cell[TextData[StyleBox["# convertion factor for projectile kinetic energy in \
+a.u. to eV", "Subsection"]], "Input",
+ CellChangeTimes->{{3.763468016274026*^9, 3.7634680374569893`*^9}, {
+  3.763468086211485*^9, 3.763468087560557*^9}, {3.7634681725587997`*^9, 
+  3.76346817416234*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"convpKautoeV", "=", 
+  RowBox[{"0.5", " ", "mp", " ", "convEhtoeV", " ", 
+   RowBox[{"(*", " ", 
+    RowBox[{"=", " ", 
+     RowBox[{"25", " ", "keV"}]}], " ", "*)"}]}]}]], "Input",
+ CellChangeTimes->{{3.763464884177507*^9, 3.7634649149132853`*^9}, {
+   3.763466182979332*^9, 3.7634661863604803`*^9}, {3.763466530193362*^9, 
+   3.76346654475912*^9}, {3.763467785249796*^9, 3.7634678248786488`*^9}, {
+   3.7634680075509253`*^9, 3.763468008426876*^9}, {3.763468121965044*^9, 
+   3.763468122319476*^9}, 3.763474169465969*^9}],
+
+Cell[BoxData["24982.092283874998`"], "Output",
+ CellChangeTimes->{{3.7634648864404573`*^9, 3.763464915510255*^9}, 
+   3.763464950253533*^9, 3.763466133485424*^9, 3.763466188362194*^9, {
+   3.7634665511195803`*^9, 3.763466617004583*^9}, 3.763467932395607*^9, 
+   3.763468126359898*^9, 3.763473747250351*^9, 3.7634741704054937`*^9, 
+   3.763485637744587*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"convpKautokeV", "=", 
+  RowBox[{"0.5", " ", "mp", " ", "convEhtoeV", " ", "1", " ", 
+   SuperscriptBox["10", 
+    RowBox[{"-", "3"}]], " ", 
+   RowBox[{"(*", " ", 
+    RowBox[{"=", " ", 
+     RowBox[{"25", " ", "eV"}]}], " ", "*)"}]}]}]], "Input",
+ CellChangeTimes->{{3.763468360212645*^9, 3.7634683728816023`*^9}, 
+   3.763474164568676*^9}],
+
+Cell[BoxData["24.982092283874998`"], "Output",
+ CellChangeTimes->{3.763468375089879*^9, 3.7634737533361797`*^9, 
+  3.763474171257927*^9, 3.763485639454185*^9}]
+}, Open  ]],
+
+Cell[TextData[StyleBox["# convertion for projectile kinetic energy in a.u. to \
+eV with projectile velocity in a.u.", "Subsection"]], "Input",
+ CellChangeTimes->{{3.763468133103251*^9, 3.76346820187817*^9}, {
+  3.763473781029554*^9, 3.7634737813049383`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Ep", "=", 
+  RowBox[{"convpKautoeV", " ", 
+   SuperscriptBox["vp", "2"], " "}]}]], "Input",
+ CellChangeTimes->{{3.763466248120565*^9, 3.763466258944077*^9}, {
+   3.7634666325985947`*^9, 3.763466642156167*^9}, {3.763466677376326*^9, 
+   3.7634666790886602`*^9}, {3.7634681244171133`*^9, 3.763468124811159*^9}, 
+   3.7634682053867693`*^9, {3.763473794820302*^9, 3.763473795861038*^9}, 
+   3.763474166387745*^9}],
+
+Cell[BoxData["999.2836913550001`"], "Output",
+ CellChangeTimes->{3.763466260187998*^9, 3.76346663342598*^9, 
+  3.763466682519589*^9, 3.763467933230867*^9, 3.7634681275542393`*^9, 
+  3.763468207878173*^9, 3.76347376455639*^9, 3.7634737984109573`*^9, 
+  3.763474173925482*^9, 3.763485640670137*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"25", " ", 
+  SuperscriptBox["10", "3"], " ", 
+  SuperscriptBox["vp", "2"]}]], "Input",
+ CellChangeTimes->{{3.763404124062078*^9, 3.763404242293714*^9}, {
+  3.763404942288433*^9, 3.7634049700803423`*^9}, {3.7634050917294207`*^9, 
+  3.763405128072197*^9}, {3.763466098646215*^9, 3.76346612630103*^9}, {
+  3.763466165256577*^9, 3.7634662081763163`*^9}}],
+
+Cell[BoxData["1000.0000000000002`"], "Output",
+ CellChangeTimes->{{3.763404157854705*^9, 3.763404242849099*^9}, {
+   3.7634049628621187`*^9, 3.763404970688406*^9}, {3.763405084493187*^9, 
+   3.76340512840796*^9}, {3.76346609910879*^9, 3.763466208674012*^9}, 
+   3.7634666351209707`*^9, 3.763467935145603*^9, 3.763473767437805*^9, 
+   3.763474175181038*^9}]
+}, Open  ]],
+
+Cell[TextData[StyleBox["# convertion for electron kinetic energy in a.u. to \
+eV with electron velocity in a.u.", "Subsection"]], "Input",
+ CellChangeTimes->{{3.763468133103251*^9, 3.76346820187817*^9}, {
+  3.7634737834111032`*^9, 3.763473787109095*^9}, {3.763474215866733*^9, 
+  3.763474216853488*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ve", "=", "5"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"ejected", " ", "electron", " ", "velocity"}], " ", "*)"}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.76347385971222*^9, 3.763473902759894*^9}, 
+   3.7634739331733522`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"conveKautoeV", "=", 
+  RowBox[{"0.5", " ", "Me", " ", "convEhtoeV", " "}]}]], "Input",
+ CellChangeTimes->{{3.763474151998858*^9, 3.763474161100685*^9}, 
+   3.7634741959958887`*^9}],
+
+Cell[BoxData["13.6056925`"], "Output",
+ CellChangeTimes->{
+  3.7634740490921507`*^9, {3.7634741777227097`*^9, 3.7634741964444523`*^9}, 
+   3.763485643852429*^9}]
+}, Open  ]],
+
+Cell[BoxData["13.6056925`"], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Ee", "=", 
+  RowBox[{"conveKautoeV", " ", 
+   SuperscriptBox["ve", "2"], " "}]}]], "Input",
+ CellChangeTimes->{{3.763473800180296*^9, 3.763473858479306*^9}, {
+   3.763474052072543*^9, 3.763474052775399*^9}, {3.763474140575878*^9, 
+   3.7634741421857367`*^9}, {3.763474179886352*^9, 3.7634741923576508`*^9}, 
+   3.7634856644806023`*^9}],
+
+Cell[BoxData["340.1423125`"], "Output",
+ CellChangeTimes->{
+  3.7634738431349993`*^9, {3.76347388640947*^9, 3.763473904410446*^9}, 
+   3.763473934548257*^9, 3.763474144786993*^9, 3.763474200301991*^9, {
+   3.763485646509941*^9, 3.763485665280442*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Convert", " ", "cross", " ", "section", " ", "as", " ", 
+   FormBox[
+    SuperscriptBox[
+     SubscriptBox["a", "0"], "2"],
+    TraditionalForm], " ", "in", " ", "atomic", " ", "units", " ", "to", " ", 
+   "other", " ", "units"}], "Section"]], "Input",
+ CellChangeTimes->{{3.7634031089149446`*^9, 3.763403120781933*^9}, {
+  3.763466846844399*^9, 3.763466848349064*^9}, {3.763468799245387*^9, 
+  3.763468800575553*^9}, {3.763477889644314*^9, 3.763477897735815*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"a0m", "=", 
+   RowBox[{"5.2917721092", " ", 
+    SuperscriptBox["10", 
+     RowBox[{"-", "11"}]]}]}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"a", ".", "u", ".", " ", "of"}], " ", "length", " ", "in", " ", 
+    "m"}], " ", "*)"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"a0cm", "=", 
+   RowBox[{"5.2917721092", " ", 
+    SuperscriptBox["10", 
+     RowBox[{"-", "11"}]], " ", "1", " ", 
+    SuperscriptBox["10", "2"]}]}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"a", ".", "u", ".", " ", "of"}], " ", "length", " ", "in", " ", 
+    "cm"}], " ", "*)"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.7634663253903418`*^9, 3.7634663551754503`*^9}, {
+  3.7634666902712173`*^9, 3.7634667123525553`*^9}, {3.763467326130966*^9, 
+  3.763467361754985*^9}, {3.76346892345846*^9, 3.763468942528721*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"convbarntocm2", "=", 
+   RowBox[{"1.", " ", 
+    SuperscriptBox["10", 
+     RowBox[{"-", "24"}]]}]}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"convert", " ", "barn", " ", "to", " ", 
+    RowBox[{
+     SuperscriptBox["cm", "2"], " ", "[", 
+     RowBox[{
+      SuperscriptBox["cm", "2"], "/", "barns"}], "]"}]}], "*)"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"convcm2tobarn", "=", 
+   RowBox[{"1", "/", "convbarntocm2"}]}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"convert", " ", 
+    SuperscriptBox["cm", "2"], " ", "to", " ", 
+    RowBox[{"barn", " ", "[", 
+     RowBox[{"barn", "/", 
+      SuperscriptBox["cm", "2"]}], "]"}]}], "*)"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"conv10m16", "=", 
+   RowBox[{"1", " ", 
+    SuperscriptBox["10", "16"]}]}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"convert", " ", 
+    SuperscriptBox["cm", "2"], " ", "to", " ", 
+    SuperscriptBox["10", "16"], 
+    SuperscriptBox["cm", "2"]}], " ", "*)"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"convbtoMb", "=", 
+   RowBox[{"1", " ", 
+    SuperscriptBox["10", 
+     RowBox[{"-", "6"}]]}]}], "  ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"convert", " ", "barns", " ", "to", " ", "Mbarns"}], " ", "*)"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"convbtoGb", "=", 
+   RowBox[{"1", " ", 
+    SuperscriptBox["10", 
+     RowBox[{"-", "9"}]]}]}], "  ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"convert", " ", "barns", " ", "to", " ", "Gbarns"}], " ", "*)"}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.763466746352934*^9, 3.763466799808445*^9}, {
+  3.763467156992772*^9, 3.763467175240281*^9}, {3.763467213113286*^9, 
+  3.7634673051975927`*^9}, {3.763467591519507*^9, 3.7634676166206207`*^9}, {
+  3.763468884076407*^9, 3.763468895981166*^9}, {3.763468945874506*^9, 
+  3.7634690254952097`*^9}, {3.763477988852404*^9, 3.763478038434205*^9}, {
+  3.7634855643103848`*^9, 3.763485592685319*^9}}],
+
+Cell[TextData[{
+ StyleBox["# convertion factor for cross section from a.u. to ", "Subsection"],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["m", "2"], TraditionalForm]]],
+ StyleBox[" ", "Subsection"]
+}], "Input",
+ CellChangeTimes->{{3.763468133103251*^9, 3.76346820187817*^9}, {
+  3.763468655018248*^9, 3.763468734274235*^9}, {3.7634688241396523`*^9, 
+  3.763468831225629*^9}, {3.7634779196185713`*^9, 3.763477920105493*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"convCSautom2", "=", 
+  SuperscriptBox["a0m", "2"], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"cross", " ", "section", " ", "as", " ", 
+    SuperscriptBox[
+     SubscriptBox["a", "0"], "2"], " ", "in", " ", "m"}], " ", 
+   "*)"}]}]], "Input",
+ CellChangeTimes->{{3.7634663727340937`*^9, 3.763466393057557*^9}, {
+   3.7634664833123627`*^9, 3.763466507596347*^9}, 3.7634673755443697`*^9, {
+   3.7634780504750433`*^9, 3.76347805437071*^9}, {3.7634781559014187`*^9, 
+   3.7634781564669657`*^9}}],
+
+Cell[BoxData["2.8002852055707014`*^-21"], "Output",
+ CellChangeTimes->{{3.763466375564238*^9, 3.7634663935640173`*^9}, 
+   3.763466715851416*^9, 3.763467376064405*^9, 3.763477834540605*^9, 
+   3.763478058099306*^9, 3.7634781751881723`*^9, 3.763485623682989*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["# convertion factor for cross section from a.u. to ", "Subsection"],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["cm", "2"], TraditionalForm]]],
+ StyleBox[" ", "Subsection"]
+}], "Input",
+ CellChangeTimes->{{3.763468133103251*^9, 3.76346820187817*^9}, {
+   3.763468655018248*^9, 3.763468734274235*^9}, {3.7634688241396523`*^9, 
+   3.763468836727478*^9}, 3.7634779232496223`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"convCSautocm2", "=", 
+  SuperscriptBox["a0cm", "2"], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{"convert", " ", 
+    RowBox[{"a", ".", "u", ".", " ", "to"}], " ", 
+    SuperscriptBox["cm", "2"]}], " ", "*)"}]}]], "Input",
+ CellChangeTimes->{{3.763467378919075*^9, 3.763467384024416*^9}, {
+  3.763478040431438*^9, 3.763478043053232*^9}, {3.76347816141096*^9, 
+  3.763478161733095*^9}}],
+
+Cell[BoxData["2.8002852055707015`*^-17"], "Output",
+ CellChangeTimes->{3.763478043373541*^9, 3.7634781771587973`*^9, 
+  3.763485625059092*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["# convertion factor for cross section from a.u. to ", "Subsection"],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["cm", "2"], TraditionalForm]]],
+ StyleBox[" to barn", "Subsection"]
+}], "Input",
+ CellChangeTimes->{{3.763468133103251*^9, 3.76346820187817*^9}, {
+   3.763468655018248*^9, 3.763468734274235*^9}, 3.763477925779056*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"convCSautocm2", " ", "convcm2tobarn"}]], "Input",
+ CellChangeTimes->{{3.7634664227679863`*^9, 3.763466424110806*^9}, {
+  3.7634665240162277`*^9, 3.7634665272080708`*^9}, {3.76346678602948*^9, 
+  3.763466789053966*^9}, {3.7634669113965397`*^9, 3.763466924843246*^9}, {
+  3.763467240024269*^9, 3.763467241606481*^9}, {3.763467310410323*^9, 
+  3.7634673105952272`*^9}, {3.763467414238535*^9, 3.76346744248622*^9}, {
+  3.763467707736396*^9, 3.7634677240442553`*^9}, {3.763468551371804*^9, 
+  3.763468551788772*^9}, {3.763478026327104*^9, 3.76347802727706*^9}, {
+  3.763478163557032*^9, 3.7634781638807573`*^9}}],
+
+Cell[BoxData["2.800285205570701`*^7"], "Output",
+ CellChangeTimes->{
+  3.763466926081684*^9, {3.763467426691146*^9, 3.7634674432847433`*^9}, 
+   3.763467757680949*^9, 3.763468786187397*^9, 3.763477841798396*^9, 
+   3.76347817906068*^9, 3.7634856744044323`*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["# convertion factor for cross section from a.u. to ", "Subsection"],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["cm", "2"], TraditionalForm]]],
+ StyleBox[" to Mbarn", "Subsection"]
+}], "Input",
+ CellChangeTimes->{{3.763468133103251*^9, 3.76346820187817*^9}, {
+   3.763468655018248*^9, 3.763468751503647*^9}, 3.763477928018219*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"convCSautocm2", " ", "convcm2tobarn", " ", "convbtoMb"}]], "Input",
+ CellChangeTimes->{{3.763467450450911*^9, 3.76346745845109*^9}, {
+   3.763467744268325*^9, 3.763467754235968*^9}, 3.76346875611661*^9, {
+   3.7634688944022818`*^9, 3.763468898720975*^9}, {3.7634780644212847`*^9, 
+   3.763478065312213*^9}, {3.763478165812079*^9, 3.7634781676970863`*^9}}],
+
+Cell[BoxData["28.00285205570701`"], "Output",
+ CellChangeTimes->{3.763467459104261*^9, 3.763467759222073*^9, 
+  3.763468787574992*^9, 3.763468899507476*^9, 3.76347784354287*^9, 
+  3.76347806582693*^9, 3.763478180547427*^9, 3.763485675707621*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["# convertion factor for cross section from a.u. to ", "Subsection"],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["cm", "2"], TraditionalForm]]],
+ StyleBox[" to Gbarn", "Subsection"]
+}], "Input",
+ CellChangeTimes->{{3.763468133103251*^9, 3.76346820187817*^9}, {
+   3.763468655018248*^9, 3.763468751503647*^9}, 3.763477928018219*^9, {
+   3.763485549858144*^9, 3.763485551473254*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"convCSautocm2", " ", "convcm2tobarn", " ", "convbtoGb"}]], "Input",
+ CellChangeTimes->{{3.763485702469613*^9, 3.7634857031243677`*^9}}],
+
+Cell[BoxData["0.028002852055707014`"], "Output",
+ CellChangeTimes->{{3.763485677023122*^9, 3.763485703699007*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"50.", " ", 
+  SuperscriptBox["10", 
+   RowBox[{"-", "3"}]]}]], "Input",
+ CellChangeTimes->{{3.763485787603868*^9, 3.763485819182085*^9}}],
+
+Cell[BoxData["0.05`"], "Output",
+ CellChangeTimes->{{3.763485815843107*^9, 3.7634858194770613`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"convcm2tobarn", " ", "convbtoGb"}]], "Input"],
+
+Cell[BoxData["9.999999999999999`*^14"], "Output",
+ CellChangeTimes->{3.763485719702819*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["# convertion factor for cross section from a.u. to ", "Subsection"],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["cm", "2"], TraditionalForm]]],
+ StyleBox[" to ", "Subsection"],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["10", 
+    RowBox[{"-", "16"}]], TraditionalForm]]],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["cm", "2"], TraditionalForm]]]
+}], "Input",
+ CellChangeTimes->{{3.763468133103251*^9, 3.76346820187817*^9}, {
+   3.763468655018248*^9, 3.763468734274235*^9}, {3.763468766840543*^9, 
+   3.763468779377039*^9}, 3.76347793022961*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"convCSautocm2", " ", "conv10m16", " "}]], "Input",
+ CellChangeTimes->{{3.763467627320043*^9, 3.7634676894955873`*^9}, 
+   3.7634687840228577`*^9, {3.763478068274878*^9, 3.763478068978155*^9}, {
+   3.763478169973268*^9, 3.763478170417099*^9}}],
+
+Cell[BoxData["0.28002852055707017`"], "Output",
+ CellChangeTimes->{3.763467628205834*^9, 3.763467692577449*^9, 
+  3.763467764962862*^9, 3.763468788836213*^9, 3.763477845108337*^9, 
+  3.763478069374371*^9, 3.763478181982319*^9, 3.7634856808381433`*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["# convertion factor for single-differential cross section from \
+a.u. to ", "Subsection"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["cm", "2"], "/", "eV"}], TraditionalForm]]],
+ StyleBox[" to Mbarn/eV", "Subsection"]
+}], "Input",
+ CellChangeTimes->{{3.763468133103251*^9, 3.76346820187817*^9}, {
+  3.763468655018248*^9, 3.763468751503647*^9}, {3.763477928018219*^9, 
+  3.763477964862403*^9}, {3.763478248640534*^9, 3.763478251444137*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"convCSautocm2", "/", "conveKautoeV"}], " ", "convcm2tobarn", " ", 
+  "convbtoMb"}]], "Input",
+ CellChangeTimes->{
+  3.76346751946207*^9, {3.763478080508934*^9, 3.7634780853612843`*^9}, 
+   3.7634781352434263`*^9, {3.7634781725572243`*^9, 3.763478172959401*^9}, {
+   3.763478265173093*^9, 3.763478275306609*^9}}],
+
+Cell[BoxData["2.058171758306827`"], "Output",
+ CellChangeTimes->{3.7634781837743063`*^9, 3.7634782769543343`*^9, 
+  3.763485684498308*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"convCSautocm2", " ", "convcm2tobarn", " ", "convbtoMb"}]], "Input",
+ CellChangeTimes->{{3.763478293920342*^9, 3.763478295443223*^9}}],
+
+Cell[BoxData["28.00285205570701`"], "Output",
+ CellChangeTimes->{3.76347829587223*^9, 3.763485687543315*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["conveKautoeV"], "Input"],
+
+Cell[BoxData["13.6056925`"], "Output",
+ CellChangeTimes->{3.7634783022105007`*^9, 3.763485690066359*^9}]
+}, Open  ]],
+
+Cell[BoxData["13.6056925`"], "Input"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Convert", " ", "cross", " ", "section", " ", "as", " ", 
+   FormBox[
+    SuperscriptBox[
+     SubscriptBox["\[Pi]a", "0"], "2"],
+    TraditionalForm], " ", "in", " ", "atomic", " ", "units", " ", "to", " ", 
+   "other", " ", "units"}], "Section"]], "Input",
+ CellChangeTimes->{{3.7634031089149446`*^9, 3.763403120781933*^9}, {
+  3.763466846844399*^9, 3.763466848349064*^9}, {3.763468799245387*^9, 
+  3.763468800575553*^9}, {3.763477889644314*^9, 3.763477910620525*^9}}],
+
+Cell[TextData[{
+ StyleBox["# convertion factor for cross section from a.u. to ", "Subsection"],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["m", "2"], TraditionalForm]]],
+ StyleBox[" ", "Subsection"]
+}], "Input",
+ CellChangeTimes->{{3.763468133103251*^9, 3.76346820187817*^9}, {
+   3.763468655018248*^9, 3.763468734274235*^9}, {3.7634688241396523`*^9, 
+   3.763468848429002*^9}, 3.763477934748547*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[Pi]", " ", 
+  SuperscriptBox["a0m", "2"]}]], "Input",
+ CellChangeTimes->{{3.76346639979228*^9, 3.763466400572473*^9}, {
+   3.76346651165202*^9, 3.7634665161908493`*^9}, 3.763467389391782*^9, 
+   3.7634782246989717`*^9}],
+
+Cell[BoxData["8.797355429777099`*^-21"], "Output",
+ CellChangeTimes->{
+  3.763466401409103*^9, 3.763466718054364*^9, {3.763467389712813*^9, 
+   3.7634673980885363`*^9}, 3.763477837013031*^9, 3.7634782296210327`*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ StyleBox["# convertion factor for cross section from a.u. to ", "Subsection"],
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["m", "2"], TraditionalForm]]],
+ StyleBox[" ", "Subsection"]
+}], "Input",
+ CellChangeTimes->{{3.763468133103251*^9, 3.76346820187817*^9}, {
+   3.763468655018248*^9, 3.763468734274235*^9}, {3.7634688241396523`*^9, 
+   3.763468854507555*^9}, 3.763477936897524*^9, {3.763478211206308*^9, 
+   3.763478211206448*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[Pi]", " ", 
+  SuperscriptBox["a0m", "2"]}]], "Input",
+ CellChangeTimes->{
+  3.76346739409723*^9, {3.763478212982086*^9, 3.763478226820711*^9}}],
+
+Cell[BoxData["8.797355429777099`*^-21"], "Output",
+ CellChangeTimes->{{3.763467394927947*^9, 3.763467398911834*^9}, 
+   3.76347784017887*^9, {3.763478215629174*^9, 3.763478230809247*^9}}]
+}, Open  ]]
+},
+WindowSize->{1136, 855},
+WindowMargins->{{337, Automatic}, {Automatic, 67}},
+FrontEndVersion->"8.0 for Linux x86 (64-bit) (October 10, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 342, 4, 42, "Input"],
+Cell[902, 26, 731, 20, 69, "Input"],
+Cell[1636, 48, 1307, 28, 94, "Input"],
+Cell[2946, 78, 283, 4, 34, "Input"],
+Cell[CellGroupData[{
+Cell[3254, 86, 546, 10, 30, "Input"],
+Cell[3803, 98, 356, 5, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4196, 108, 365, 9, 30, "Input"],
+Cell[4564, 119, 159, 2, 30, "Output"]
+}, Open  ]],
+Cell[4738, 124, 258, 3, 34, "Input"],
+Cell[CellGroupData[{
+Cell[5021, 131, 433, 8, 30, "Input"],
+Cell[5457, 141, 296, 4, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5790, 150, 374, 7, 30, "Input"],
+Cell[6167, 159, 356, 5, 30, "Output"]
+}, Open  ]],
+Cell[6538, 167, 303, 4, 34, "Input"],
+Cell[6844, 173, 263, 7, 30, "Input"],
+Cell[CellGroupData[{
+Cell[7132, 184, 204, 4, 30, "Input"],
+Cell[7339, 190, 161, 3, 30, "Output"]
+}, Open  ]],
+Cell[7515, 196, 37, 0, 30, "Input"],
+Cell[CellGroupData[{
+Cell[7577, 200, 359, 7, 30, "Input"],
+Cell[7939, 209, 251, 4, 30, "Output"]
+}, Open  ]],
+Cell[8205, 216, 500, 10, 44, "Input"],
+Cell[8708, 228, 857, 22, 50, "Input"],
+Cell[9568, 252, 1943, 53, 107, "Input"],
+Cell[11514, 307, 425, 9, 34, "Input"],
+Cell[CellGroupData[{
+Cell[11964, 320, 511, 11, 30, "Input"],
+Cell[12478, 333, 261, 3, 30, "Output"]
+}, Open  ]],
+Cell[12754, 339, 404, 9, 34, "Input"],
+Cell[CellGroupData[{
+Cell[13183, 352, 404, 9, 30, "Input"],
+Cell[13590, 363, 142, 2, 30, "Output"]
+}, Open  ]],
+Cell[13747, 368, 357, 8, 34, "Input"],
+Cell[CellGroupData[{
+Cell[14129, 380, 631, 9, 30, "Input"],
+Cell[14763, 391, 260, 4, 30, "Output"]
+}, Open  ]],
+Cell[15038, 398, 358, 8, 34, "Input"],
+Cell[CellGroupData[{
+Cell[15421, 410, 379, 5, 30, "Input"],
+Cell[15803, 417, 245, 3, 30, "Output"]
+}, Open  ]],
+Cell[16063, 423, 408, 9, 34, "Input"],
+Cell[CellGroupData[{
+Cell[16496, 436, 159, 2, 30, "Input"],
+Cell[16658, 440, 114, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16809, 446, 161, 4, 30, "Input"],
+Cell[16973, 452, 100, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17110, 458, 69, 1, 30, "Input"],
+Cell[17182, 461, 91, 1, 30, "Output"]
+}, Open  ]],
+Cell[17288, 465, 575, 16, 34, "Input"],
+Cell[CellGroupData[{
+Cell[17888, 485, 266, 4, 30, "Input"],
+Cell[18157, 491, 251, 3, 30, "Output"]
+}, Open  ]],
+Cell[18423, 497, 481, 11, 34, "Input"],
+Cell[CellGroupData[{
+Cell[18929, 512, 346, 7, 30, "Input"],
+Cell[19278, 521, 138, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19453, 528, 157, 2, 30, "Input"],
+Cell[19613, 532, 108, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19758, 538, 38, 0, 30, "Input"],
+Cell[19799, 540, 104, 1, 30, "Output"]
+}, Open  ]],
+Cell[19918, 544, 37, 0, 30, "Input"],
+Cell[19958, 546, 505, 10, 44, "Input"],
+Cell[20466, 558, 401, 9, 34, "Input"],
+Cell[CellGroupData[{
+Cell[20892, 571, 245, 5, 30, "Input"],
+Cell[21140, 578, 215, 3, 30, "Output"]
+}, Open  ]],
+Cell[21370, 584, 451, 10, 34, "Input"],
+Cell[CellGroupData[{
+Cell[21846, 598, 169, 4, 30, "Input"],
+Cell[22018, 604, 187, 2, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

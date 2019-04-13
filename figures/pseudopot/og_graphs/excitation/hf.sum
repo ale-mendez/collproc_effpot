@@ -1,0 +1,64 @@
+1
+
+
+         HARTREE-FOCK WAVE FUNCTIONS FOR  Li    AV     Z =  3.0
+
+              Core =
+     Configuration =  1s(   2)  4s(   1)                              
+
+
+         INPUT DATA
+         ----- ----
+
+             WAVE FUNCTION  PROCEDURE
+                 NL  SIGMA METH ACC OPT
+
+
+
+       1   1s  1  0    0.5   1 0.0   0
+       2   4s  4  0    2.0   1 0.0   0
+
+
+
+        INITIAL ESTIMATES 
+
+          NL    SIGMA      E(NL)    AZ(NL)    FUNCTIONS
+
+
+          1s     0.50      0.000     8.696    SCREENED HYDROGENIC    
+          4s     2.00      0.000     0.500    SCREENED HYDROGENIC    
+
+      LEAST SELF-CONSISTENT FUNCTION IS  4s :WEIGHTED MAXIMUM CHANGE =  8.73D-02
+
+      LEAST SELF-CONSISTENT FUNCTION IS  1s :WEIGHTED MAXIMUM CHANGE =  2.54D-03
+
+      LEAST SELF-CONSISTENT FUNCTION IS  4s :WEIGHTED MAXIMUM CHANGE =  9.86D-05
+
+      LEAST SELF-CONSISTENT FUNCTION IS  4s :WEIGHTED MAXIMUM CHANGE =  4.49D-06
+
+      LEAST SELF-CONSISTENT FUNCTION IS  1s :WEIGHTED MAXIMUM CHANGE =  2.84D-07
+
+
+          NUMBER OF FUNCTIONS ITERATED          =     2
+          MAXIMUM WEIGHTED CHANGE IN FUNCTIONS  =  0.38D-07
+
+
+
+
+                        ATOM Li       TERM AV    
+
+  nl       E(nl)        I(nl)       KE(nl)        Rel(nl)   S(nl)       Az(nl)
+  1s     5.4444487    -4.443981     3.617710    -0.000331   0.380      9.267817
+  4s     0.0769489    -0.178894     0.039470    -0.000002   1.770      0.428529
+
+
+  nl      Delta(R)     1/R**3       1/R         R        R**2
+  1s         6.835       0.0000    2.68723   0.57242    0.44543
+  4s         0.015       0.0000    0.07279  19.51695  429.23261
+
+
+     TOTAL ENERGY (a.u.)
+     ----- ------
+           Non-Relativistic       -7.27488959    Kinetic        7.27488963
+           Relativistic Shift     -0.00053359    Potential    -14.54977922
+           Relativistic           -7.27542317    Ratio        -1.999999994

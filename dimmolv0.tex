@@ -1,0 +1,1065 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{authblk}
+% \usepackage[square,sort,comma,numbers]{natbib}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{hyperref}
+
+
+\hyphenation{pseudo-charges pseudo-potential mo-men-tum lith-ium}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\title{Collision processes in atoms and molecules using effective 
+potentials}
+\author[ ]{Alejandra M.P. Mendez}
+\author[ ]{Dar\'io M. Mitnik}
+\author[ ]{Jorge E. Miraglia}
+\affil[ ]{\small
+Instituto de Astronom\'ia y F\'isica del Espacio,  
+Universidad de Buenos Aires -- 
+Consejo Nacional de Investigaciones Cient\'ificas y T\'ecnicas,
+Buenos Aires, Argentina}
+% \affil[2]{Departamento de F\'isica, Facultad de Ciencias Exactas y Naturales, 
+% Universidad de Buenos Aires, Buenos Aires, Argentina}
+
+\maketitle
+
+% \scriptsize
+\tableofcontents
+
+% \normalsize
+\begin{abstract}
+We investigate the feasibility of using pseudopotentials to generate
+the bound and continuum orbitals needed in collisional calculations. 
+By examination of several inelastic processes, we demonstrate the 
+inconveniences of this approximation. Instead, we prescribe 
+the usage of effective potentials obtained with the Depurated Inversion 
+Method (DIM), which is described in this work. We also extended this method 
+for molecular systems. Calculations of single photoionisation and 
+proton--impact ionisation with DIM show good agreements with 
+experimental results.
+\end{abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Outline}
+
+Inelastic transition calculations require the representation of 
+the bound and continuum states involved in the collisional processes. 
+The hypothetical existence of an effective one--electron local 
+potential accounting for these states would allow to generate in a 
+simpler way the orthogonal wavefunctions for the interacting particles.
+This should include detailed $nl$--orbital potentials, a feature 
+missing in most of the standard density functional methods. 
+The idea of replacing a many--body, nonlocal interaction by
+an effective one--electron equation opens up the possibility of studying
+extremely complex systems with high accuracy. 
+However, this is not a simple task.
+
+In this context, one clever idea emerge from the pseudopotential
+approximation, 
+in which all the complexity of the wavefunctions near the core  
+-- that normally consumes a huge numerical effort --, is avoided.
+For instance, density functional theory codes using pesudopotentials, 
+such as the {\sc parsec} for example \cite{parsecwebpage,Chelikowsky1994}, 
+permit to use an 
+equally--spaced grid involving a relatively small number of points. 
+Otherwise, the use of realistic potentials describing properly the
+nucleus Coulomb potential, requires a high density of points 
+concentrated at the origin to describe precisely what the 
+pseudopotentials cast aside. 
+Thus, if this approach is applicable in the field of collisions theory, 
+one would save enormous amount of computational resources.
+In this article, we explore the possibility of using pseudopotentials 
+within the single electron model to calculate inelastic transitions. 
+Single photoionization, excitation, ionization and electron capture were
+calculated in first perturbative order. 
+We found two important drawbacks in this applications. 
+First, the range of validity is restrained to very
+small momentum transfers.
+Second, the internal information of the wavefunctions can play a very 
+important role, such as the cusp conditions in the processes of 
+electron capture and ionization. 
+
+In previous works \cite{Mendez2015,Mendez2016,Mendez2018}, we developed the 
+Depurated Inversion Method 
+(DIM), allowing to obtain accurate effective potentials by substituting 
+the coupled multielectron equations into a Kohn--Sham type equation. 
+In a first step, the corresponding effective potential is obtained 
+through inversion of this equation. 
+Next, a careful optimisation of this potential is carried on, eliminating 
+poles, and imposing analytically, the appropriate boundary conditions. 
+In that way, the DIM potentials are parametrized in simple analytical 
+expressions.
+In the present work, we show how these DIM potentials overcome the 
+deficiencies of the pseudopotentials, calculating the cross sections 
+for inelastic problems.
+
+Finally, an extension of the DIM method for simple molecular system 
+is developed, providing a new parameteric expression and results for 
+collisional processes. An implementation example is given for the 
+methane molecule.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Theory}
+
+\subsection{Pseudopotentials}
+\label{sec:PPs}
+
+The pseudopotential (PP) method consists of replacing the Coulomb 
+potential in the many--electron system Hamiltonian with a smooth 
+function so that the electron wavefunctions oscillating rapidly in 
+the core region are replaced by nodeless pseudo--orbitals having the 
+correct energy and the same outer range properties.
+In general, the pseudopotentials $V_{\mbox{\tiny PP}}$ can be defined 
+through a pseudo--charge $Z_{\mbox{\tiny PP}}$ as
+\begin{equation}
+ V_{\mbox{\tiny PP}}(r)=-\frac{Z_{\mbox{\tiny PP}}(r)}{r} \,,
+ \label{eq:pseudopotential}
+\end{equation}
+\begin{equation}
+ Z_{\mbox{\tiny PP}}(r)=\bigg\{
+ \begin{array}{cl}
+  f(r), & r\leq r_c \\
+  1, & r>r_c 
+ \end{array} 
+ \,,
+ \label{eq:pseudocharge}
+\end{equation}
+where $r_c$ is a cutoff radius that separates the core, $r\leq r_c$,
+from the valence region, $r>r_c$, of the target and $f(r)$ is a 
+continous function with a constant value at the origin.
+Fig.~\ref{fig:pseudoLi} illustrates a pseudopotential (solid line)
+and its corresponding pseudo--wavefunction for the $3s$ orbital of 
+argon. The one--electron Hartree--Fock wavefunction is included
+with a dashed line. The pseudo--wavefunction agrees with the 
+HF orbital only in the outer region, loosing all 
+infomation about the atomic structure close to the origin.
+\begin{figure}[H]
+\centering
+ \includegraphics[height=0.23\textheight]{figures/pseudopot/pseudopotAr.eps}
+\hspace{0.2cm}
+ \includegraphics[height=0.23\textheight]{figures/pseudopot/pseudofuncAr.eps}
+ \caption{(a) Pseudopotential, (b) pseudo--wavefunction and 
+ HF orbital for the $3s$ orbital of argon.}
+ \label{fig:pseudoLi}
+\end{figure}
+
+In Section~\ref{sec:colproc}, we analyze the feasibility of 
+implementing PPs in collisional processes calculations for two 
+simple atomic cases: hydrogen and lithium. For each atom, the 
+following pseudopotentials are examined
+\begin{equation}
+ \begin{array}{clll}
+  \mbox{Name} & \mbox{Source} & \mbox{Type} & \mbox{Ref.} \\
+  \hline  
+  A & \mbox{\sc abinit} & \mbox{GGA} & \cite{abinitwebpage,Hamann1979} \\
+  P & \mbox{\sc parsec} & \mbox{Troullier Martins} & \cite{parsecwebpage,Chelikowsky1994}\,.
+ \end{array}
+ \label{eq:pseudosources}
+\end{equation}
+Although there is no electronic core for hydrogen orbitals, it
+can still be readily described by the pseudopotential 
+approximation. In fact, the hydrogen pseudopotentials from 
+(\ref{eq:pseudosources}) reproduce the exact orbitals very 
+accurately.
+
+We will now proceed to examine closely the pseudo--charges and its 
+one--electron solutions for the lithium atom. 
+First, we study the spatial and momentum representation of the 
+pseudo--charges. The momentum--space equivalent of $Z(r)$ is given 
+by the Fourier transform
+\begin{equation}
+ \widetilde{Z}(k) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{+\infty} 
+ Z(r)\,e^{-ikr}\,dr\,.
+\end{equation}
+The pseudo--charges from~(\ref{eq:pseudosources}) for the $2s$ 
+orbital of lithium are illustrated in Fig.~\ref{fig:ZLi}. 
+For comparison, we include the potential attained from implementing 
+the Depurated Inversion Method described in Section~\ref{sec:DIM}.
+The pseudo--charges vanish at the origin, avoiding the divergence 
+of the Coulomb potential. However, this feature comes at a price: 
+the pseudo--charges in the spatial representation are repulsive 
+around \mbox{$r= $1 a.u.} and their momentum picture fails to represent the 
+target for high $k$, showing an incorrect oscillatory behaviour for 
+values greater than $k_c=(2\pi r_c)^{-1}\sim0.7$ a.u..
+\begin{figure}[H]
+\centering
+ \includegraphics[height=0.23\textheight]{figures/pseudopot/ZLi.eps}
+\hspace{0.2cm}
+ \includegraphics[height=0.23\textheight]{figures/pseudopot/ZLik.eps}
+ \caption{Pseudo and DIM charges for the $2s$ orbital of lithium. 
+ (a) Spatial and (b) momentum representation.}
+ \label{fig:ZLi}
+\end{figure}
+
+Secondly, we inspect the behaviour of the bound pseudo--orbitals 
+obtained from solving the one--electron Schrodinger equation with a 
+pseudopotential. As usual, the bound state wavefunctions can be 
+written as
+\begin{equation}
+ \psi_{nlm}(\mathbf{r}) = \frac{u_{nl}(r)}{r}Y_l^m(\hat{r})\,,
+ \label{eq:centralfield-wave}
+\end{equation}
+where $u_{nl}(r)$ are the reduced radial wavefunctions and $Y_l^m(\hat{r})$ are
+th spherical harmonics. Similarly, the Fourier transform of these
+functions are given by
+\begin{equation}
+ \widetilde{\psi}_{nlm}(\mathbf{k}) =
+ \frac{\chi_{nl}(k)}{k}Y_l^m(\hat{k})\,.
+\end{equation}
+
+The spatial and momentum representation of the $2s$ radial 
+pseudo--wavefunctions of lithium corresponding to the pseudo--charges 
+from~(\ref{eq:pseudosources}) are displayed in Fig.~\ref{fig:wavesLi}.
+Although the pseudo--orbitals are very different
+than the HF $2s$ wavefunction, the transformed $\chi(k)$ seems to 
+have similar characteristics. However, a closer inspection of the 
+tail region of these functions (see the inset of the figure) 
+show the existence of several nodes.
+We will see later that these discrepancies introduce significant 
+consequences in the cross sections for most of the collisional 
+processes examined.
+\begin{figure}[H]
+\centering
+ \includegraphics[height=0.23\textheight]{figures/pseudopot/funcLi.eps}
+\hspace{0.2cm}
+ \includegraphics[height=0.23\textheight]{figures/pseudopot/funckLi.eps}
+ \caption{Pseudo and DIM bound state wavefunction in (a) spatial
+ and (b) momentum representation for the
+ $2s$ orbital of lithium.}
+ \label{fig:wavesLi}
+\end{figure}
+
+Finally, the pseudopotential approach not only affects the 
+representation of the bound orbitals, but also determines the form of 
+the continuum wavefunctions. For large $r$, the free state orbitals of 
+an electron in presence of a Coulomb potential can be written as
+\begin{equation}
+ u_{kl}(r) \rightarrow \,\sin \left( kr - l\frac{\pi}{2} - \eta \ln 2kr +
+ \sigma_l + \delta_l \right)\,,
+\end{equation}
+where $k$ is the particle wave number, $\eta$ is Sommerfeld's 
+parameter, $\sigma_l$ is the Coulomb phase shift and $\delta_l$ is the 
+wave phase shift with respect to the Coulomb wave.
+
+Comparisons between the DIM (solid line) and the pseudo (dashed)
+free $ks$ wavefunctions for lithium are shown in Fig.~\ref{fig:contLi},
+close to the origin (left) and asymptotically (right).
+The pseudo and DIM wavefunctions behave similarly far away from the nucleus.
+The asymptotic phase shift $\Delta$ accounts for the differences 
+between the potentials. As the 
+energy of the free electron increases, $\Delta$ diminishes. 
+However, the orbitals in the core region are different even with 
+increasing energy; the first maximum of the DIM wavefunctions 
+are consistently smaller than of the pseudo--orbitals, which is 
+understood since the Coulomb--type attraction of the nuclei is 
+stronger than the pseudopotential in that region. 
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.23\textheight]{figures/pseudopot/LicontA.eps}
+% \hspace{0.01cm}
+\includegraphics[height=0.23\textheight]{figures/pseudopot/LicontB.eps}
+ \caption{Continuum wavefunctions with energies $E$ near the origin 
+ (left) and in the asymptotic region (right), calculated with the 
+ DIM potential (solid line) and the {\sc abinit} pseudopotential (dashed line). }
+ \label{fig:contLi}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Depurated Inversion Method potentials}
+\label{sec:DIM}
+
+The Depurated Inversion Method \cite{Mendez2015,Mendez2016,Mendez2018} 
+consists of assuming that the many--electron atom orbitals can be 
+represented by the solution of Kohn--Sham type equations, in which 
+the $nl$ effective potentials are given by 
+\begin{equation}
+V_{nl}(r) = 
+\frac{1}{2}\frac{1}{u_{nl}(r)}
+\frac{d^2u_{nl}(r)}{dr^{2}} - 
+\frac{l(l+1)}{2r^{2}}+\varepsilon_{nl} \, ,
+\label{eq:V}
+\end{equation}
+where $u_{nl}$ and $\varepsilon_{nl}$ are the $nl$ orbital wavefunctions and
+energies, respectively. In this work, the atomic structure is
+approximated with the Hartree--Fock method, 
+which is computed with the {\sc hf} codes by 
+C. F. Fischer \cite{FroeseFischer1997} and the {\sc nrhf} code by 
+W. Johnson \cite{Johnson2007}. The computation of Eq.~(\ref{eq:V}) 
+poses various numerical problems. The nodes and asymptotic decay
+of the wavefunctions $u_{nl}(r)$ introduce significant numerical errors in
+the inversion procedure (see Ref.~\cite{Mendez2018} for further 
+details). The nodes of the orbitals produces huge unphysical 
+poles, while the rapid asymptotic decay of the internal wavefunctions 
+generates large divergences in the tail region of the potentials.
+The Depuration method is implemented to tackle these unphysical features. 
+An effective potential with a Coulomb--type shape $V_r(r)=-Z_r(r)/r$ 
+is defined, and we enforce the correct boundary 
+conditions fitting the inverted potential with the following analytical 
+expression
+\begin{equation}
+ Z_r(r) = \sum_{j=1}^n z_j e^{-\alpha_j r}(1+\beta_jr) + 1
+ \, \longrightarrow \, \bigg\{
+ \begin{array}{cc}
+  Z_N, & r\rightarrow0 \\
+  1, & r\rightarrow\infty 
+ \end{array}
+ \label{eq:atomiczDIM}
+\end{equation} 
+where \mbox{$\sum z_j = Z_N-1$}. Afterwards, the parameters are 
+optimised to reproduce the HF values accurately. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Collisional processes in atoms}
+\label{sec:colproc}
+
+The most significative advantage of the pseudopotential method is 
+its symplicity. However, it is worth to determine the validity
+of this approach for computing collisional processes.
+In this Section, we perform a thorough examination of the
+pseudo--potentials for hydrogen and 
+lithium by comparing the cross sections of four inelastic 
+processes: proton--impact excitation, proton--impact ionisation,
+charge exchange and photoionisation. The initial and final states
+of the targets are obtained by solving the corresponding Schr\"odinger 
+equation.
+For the hydrogen atom, we compare the pseudopotential results with 
+the exact analytical solutions.  
+Furthermore, in order to asses the aplicability of the 
+Depurated Inversion Method, we compute the photoionisation of 
+more complex many--electron atoms and 
+compare our findings with experimental data.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Proton--Impact Excitation}
+
+The proton--impact excitation of target $X$ is defined as 
+\begin{equation}
+ \mbox{H}^+ + X \rightarrow \mbox{H}^+ + X^*\,.
+\end{equation}
+The excitation cross section $\sigma$ of the target from the initial bound
+state $\psi_i$ to the excited state $\psi_{\!f}$ may be written as 
+\begin{equation}
+ \sigma=\frac{\mu^2}{4\pi^2}\frac{k_{\!f}}{k_i}\int{\left|T_{\!fi}\right|^2 
+ d\Omega}\,,
+  \label{eq:cross-section}
+\end{equation}
+where $\mu$ is the reduced mass of the proton--atom system, 
+$\mathbf{k}_i$ and $\mathbf{k}_{\!f}$ are the initial and final relative 
+momentum, and 
+\begin{equation}
+ T_{\!fi}=\langle \psi_{\!f}|V|\psi_i\rangle
+ \label{eq:transition-matrix}
+\end{equation}
+is the transition matrix or T--matrix.
+If the initial and final state of the transition are described by
+the Hartree--Fock method, the orbitals will give the correct high 
+energy limit in the first order approximation (this is not the case 
+for the charge exchange process). Hence, we will concentrate our 
+computing efforts in the first perturbative order of the transition
+matrix element through the first Born (FB) approximation, given by
+\begin{equation}
+ T_{\!fi}^{\mbox{\scriptsize FB}} = \widetilde{V}(\mathbf{p}) F_{\!fi}(\mathbf{p}) \,.
+ \label{eq:firstbornTmatrix}
+\end{equation}
+The term $F_{\!fi}(\mathbf{p})$ is the form--factor
+\begin{equation}
+ F_{fi}(\mathbf{p}) = \frac{1}{(2\pi)^{3/2}} 
+ \int{\widetilde{\psi}_{\!f}^*(\mathbf{k})
+ \widetilde{\psi}_i(\mathbf{k}+\mathbf{p})\,d\mathbf{k}}\,,
+ \label{eq:form-factor}
+\end{equation}
+where $\mathbf{p}$ is the momentum transfer vector
+\begin{equation}
+ \mathbf{p} = p_{\mbox{\tiny min}} \hat{\mathbf{v}} + \boldsymbol{\eta} \,,
+\end{equation}
+\begin{equation}
+ p_{\mbox{\tiny min}} = \frac{\varepsilon_{\!f}-\varepsilon_i}{v} \rightarrow 
+ \bigg\{
+ \begin{array}{cl}
+  \infty, &v\rightarrow 0 \\
+  0, &v\rightarrow \infty
+ \end{array}
+ \,,
+ \label{eq:pmin}
+\end{equation}
+$\hat{\mathbf{v}}$ is the ion velocity, $\boldsymbol{\eta}$ is
+the transversal momentum transfer, so that 
+$\hat{\mathbf{v}} \cdot \boldsymbol{\eta}=0$, whereas $\varepsilon_i$ 
+and $\varepsilon_{\!f}$ are the binding energies corresponding to the 
+initial and final state.
+
+The first Born proton--impact excitation cross sections of hydrogen 
+and lithium from the ground states are shown in Fig.~\ref{fig:exHLi}.
+The pseudopotential results for the $n=2$ and $n=3$ final states of
+hydrogen agree excellently with the analytical expression. For 
+lithium, the pseudopotential cross sections agree in a broad velocity 
+range with the DIM calculations, except for low proton--impact velocities. 
+This disagreement arises from the form 
+factor. For low impact velocities, the momentum transfer vector is large 
+(\ref{eq:pmin}). As discussed earlier, the bound momentum orbital
+$\widetilde{\psi}(\mathbf{k}+\mathbf{p})$ is not properly described 
+by the pseudopotentials at this region. 
+An alternative expression for the form factor can
+be considered by implementing the peaking approximation
+\begin{equation}
+ F_{\!fi}(\mathbf{p}) \sim \widetilde{\psi}_i(\mathbf{p})\widetilde{\psi}_{\!f}^*(0)
+ +\widetilde{\psi}_{\!f}(\mathbf{p})\widetilde{\psi}_i^*(0)\,.
+\end{equation}
+Therefore, in order to have the correct form factor it is necessary to 
+obtain an accurate description of the initial bound state at large
+momentum values, which is not the case for the pseudostates (see 
+Fig.~\ref{fig:wavesLi}b) and hence their failure.
+
+\begin{figure}[H]
+\centering
+ \includegraphics[height=0.23\textheight]{figures/pseudopot/Hex.eps}
+ \hspace{0.4cm}
+ \includegraphics[height=0.23\textheight]{figures/pseudopot/Liex.eps}
+ \caption{Proton--impact excitation cross section from the ground state 
+ for hydrogen and lithium.}
+ \label{fig:exHLi}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Proton--Impact Ionisation}
+
+The transition matrix (\ref{eq:transition-matrix}) for the 
+proton--impact ionisation of $X$,
+\begin{equation}
+ \mbox{H}^+ + X \rightarrow \mbox{H}^+ + X^+ + e^-\,,
+\end{equation}
+can also be written in terms of the first order Born
+approximation. In this case, the final state $\psi_{\!f}$ in 
+Eq.~(\ref{eq:form-factor}) is an outgoing continuum 
+wavefunction $\psi_{\mathbf{k}_{\!f}}^-$ and $\varepsilon_{\!f}=k_{\!f}^2/2$. 
+
+The single--differential proton--impact ionisation cross sections 
+$d\sigma/d\varepsilon_{\!f}$ of hydrogen and lithium at a proton 
+velocity of $v_p=1$\,a.u. 
+are shown in Fig.~\ref{fig:ionHLi}. 
+In the case of hydrogen, the pseudopotential and analytical results
+agree for all the electron energy range, except at very high values. 
+On the other hand, for lithium, the cross sections computed with 
+pseudopotentials only agree at low energies. 
+Once again, assuming that $\psi_{\mathbf{k}_{\!f}}^-(\mathbf{k})$ can be 
+approximated by a plane wave, the form factor is reduced to the 
+Fourier transform of the initial bound state
+\begin{equation}
+ F_{\!fi}(\mathbf{p})\sim\widetilde{\psi}_i(\mathbf{p}-\mathbf{k}_{\!f})\,.
+\end{equation}
+Then, as $k_{\!f}$ increases, so does $p_{\mbox{\tiny min}}$, and the form
+factor is not well represented by the pseudopotentials. The big 
+discrepancies shown in Fig. \ref{fig:ionHLi} provides another demonstration
+of how a wrong description of the momentum space wavefunction may
+produce huge errors in collisional processes calculations.
+\begin{figure}[H]
+\centering
+ \includegraphics[height=0.225\textheight]{figures/pseudopot/ionizationH.eps}
+ \hspace{0.2cm}
+ \includegraphics[height=0.225\textheight]{figures/pseudopot/ionizationLi.eps}
+ \caption{Single differential proton--impact ionisation cross 
+ section for hydrogen and lithium at \mbox{$v_p=1$\, a.u..}}
+ \label{fig:ionHLi}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Proton--Impact Charge Exchange}
+
+The proton--impact charge exchange of target $X$ is defined as
+\begin{equation}
+ \mbox{H}^+ + X \rightarrow \mbox{H} + X^+\,.
+\end{equation}
+The charge transfer cross section by the collision of a proton 
+(electron capture) is 
+computed with the first order Brinkman--Kramers 
+approximation~\cite{Brinkman1930}. 
+Accordingly, the matrix element is defined by 
+\begin{equation}
+ T_{\!fi}^{\mbox{\tiny BK}} = \widetilde{\psi}_f^*(\mathbf{W}_{\!f})
+ \left[\varepsilon_{\!f}-\frac{W_{\!f}^2}{2} \right]
+ \widetilde{\psi}_{\!i}(\mathbf{W}_i)\,,
+\end{equation}
+where $\mathbf{W}_{\!i}$ and $\mathbf{W}_{\!f}$ are the momentum transfer 
+vectors 
+\begin{equation}
+ \mathbf{W}_{\!i} = W_{\!i0} \hat{\mathbf{v}} + \boldsymbol{\eta}, \quad 
+ W_{\!i0} = \frac{v}{2} - p_{\mbox{\tiny min}}
+ \label{eq:momtransfi0}
+\end{equation}
+\begin{equation}
+ \mathbf{W}_{\!f} = W_{\!f0} \hat{\mathbf{v}} + \boldsymbol{\eta}, \quad 
+ W_{\!f0} = \frac{v}{2} + p_{\mbox{\tiny min}}\,,
+ \label{eq:momtransff0}
+\end{equation}
+and they satisfy the condition $\mathbf{W}_{\!i}+\mathbf{W}_{\!f}=\mathbf{v}$,
+and $p_{\mbox{\tiny min}}$ is defined in Eq.~(\ref{eq:pmin}).
+
+The charge exchange cross sections of hydrogen and lithium in the 
+ground state are illustrated in Fig.~\ref{fig:captureH}. The cross 
+section of hydrogen is described with high accuracy by the 
+pseudopotential approach for a wide range of proton velocities. 
+However, this process constitutes 
+a symmetrical resonance, i.e. $\varepsilon_{\!f}=\varepsilon_{\!i}$, 
+and the agreement may be misleading. For the lithium case, the 
+pseudopotentials fail utterly to describe the electron capture 
+correctly at low and high velocities. For low and high $v_p$ values, the 
+momentum transfer vector becomes large and therefore, the cross 
+sections are wrongly calculated with pseudopotentials. 
+The results disagree completely for most of the energy values, except
+for a very small range of velocities around $v\simeq0.77$\,a.u..
+\begin{figure}[H]
+\centering
+ \includegraphics[height=0.23\textheight]{figures/pseudopot/captureH.eps}
+ \hspace{0.3cm}
+ \includegraphics[height=0.23\textheight]{figures/pseudopot/captureLi.eps}
+ \caption{Proton--impact electron capture cross section for hydrogen and 
+ lithium.}
+ \label{fig:captureH}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Photoionisation}
+\label{sec:photo}
+
+The single photoionisation is defined as
+\begin{eqnarray}
+ \hbar\omega + X &\rightarrow& X^+ + e\,.
+\end{eqnarray}
+Considering a perturbative photon field, the initial bound $\psi_{i}$ 
+and final continuum $\psi_{\mathbf{k}_{\!f}}^-$ states of the target are
+not considerably distorted; therefore, the relevant matrix element of the 
+photoionisation process is given by
+\begin{equation}
+ T_{\mathbf{k}}^{\mbox{\tiny Ph}} = \int{
+ \psi_{\mathbf{k}_{\!f}}^-(\mathbf{r}) 
+ \left[-i \hat{\boldsymbol{\varepsilon}}_\lambda \cdot 
+ \boldsymbol{\nabla}_\mathbf{r}\right] 
+ \psi_{i}(\mathbf{r})}\,,
+\end{equation}
+where $\hat{\boldsymbol{\varepsilon}}_\lambda$ is the polarisation 
+versor and $\mathbf{k}_{\!f}=\sqrt{2(\omega+\varepsilon_i)}$, as imposed 
+by the energy conservation.
+
+The first--order photoionisation cross sections of hydrogen and 
+lithium are shown in Fig.~\ref{fig:photoHLi}. The pseudopotentials 
+results for the hydrogen atom agree with the exact analytical 
+expression results only for low photon energies, failing at larger values. 
+This discrepancies can be understood considering the continuum 
+wavefunction $\psi_{\mathbf{k}_{\!f}}^-(\mathbf{r})$ as a plane wave. 
+Consequently, the matrix element $T_{\mathbf{k}}^{\mbox{\tiny Ph}}$ 
+is reduced to
+\begin{equation}
+ T_{\mathbf{k}}^{\mbox{\tiny Ph}} \sim 
+ -\left(\hat{\boldsymbol{\varepsilon}}_\lambda \cdot \mathbf{k}_{\!f} \right)
+ \widetilde{\psi_i} \left(\mathbf{k}_{\!f}\right)\,,
+\end{equation}
+and it is determined entirely by the behaviour of the bound target 
+pseudostate in the momentum representation. For hydrogen, the 
+pseudo--orbital from {\sc parsec} in the Fourier space coincides with 
+the exact 
+analytical solution for the entire range of $k$, which explains the 
+excellent agreement in the cross section results.
+For lithium, the pseudopotential cross sections disagree with the DIM 
+results for all energy values. The large oscilations in the cross sections
+are originated by the spurious oscillatory structure of the bound state
+for large  $k$ values (see inset of Fig.~\ref{fig:wavesLi}b).
+
+\begin{figure}[H]
+\centering
+ \includegraphics[height=0.23\textheight]{figures/pseudopot/photoionH.eps}
+ \hspace{0.2cm}
+ \includegraphics[height=0.23\textheight]{figures/pseudopot/photoionLi.eps}
+\caption{Single photoionisation cross section for hydrogen 
+and lithium.}
+ \label{fig:photoHLi}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{DIM photoionisation of many--electron atoms}
+
+In order to asses the applicability of the Depurated Inversion Method
+for atoms with a more complex structure, we compute the 
+photoionisation of many--electron targets with the DIM 
+potentials~\cite{Mendez2016} and compare our results with 
+experimental values. 
+The first order photoionisation cross section of nitrogen and neon 
+are shown in Fig.~\ref{fig:photoDIM}. Experimental data 
+from~\cite{Henke1993,Samson1990,Samson2002,Stolte2016} is illustrated 
+with hollow symbols. The DIM photoionisation cross section
+of these atoms agree excellently with the experimental values for 
+low, medium and high photon--energies. For neon, discrepancies start 
+to be noticeable for low and intermediate energy. An accurate 
+photoionisation description of heavier atoms requires the inclusion 
+of many--body effects that can be relevant, such as orbital 
+relaxation due to the creation of a hole, collective response 
+of inner shell electrons~\cite{Ederer1964} and correlation effects.
+
+\begin{figure}[H]
+\centering
+ \includegraphics[height=0.23\textheight]{figures/dimpot/photoN.eps}
+ \hspace{0.2cm}
+ \includegraphics[height=0.23\textheight]{figures/dimpot/photoNe.eps}
+\caption{Single photoionisation cross section for nitrogen and 
+neon.}
+\label{fig:photoDIM}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Depurated Inversion Method for Molecules}
+
+The description of molecular systems constitutes a real challenge due 
+to their generally multicentered and highly non--central nature. 
+Many \textit{ab initio} and semi--empirical theoretical approximations 
+have been developed to this end over the last century.
+
+In this work, the Depurated Inversion Method is extended to determine 
+effective potentials for molecules. In this Section, the theoretical 
+methods are stablished and results for methane are given. Furthermore, 
+collisional processes are computed with these molecular DIM potentials.
+
+\subsection{Theory}
+
+Without loss of generality, we will present the DIM theoretical grounds 
+for hydride compounds. The Hamiltonian of a $N$--electron $X\!H_n$ 
+molecule within the Born--Oppenheimer approximation is given by
+\begin{equation}
+ \mathcal{H}=\sum_{i=1}^N \frac{1}{2} \nabla^2_{\mathbf{r}_i} 
+ - \sum_{i=1}^N \frac{Z_N}{r_i} 
+ + \sum_{i=1}^N V_H(r_i)
+ + \sum_{i=1}^N \frac{1}{r_{ij}}
+\end{equation}
+\begin{equation}
+ V_H(r_i) = -\sum_{j=1}^{n} \frac{1}{\left|\mathbf{r}_i-\mathbf{R}_{H_j}\right|}
+\end{equation}
+where $Z_N$ is the nuclear charge of the heavier atom and 
+$\mathbf{R}_{H_j}$ are the coordinates of the hydrogens with respect to 
+the $X$ atom. The corresponding Schr\"odinger equation 
+$\mathcal{H}\Psi=E\Psi$ is solved and the orbitals are expressed as
+Eq.~(\ref{eq:centralfield-wave})
+% $\Psi_{nlm}=u_{nl}(r)/r\,Y_l^m(\hat{r})$
+considering the single--center 
+expansion (SCE). The orbitals and energies are found by solving the 
+Hartree--Fock equations. The computation of these 
+equations generally relies on the use of finite basis sets for the 
+representation of the molecular orbitals (MOs). Usually, the MOs are 
+expressed as a linear combination of atomic orbitals (LCAO),
+\begin{equation}
+ \Psi_i=\sum_j c_{ji} \phi_j\,,
+\end{equation}
+which can be constructed with Gaussian--type orbitals (GTO) basis 
+sets. 
+
+The inverted molecular potential expression, analogous 
+to Eq.~(\ref{eq:V}), obtained from GTO basis sets present more difficulties
+than the atomic case. In addition to the asymptotic divergences and
+the poles, large unphysical 
+oscillations arise~\cite{Schipper1997,Mura1997,Jacob2011,Gaiduk2013}. 
+These big oscillations are originated from imperceptible undulations 
+present in the MOs due to the finite number of the basis set. The
+second derivative, necessary to evaluate the invertion formula, amplifies
+these features~\cite{Schipper1997,Gaiduk2013}.
+The appearance of these oscillations in the inverted potentials forces us to
+incorporate further actions in the depuration scheme. To illustrate 
+this procedure, we consider the $1s$ orbital of the carbon atom. 
+We solved the Hartree--Fock equations using the \mbox{6-311G} basis set 
+with {\sc gamess} code~\cite{Schmidt1993,Gordon2005}.
+We obtain the inverted potentials by implementing Eq.~(\ref{eq:V}). 
+The resulting $Z_{1s}^{\mbox{\scriptsize 6-311G}}$ charge is shown in 
+Fig.~\ref{fig:1sCarbon}a with a dot--dashed line. 
+The charge oscillates significantly at low distances and diverges for 
+higher $r$ values. The same calculation was 
+repeated using the universal Gaussian basis set (UGBS), which has a 
+more significant amount of primitives. The corresponding inverted 
+charge $Z_{1s}^{\mbox{\scriptsize UGBS}}$ is exhibited in the figure 
+with a dashed line. 
+Although the charge still diverges around $r\approx1\,$a.u., the 
+oscillations are now circumscribed near the nucleus.
+Finally, the differential Hartree--Fock equations for the carbon 
+atom were solved using the finite--differences (FD) method. 
+The $1s$ inverted charge obtained with this procedure, 
+$Z_{nl}^{\mbox{\scriptsize FD}}$, shows no oscillations since no basis 
+sets have 
+been used to construct the orbital; however, the charge still 
+diverges for $r>1\,$a.u., as it usually does for all HF calculations.
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.23\textheight]{figures/dimpot/1sCGMSS_BS.eps}
+\hspace{0.3cm}
+\includegraphics[height=0.23\textheight]{figures/dimpot/1sC_oscprof.eps}
+\caption{(a) Effective charges for the $1s$ orbital of carbon. 
+(b) Basis--set oscillation profiles.}
+\label{fig:1sCarbon}
+\end{figure}
+
+As shown in the figure, for each basis set used in the calculations,
+different oscillation profiles will arise, which are defined as 
+\begin{equation}
+ p_{nl}^{\mbox{\scriptsize BS}} = Z_{nl}^{\mbox{\scriptsize BS}}-
+ Z_{nl}^{\mbox{\scriptsize FD}} \,,
+ \label{eq:oscillation-prof}
+\end{equation}
+where $Z_{nl}^{\mbox{\scriptsize BS}}$ is the inverted charge of the atom 
+using the particular basis set ``BS'' and 
+$Z_{nl}^{\mbox{\scriptsize FD}}$ is the effective charge obtained 
+from the invertion of the finite--difference wavefunctions. 
+In the previous example, the basis set considered for calculating 
+the $1s$ orbital of carbon were \mbox{6-311G} and UGBS. The 
+oscillation profiles for the $1s$ orbital, using Eq.~(\ref{eq:oscillation-prof}) 
+for these basis sets, are shown in Fig.~\ref{fig:1sCarbon}b. 
+Since the orbital profiles for each atomic basis set are distinctive,
+once they are determined for the atomic case, they can be removed 
+in further molecular calculations. An example of this procedure 
+is given in the following Section.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Example: Methane}
+\label{sec:dimmethane}
+
+In order to illustrate the implementation of the DIM for molecules, 
+we considered the methane molecule, which has a suitable
+spherical geometry. We computed the HF molecular orbitals and 
+energies of CH$_4$ employing the UGBS basis sets of carbon and 
+hydrogen, using the {\sc gamess} code. 
+The charges obtained by direct inversion are given in 
+Fig.~\ref{fig:ch4zeff} with dashed lines. 
+Since the molecular orbitals are given by LCAO of carbon and 
+hydrogen, the oscillations of the inverted charges are a 
+consequence of the finite basis set of these atoms. To remove the
+most important oscillations it is necessary 
+to determine the oscillation profiles produced by the atomic carbon basis set.
+We use Eq.~(\ref{eq:oscillation-prof}) to determine the 
+$p_{1s}^{\mbox{\scriptsize UGBS}}$, $p_{2s}^{\mbox{\scriptsize UGBS}}$ 
+and $p_{2p}^{\mbox{\scriptsize UGBS}}$ profiles of carbon. 
+Then, we remove the oscillations by 
+substracting the carbon $p_{nl}^{\mbox{\scriptsize UGBS}}$ profiles 
+to the corresponding inverted charges 
+$Z_{i}^{\mbox{\scriptsize UGBS}}$ of CH$_4$.
+The oscillations are removed for all orbitals except for the 
+$2a_2$, which presents small oscillatory residues from the 
+hydrogen basis set. Since the residual fluctuations are very small
+and near the nucleus, we proceeded to implement the depuration 
+scheme as described in Section~\ref{sec:DIM}. We define a new 
+parametric DIM charge equation,
+\begin{eqnarray}
+ Z(r) = \sum_j Z_j e^{-\alpha_j r} 
+ + Z_{\mbox{\scriptsize H}} e^{-(\ln r - \ln \beta)^2/(2\gamma)} 
+ + 1\,.
+ \label{eq:moleculezDIM}
+\end{eqnarray}
+In contrast to the approximation proposed for 
+atoms~(\ref{eq:atomiczDIM}), a second term has been added to the 
+formula to account for the presence of the hydrogens.
+The optimised parameters for the methane molecule are given in 
+Table~\ref{tab:ch4parameters} and the corresponding DIM 
+charges are shown in Fig.~\ref{fig:ch4zeff}, with solid lines. 
+The orbital energies obtained with these charges are also given in 
+the table.
+
+\begin{figure}[t]
+\centering
+\includegraphics[height=0.23\textheight]{figures/dimpot/zeff_1sCH4.eps}
+\hspace{0.3cm}
+\includegraphics[height=0.23\textheight]{figures/dimpot/zeff_2sCH4.eps}
+
+\vspace{0.25cm}
+\includegraphics[height=0.23\textheight]{figures/dimpot/zeff_2pCH4.eps}
+\caption{Effective charges of CH$_4$; 
+direct inversion (dashed line) and depurated inverted (solid line).}
+\label{fig:ch4zeff}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{cc|ccccc}
+\hline
+   $nl$ & $E$ &$Z$ & $\alpha$ & $\beta$ & $\gamma$ \\
+\hline
+   $1a_1$ & -11.1949  & 1.925280 & 0.641982 & & \\
+          & & 0.953120 & 5.571510 & & \\
+          & & 2.121600 & 1.500440 & & \\
+   $2a_2$ & -0.9204 & 2.912200 & 3.149990 & & \\
+          & & 2.087800 & 0.771371 & & \\
+          & & 1.23640  &          & 2.329570 & 0.053420 \\
+   $2t_1$ & -0.5042 & 0.901953 & 2.895140 & & \\
+          & & 1.112030 & 0.388649 & & \\
+          & & 2.986017 & 2.931210 & & \\
+          & & 1.30182  &          & 2.169850 & 0.012616 \\
+\hline
+\end{tabular}
+\caption{Energies and fitting parameters for the DIM effective charges 
+(Eq.~(\ref{eq:moleculezDIM})), for CH$_4$.}
+\label{tab:ch4parameters}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Collisional processes}
+
+The orientation of the molecular targets are important for determining
+the cross sections of collisional processes. However, the molecular 
+orientations in most collisional experiments are generally not 
+pre--established. Thus, the spherical averaged description of the system, 
+assumed by the DIM potential is a valid approximation. In the 
+following, we examine two collisional processes in the first--order 
+approximation: proton--impact ionisation 
+and single photoionisation. 
+
+\subsubsection{Proton--Impact Ionisation}
+
+Results for the proton--impact ionisation cross section for CH$_4$,
+calculated under the first Born approximation, are given in 
+Fig.~\ref{fig:ionch4}. 
+Experimental data from Ref.~\cite{Rudd1983,Rudd1985} are displayed 
+with symbols. The initial bound and the final continuum states 
+of the molecule needed for the T--matrix computation 
+(Eq.~(\ref{eq:transition-matrix})) were calculated 
+with the DIM potentials from Section~\ref{sec:dimmethane}. 
+The photoionisation cross section for high and intermediate energies
+shows good agreement with the experimental results. The failure at
+low energies is attributed to the validity of the first Born 
+approximation and not to our DIM approach.
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.23\textheight]{figures/dimpot/born_ionch4.eps}
+\caption{Proton--impact ionisation cross section for CH$_4$. Solid 
+line: first--order DIM theoretical calculations. Symbols: experiments 
+from Ref.~\cite{Rudd1983,Rudd1985}.}
+\label{fig:ionch4}
+\end{figure}
+
+\subsubsection{Photoionisation}
+\label{subsubsec:photoionisation}
+
+The photoionisation cross section for CH$_4$, calculated with the DIM 
+potentials in a first order approximation, is shown in 
+Fig.~\ref{fig:photoch4} (solid lines).
+Good agreement with the experimental results (symbols) is found for 
+high energy values and at the thresholds. The curve between $\sim$15 and
+$\sim$300 eV shows the photoionisation from the outer $n=2$ shell. 
+The pronounced discontinuity at 300 eV corresponds to the threshold of
+the $1a_1$ inner shell orbital. For low and intermediate photon--energies,
+the agreement between our calculations and the experimental values 
+from Ref.~\cite{Lukirskii1964,Henke1982,Samson1989} is not perfect.
+Phenomena such as molecular orbital relaxation, possible 
+collective contributions and correlation effects must be considered 
+in further calculations. On the other hand, for the $1a_1$ inner shell
+photoionisation, these effects are not significant and we obtain a 
+perfect agreement with the experimental results.
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.23\textheight]{figures/dimpot/photoch4.eps}
+\caption{Single photoionisation cross section of CH$_4$.
+Solid line: first--order DIM theoretical calculations. Symbols: experiments
+from Ref.~\cite{Lukirskii1964,Henke1982,Samson1989}.}
+\label{fig:photoch4}
+\end{figure}
+
+
+\section{Concluding remarks}
+
+In this work, we explored the possibility of using pseudopotentials 
+within the single electron model to calculate inelastic transitions. 
+The first Born approximation was used to calculate proton--impact 
+excitation, ionization, electron capture and photoionization. Two simple
+atoms were studied, having a single electron in the outer shell. For 
+hydrogen, we found great agreement for all the collisional processes, for 
+low and intermediate energies. In the case of lithium, the only process
+that can be calculated with a reasonable accuracy is the proton--impact
+excitation. We concluded that the range of validity is restrained to very
+small momentum transfers. 
+The Depurated Inversion method, on the other hand, accurately reproduce
+photoionisation experimental results for many--electron atoms. 
+
+We extended the DIM for molecular systems. In this case, the inversion
+procedure raises huge oscillation due the finite size of the basis involved 
+in the Hartree--Fock orbital calculations. An additional step is included 
+during the depuration scheme. In order to determine the oscillation profile
+for a particular basis set, we computed the atomic inverted charges also in
+a finite--differences framework. By substracting the charges, it is possible
+to isolate the oscillations corresponding to this particular basis set.
+We used the DIM method to determine the effective potentials for CH$_4$.
+These potentials are implemented in a first--order proton--impact ionisation
+and photoionisation cross sections calculations. For both processes, we
+found very good agreement with the experimental results. The main
+discrepancies can be attributed to the fact that only first--order is 
+considered in the perturbation theory.
+
+
+\section*{Acknowledgement}
+The authors thank the Consejo Nacional de Investigaciones 
+Cient\'ificas y T\'ecnicas (CONICET), Universidad de Buenos Aires (UBA)
+and Agencia Nacional de Promoci\'on Cient\'ifica y Tecnol\'ogica (ANPCyT)
+for the grants that supported this work.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \bibliographystyle{plain}
+% \bibliography{dimmol}
+
+\begin{thebibliography}{10}
+
+\bibitem{parsecwebpage}
+\url{https://parsec.ices.utexas.edu/styled-2/}
+
+\bibitem{Chelikowsky1994}
+J. R. Chelikowsky, N. Troullier, and Y. Saad,
+Finite--difference--pseudopotential method: Electronic structure 
+calculations without a basis,
+Phys. Rev. Lett. {\bf 72}, 1240--1243 (1994).
+
+\bibitem{Mendez2015}
+A. M. P. Mendez,
+M\'etodo de Inversi\'on Depurada para Potenciales Locales en 
+\'Atomos y Mol\'eculas, 
+Tesis de Licenciatura, Universidad Nacional de Salta (2015).
+
+\bibitem{Mendez2016}
+A. M. P. Mendez, D. M. Mitnik, and J. E. Miraglia,
+Depurated inversion method for orbital--specific exchange potentials.
+Int. J. Quantum Chem. {\bf 116}, 24 (2016).
+
+\bibitem{Mendez2018}
+A. M. P. Mendez, D. M. Mitnik, and J. E. Miraglia,
+Local Effective Hartree--Fock Potentials Obtained by the Depurated 
+Inversion Method, 
+Advances in Quantum Chemistry {\bf 76}, 117--132 (2018).
+
+\bibitem{abinitwebpage}
+\url{https://www.abinit.org/psp-tables}
+
+\bibitem{Hamann1979}
+D. R. Hamann, M. Schl\"uter, and C. Chiang,
+Norm--Conserving Pseudopotentials,
+Phys. Rev. Lett. {\bf 43}, 1494--1497 (1979).
+
+\bibitem{FroeseFischer1997}
+C. Froese Fischer, T. Brage, and P. J\"onsson,
+{\em Computational atomic structure: an MCHF approach},
+Institute of Physics Publishing (1997).
+
+\bibitem{Johnson2007}
+W. R. Johnson,
+{\em Atomic structure theory : lectures on atomic physics},
+Springer (2007).
+
+\bibitem{Brinkman1930}
+Von H. C. Brinkman and H. A. Kramers,
+Zur Theorie der Einfangung von Elektronen durch $\alpha$--Teilchen.
+Proc. K. Akad. van Wet. {\bf 33}, 973--984 (1930).
+
+\bibitem{Henke1993}
+B. L. Henke, E. M. Gullikson, and J. C. Davis,
+X--Ray Interactions: Photoabsorption, Scattering, Transmission, and
+Reflection at $E$=50--30000 eV, $Z$=1--92,
+At. Data Nucl. Data Tables {\bf 54}, 181--342 (1993).
+
+\bibitem{Samson1990}
+J. A. R. Samson and G. C. Angel,
+Single-- and double--photoionization cross sections of atomic nitrogen
+from threshold to 31 \AA,
+Phys. Rev. A {\bf 42}, 1307--1312 (1990).
+
+\bibitem{Samson2002}
+J. A. R. Samson and W. C. Stolte,
+Precision measurements of the total photoionization cross--sections
+of He, Ne, Ar, Kr, and Xe,
+J. Electron Spectros. Relat. Phenomena {\bf 123}, 265--276 (2002).
+
+\bibitem{Stolte2016}
+W. C. Stolte, V. Jonauskas, D. W. Lindle, M. M. Sant'Anna, and D. W. Savin,
+Inner--shell Photoionization studies of neutral atomic nitrogen,
+Astrophys. J. {\bf 818}, 149 (2016).
+
+\bibitem{Ederer1964}
+D. L. Ederer,
+Photoionization of the $4d$ electrons in Xenon,
+Phys. Rev. Lett. {\bf 13}, 760--762 (1964).
+
+\bibitem{Schipper1997}
+P. R. T. Schipper, O. V. Gritsenko, and E. J. Baerends,
+Kohn-Sham potentials corresponding to Slater and Gaussian basis set densities,
+Theor. Chem. Accounts: Theory, Comput. Model. 
+(Theoretica Chim. Acta) {\bf 98}, 16--24 (1997).
+
+\bibitem{Mura1997}
+M. E. Mura, P. J. Knowles, and C. A. Reynolds,
+Accurate numerical determination of Kohn--Sham potentials from
+electronic densities: I. Two--electron systems,
+J. Chem. Phys. {\bf 106}, 9659--9667 (1997).
+
+\bibitem{Jacob2011}
+C. R. Jacob,
+Unambiguous optimization of effective potentials in finite basis sets,
+J. Chem. Phys. {\bf 135}, 244102 (2011).
+
+\bibitem{Gaiduk2013}
+A. P. Gaiduk, I. G. Ryabinkin, and V. N. Staroverov,
+Removal of Basis--Set Artifacts in Kohn--Sham Potentials Recovered
+from Electron Densities,
+J. Chem. Theory Comput. {\bf 9}, 3959--3964 (2013).
+
+
+\bibitem{Schmidt1993}
+M. W. Schmidt, K. K. Baldridge, J. A. Boatz, S. T. Elbert, M. S. Gordon,
+J. H. Jensen, S. Koseki, N. Matsunaga, K. A. Nguyen, S. Su, T. L. Windus, 
+M. Dupuis, and J. A. Montgomery,
+General atomic and molecular electronic structure system,
+J. Comput. Chem. {\bf 14}, 1347--1363 (1993).
+
+
+\bibitem{Gordon2005}
+M. S. Gordon and M. W. Schmidt,
+Advances in electronic structure theory: GAMESS a decade later,
+in Theory Appl. Comput. Chem., {\bf 41}, 1167--1189 (2005).
+
+\bibitem{Rudd1983}
+M. E. Rudd, R. D. DuBois, L. H. Toburen, C. A. Ratcliffe, and T. V. Goffe,
+Cross sections for ionization of gases by 5--4000 keV protons and for
+electron capture by 5--150 keV protons,
+Phys. Rev. A {\bf 28}, 3244--3257 (1983).
+
+\bibitem{Rudd1985}
+M. E. Rudd, Y. K. Kim, D. H. Madison, and J. W. Gallagher,
+Electron production in proton collisions: total cross sections,
+Rev. Mod. Phys. {\bf 57}, 965--994 (1985).
+
+
+\bibitem{Lukirskii1964}
+A. P. Lukirskii, I. A. Brytov, and T. M. Zimkina,
+Optika i spektr. {\bf 17}, 234 (1964).
+
+
+\bibitem{Henke1982}
+B. L. Henke, P. Lee, T. J. Tanaka, R. L. Shimabukuro, and B. K. Fujikawa,
+Low--energy X--ray interaction coefficients: Photoabsorption,
+scattering, and reflection: $E$=100--2000 eV $Z$=1--94,
+At. Data Nucl. Data Tables {\bf 27}, 1--144 (1982).
+
+
+
+\bibitem{Samson1989}
+J. A. R. Samson, G. N. Haddad, T. Masuoka, P. N. Pareek, 
+and D. A. L. Kilcoyne,
+Ionization yields, total absorption, and dissociative photoionization 
+cross sections of CH4 from 110 to 950 \AA,
+J. Chem. Phys. {\bf 90}, 6925--6932 (1989).
+
+
+
+\end{thebibliography}
+
+
+\end{document}

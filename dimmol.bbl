@@ -1,0 +1,222 @@
+\providecommand{\latin}[1]{#1}
+\providecommand*\mcitethebibliography{\thebibliography}
+\csname @ifundefined\endcsname{endmcitethebibliography}
+  {\let\endmcitethebibliography\endthebibliography}{}
+\begin{mcitethebibliography}{27}
+\providecommand*\natexlab[1]{#1}
+\providecommand*\mciteSetBstSublistMode[1]{}
+\providecommand*\mciteSetBstMaxWidthForm[2]{}
+\providecommand*\mciteBstWouldAddEndPuncttrue
+  {\def\EndOfBibitem{\unskip.}}
+\providecommand*\mciteBstWouldAddEndPunctfalse
+  {\let\EndOfBibitem\relax}
+\providecommand*\mciteSetBstMidEndSepPunct[3]{}
+\providecommand*\mciteSetBstSublistLabelBeginEnd[3]{}
+\providecommand*\EndOfBibitem{}
+\mciteSetBstSublistMode{f}
+\mciteSetBstMaxWidthForm{subitem}{(\alph{mcitesubitemcount})}
+\mciteSetBstSublistLabelBeginEnd
+  {\mcitemaxwidthsubitemform\space}
+  {\relax}
+  {\relax}
+
+\bibitem[par()]{parsecwebpage}
+{PARSEC Home Page}. \url{https://parsec.ices.utexas.edu/styled-2/}, (accessed
+  Jan 18, 2019 )\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Chelikowsky \latin{et~al.}(1994)Chelikowsky, Troullier, and
+  Saad]{Chelikowsky1994}
+Chelikowsky,~J.~R.; Troullier,~N.; Saad,~Y. \emph{Phys. Rev. Lett.}
+  \textbf{1994}, \emph{72}, 1240--1243\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Mendez(April 2015)]{Mendez2015}
+Mendez,~A. M.~P. M{\'{e}}todo de Inversi{\'{o}}n Depurada para Potenciales
+  Locales en {\'{A}}tomos y Mol{\'{e}}culas. Tesis de Licenciatura, Universidad
+  Nacional de Salta, April 2015\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Mendez \latin{et~al.}(2016)Mendez, Mitnik, and Miraglia]{Mendez2016}
+Mendez,~A. M.~P.; Mitnik,~D.~M.; Miraglia,~J.~E. \emph{Int. J. Quantum Chem.}
+  \textbf{2016}, \emph{116}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Mendez \latin{et~al.}(2018)Mendez, Mitnik, and Miraglia]{Mendez2018}
+Mendez,~A. M.~P.; Mitnik,~D.~M.; Miraglia,~J.~E. In \emph{Nov. Electron.
+  Struct. Theory Gen. Innov. Strongly Correl. Syst.}; Hoggan,~P.~E., Ed.;
+  Advances in Quantum Chemistry; Academic Press, 2018; Vol.~76; pp
+  117--132\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[abi()]{abinitwebpage}
+{ABINIT Home Page}. \url{https://www.abinit.org/psp-tables}, (accessed Jan 18,
+  2019 )\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Hamann \latin{et~al.}(1979)Hamann, Schl{\"{u}}ter, and
+  Chiang]{Hamann1979}
+Hamann,~D.~R.; Schl{\"{u}}ter,~M.; Chiang,~C. \emph{Phys. Rev. Lett.}
+  \textbf{1979}, \emph{43}, 1494--1497\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{Froese Fischer} \latin{et~al.}(1997){Froese Fischer}, Brage, and
+  Jönsson]{FroeseFischer1997}
+{Froese Fischer},~C.; Brage,~T.; Jönsson,~P. \emph{{Computational atomic
+  structure: an MCHF approach}}; Institute of Physics Publishing, 1997; p
+  279\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Johnson(2007)]{Johnson2007}
+Johnson,~W.~R. \emph{{Atomic structure theory : lectures on atomic physics}};
+  Springer, 2007; p 312\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{C Brinkman} and Kramers(1930){C Brinkman}, and Kramers]{Brinkman1930}
+{C Brinkman},~V.~H.; Kramers,~H.~A. \emph{Proc. K. Akad. van Wet.}
+  \textbf{1930}, \emph{33}, 973--984\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Henke \latin{et~al.}(1993)Henke, Gullikson, and Davis]{Henke1993}
+Henke,~B.; Gullikson,~E.; Davis,~J. \emph{At. Data Nucl. Data Tables}
+  \textbf{1993}, \emph{54}, 181--342\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Samson and Angel(1990)Samson, and Angel]{Samson1990}
+Samson,~J. A.~R.; Angel,~G.~C. \emph{Phys. Rev. A} \textbf{1990}, \emph{42},
+  1307--1312\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Samson and Stolte(2002)Samson, and Stolte]{Samson2002}
+Samson,~J.; Stolte,~W. \emph{J. Electron Spectros. Relat. Phenomena}
+  \textbf{2002}, \emph{123}, 265--276\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Stolte \latin{et~al.}(2016)Stolte, Jonauskas, Lindle, Sant'Anna, and
+  Savin]{Stolte2016}
+Stolte,~W.~C.; Jonauskas,~V.; Lindle,~D.~W.; Sant'Anna,~M.~M.; Savin,~D.~W.
+  \emph{Astrophys. J.} \textbf{2016}, \emph{818}, 149\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ederer(1964)]{Ederer1964}
+Ederer,~D.~L. \emph{Phys. Rev. Lett.} \textbf{1964}, \emph{13}, 760--762\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Schipper \latin{et~al.}(1997)Schipper, Gritsenko, and
+  Baerends]{Schipper1997}
+Schipper,~P. R.~T.; Gritsenko,~O.~V.; Baerends,~E.~J. \emph{Theor. Chem.
+  Accounts Theory, Comput. Model. (Theoretica Chim. Acta)} \textbf{1997},
+  \emph{98}, 16--24\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Mura \latin{et~al.}(1997)Mura, Knowles, and Reynolds]{Mura1997}
+Mura,~M.~E.; Knowles,~P.~J.; Reynolds,~C.~A. \emph{J. Chem. Phys.}
+  \textbf{1997}, \emph{106}, 9659--9667\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Jacob(2011)]{Jacob2011}
+Jacob,~C.~R. \emph{J. Chem. Phys.} \textbf{2011}, \emph{135}, 244102\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Gaiduk \latin{et~al.}(2013)Gaiduk, Ryabinkin, and
+  Staroverov]{Gaiduk2013}
+Gaiduk,~A.~P.; Ryabinkin,~I.~G.; Staroverov,~V.~N. \emph{J. Chem. Theory
+  Comput.} \textbf{2013}, \emph{9}, 3959--3964\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Schmidt \latin{et~al.}(1993)Schmidt, Baldridge, Boatz, Elbert, Gordon,
+  Jensen, Koseki, Matsunaga, Nguyen, Su, Windus, Dupuis, and
+  Montgomery]{Schmidt1993}
+Schmidt,~M.~W.; Baldridge,~K.~K.; Boatz,~J.~A.; Elbert,~S.~T.; Gordon,~M.~S.;
+  Jensen,~J.~H.; Koseki,~S.; Matsunaga,~N.; Nguyen,~K.~A.; Su,~S.;
+  Windus,~T.~L.; Dupuis,~M.; Montgomery,~J.~A. \emph{J. Comput. Chem.}
+  \textbf{1993}, \emph{14}, 1347--1363\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Gordon and Schmidt(2005)Gordon, and Schmidt]{Gordon2005}
+Gordon,~M.~S.; Schmidt,~M.~W. \emph{Theory Appl. Comput. Chem.}; Elsevier,
+  2005; Chapter 41, pp 1167--1189\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Rudd \latin{et~al.}(1983)Rudd, DuBois, Toburen, Ratcliffe, and
+  Goffe]{Rudd1983}
+Rudd,~M.~E.; DuBois,~R.~D.; Toburen,~L.~H.; Ratcliffe,~C.~A.; Goffe,~T.~V.
+  \emph{Phys. Rev. A} \textbf{1983}, \emph{28}, 3244--3257\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Rudd \latin{et~al.}(1985)Rudd, Kim, Madison, and Gallagher]{Rudd1985}
+Rudd,~M.~E.; Kim,~Y.~K.; Madison,~D.~H.; Gallagher,~J.~W. \emph{Rev. Mod.
+  Phys.} \textbf{1985}, \emph{57}, 965--994\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Lukirskii \latin{et~al.}(1964)Lukirskii, Brytov, and
+  Zimkina]{Lukirskii1964}
+Lukirskii,~A.~P.; Brytov,~I.~A.; Zimkina,~T.~M. \emph{Optika i spektr.}
+  \textbf{1964}, \emph{17}, 234\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Henke \latin{et~al.}(1982)Henke, Lee, Tanaka, Shimabukuro, and
+  Fujikawa]{Henke1982}
+Henke,~B.; Lee,~P.; Tanaka,~T.; Shimabukuro,~R.; Fujikawa,~B. \emph{At. Data
+  Nucl. Data Tables} \textbf{1982}, \emph{27}, 1--144\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Samson \latin{et~al.}(1989)Samson, Haddad, Masuoka, Pareek, and
+  Kilcoyne]{Samson1989}
+Samson,~J. A.~R.; Haddad,~G.~N.; Masuoka,~T.; Pareek,~P.~N.; Kilcoyne,~D. A.~L.
+  \emph{J. Chem. Phys.} \textbf{1989}, \emph{90}, 6925--6932\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}
