@@ -12,12 +12,23 @@
 \begin{document}
 
 \noindent
-{\bf Referee 2:}
+{\bf Referee 2:} 
 
 \vspace{0.2cm}
 The authors thank the referee for the suggestions and corrections provided.
 
 \begin{enumerate}
+
+ \item {\tt The authors develop a simple pseudo-potential (PP) approach
+ to complicated \\ processes of electron capture and transfer and
+ collisions. They show the best \\ results for inverting a many-electron
+ potential to yield effective one-electron \\ charges is by the Depurated
+ Inversion Method they previously published.}
+ 
+ We developed an effective potential approach. The inelastic
+ cross sections obtained with it describing the target were compared
+ two different pseudopotentials.
+
  \item {\tt The description of numerical difficulties in obtaining 
  the pseudo-charges is \\ detailed, in particular for the 2s AO of the 
  lithium atom. One problem is that a \\ singularity appears due to charge 
@@ -26,11 +37,16 @@ The authors thank the referee for the suggestions and corrections provided.
  defined (although an orbital may be empty) and could be averted by 
  \\ explicit correlation factors.}
  
+ The referee is correct.
+ 
  \item {\tt Let me comment the CH4 application.
  
  This uses PPs to replace node-less AOs so it is not a case
  where the arguments \\ developed and illustrated by fid 1 and 2 are
  actually applied.}
+ 
+ {\it No entiendo lo que quiere decir. Supongo que cuando dice PP se
+ refiere al DIM? (?)}
  
  \item {\tt In below (3), the claim concerning H-atoms is correct but 
  a physical \\ interpretation of the PP in this case is missing.}
@@ -39,28 +55,35 @@ The authors thank the referee for the suggestions and corrections provided.
  by use of a PP. They come from defects in the GTO basis as the authors
  mention. }
  
+ We did not make use of PPs in the CH4 calculation.
+ 
  \item {\tt A-why not use an ETO basis? The first term of eq (31) is 
  like an LCAO of Is ETOs.
-The n=2 shell could be compared with simple semi-cartesian Sturmians:
+ The n=2 shell could be compared with simple semi-cartesian Sturmians:
 
-S(1) = N (s+x+y+z) A(r) 
+ S(1) = N (s+x+y+z) A(r) 
 
-S(2) = N (s-x-y+z) A(r) 
-
-S(3) = N (s-x+y-z) A(r) 
-
-S(4) = N (s+x-y-z) A(r) 
-
-Here N=1/2 for othonormal functions,  A(r) = exp(-($Z_{eff}$ r)/2 
-s= (2/a -r) and x,y,\\z are just the Cartesian functions.
-They are bases for the Irreps a2 (S(1)) and \\ t1 (S(2), S(3), S(4)) 
-$Z_{eff}$ is to be optimised and could be given a value from the \\
-Clementi  tables.}
+ S(2) = N (s-x-y+z) A(r) 
  
+ S(3) = N (s-x+y-z) A(r) 
+
+ S(4) = N (s+x-y-z) A(r) 
+
+ Here N=1/2 for othonormal functions,  A(r) = exp(-($Z_{eff}$ r)/2 
+ s= (2/a -r) and x,y,\\z are just the Cartesian functions. They are 
+ bases for the Irreps a2 (S(1)) and \\ t1 (S(2), S(3), S(4)) 
+ $Z_{eff}$ is to be optimised and could be given a value from the \\
+ Clementi  tables.}
  
+ Actually, in our first calculation for a CH4 potential, we employed 
+ the SCF OCE MOs given by Moccia (1964), which uses Slaters. The MOs
+ showed incorrect cusp behaviour and were not considered. However, it is
+ worth inspecting the viability of using CETO.
 
  \item {\tt It is well-known that modest GTO basis sets introduce 
  oscillations, since grad[$\rho$]/$\rho$ is not smooth.}
+ 
+ This assertion is correct.
  
  \item {\tt The FD finite difference HF seems to cure this and it should 
  be benchmarked \\ against ETOs.}
@@ -69,7 +92,7 @@ Clementi  tables.}
   a 10-electron core PP and \\ comparison to the detailed study of Li 
   and H.}
   
-  This molecule suggestion will be taking into account for further 
+  This molecule suggestion will be taken into account for further 
   calculations.
 
  \item {\tt However, the desired properties are obtained quite well.
@@ -79,11 +102,12 @@ Clementi  tables.}
  is calculated within that framework. \\ The important point it that it 
  is ‘norm-conserving’.}
  
- The referee is absolutetly right. 
+ The referee is right. 
  
  \item {\tt The English is rather poor.} 
  
- Misprints have been corrected and awkward sentences have been rephrased.
+ Misprints have been corrected, and awkward sentences have been
+ rephrased.
  
  
 \end{enumerate}
