@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.4)  13 APR 2019 11:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.4)  13 APR 2019 11:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**dimmol.tex
-(./dimmol.tex
+**diff1.tex
+(./diff1.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -282,37 +282,64 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip48
 )
-(./dimmol.aux)
-\openout1 = `dimmol.aux'.
+(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box30
+\UL@hyphenbox=\box31
+\UL@skip=\skip49
+\UL@hook=\toks23
+\UL@height=\dimen126
+\UL@pe=\count116
+\UL@pixel=\dimen127
+\ULC@box=\box32
+Package: ulem 2012/05/18
+\ULdepth=\dimen128
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/settobox.sty
+Package: settobox 2016/05/16 v1.5 Assign box dimensions to length registers (HO
+)
+)
+\DIFdelgraphicsbox=\box33
+\DIFdelgraphicswidth=\skip50
+\DIFdelgraphicsheight=\skip51
+LaTeX Info: Redefining \DIFaddbegin on input line 70.
+LaTeX Info: Redefining \DIFaddend on input line 71.
+LaTeX Info: Redefining \DIFdelbegin on input line 72.
+LaTeX Info: Redefining \DIFdelend on input line 73.
+LaTeX Info: Redefining \DIFaddbeginFL on input line 78.
+LaTeX Info: Redefining \DIFaddendFL on input line 79.
+LaTeX Info: Redefining \DIFdelbeginFL on input line 80.
+LaTeX Info: Redefining \DIFdelendFL on input line 81.
+ (./diff1.aux)
+\openout1 = `diff1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count116
-\scratchdimen=\dimen126
-\scratchbox=\box30
-\nofMPsegments=\count117
-\nofMParguments=\count118
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count119
-\MPscratchDim=\dimen127
-\MPnumerator=\count120
-\makeMPintoPDFobject=\count121
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count117
+\scratchdimen=\dimen129
+\scratchbox=\box34
+\nofMPsegments=\count118
+\nofMParguments=\count119
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count120
+\MPscratchDim=\dimen130
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
+\everyMPtoPDFconversion=\toks25
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -364,41 +391,113 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 14.
+\AtBeginShipoutBox=\box35
+Package hyperref Info: Link coloring OFF on input line 84.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count122
+\c@section@level=\count123
 )
-LaTeX Info: Redefining \ref on input line 14.
-LaTeX Info: Redefining \pageref on input line 14.
-LaTeX Info: Redefining \nameref on input line 14.
+LaTeX Info: Redefining \ref on input line 84.
+LaTeX Info: Redefining \pageref on input line 84.
+LaTeX Info: Redefining \nameref on input line 84.
 
-(./dimmol.out) (./dimmol.out)
+(./diff1.out) (./diff1.out)
 \@outlinefile=\write3
-\openout3 = `dimmol.out'.
+\openout3 = `diff1.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 28.
+LaTeX Font Info:    Try loading font information for U+msa on input line 100.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 28.
+LaTeX Font Info:    Try loading font information for U+msb on input line 100.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./dimmol.toc)
+) (./diff1.toc)
 \tf@toc=\write4
-\openout4 = `dimmol.toc'.
+\openout4 = `diff1.toc'.
 
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (2.14507pt too wide) in paragraph at lines 163--175
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
+]   |   []   |   []   [][]|   []   |   []   |   []
+ []
+
+
+Overfull \hbox (7.75494pt too wide) in paragraph at lines 176--204
+[]\OT1/cmr/m/n/10 In the present work, we []|   []   |   []   |   []   |   []  
+ |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Overfull \hbox (9.36627pt too wide) in paragraph at lines 205--219
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
+  |   []   |   []   |   []
+ []
+
+
+Overfull \hbox (29.74127pt too wide) in paragraph at lines 222--234
+|   []   |   []   |   []   |   []   |   []   |   []   [][]|   []   |   [][] []|
+   []   |   []   |   []   |   []
+ []
+
+[2]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 239.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 239.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\DIFdelincludegraphics' on input line 239.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 239.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 239.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 239.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 239.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 239.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\DIFaddincludegraphics' on input line 239.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 239.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 239.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 239.
+
 Package epstopdf Info: Source file: <figures/pseudopot/pseudopotAr.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
 (epstopdf)                    size: 31152 bytes
@@ -408,20 +507,20 @@ d-to.pdf>
 (epstopdf)                    size: 11668 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/pseudopo
 tAr-eps-converted-to.pdf figures/pseudopot/pseudopotAr.eps>
-(epstopdf)             \includegraphics on input line 171.
+(epstopdf)             \includegraphics on input line 281.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/pseudopot/pseudopotAr-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<figures/pseudopot/pseudopotAr-eps-converted-to.pdf, id=141, 575.14874pt x 428.
+<figures/pseudopot/pseudopotAr-eps-converted-to.pdf, id=145, 575.14874pt x 428.
 60126pt>
 File: figures/pseudopot/pseudopotAr-eps-converted-to.pdf Graphic file (type pdf
 )
 <use figures/pseudopot/pseudopotAr-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/pseudopotAr-eps-converted-to.pdf  us
-ed on input line 171.
+ed on input line 281.
 (pdftex.def)             Requested size: 196.28517pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/pseudopot/pseudofuncAr.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -432,21 +531,23 @@ ed-to.pdf>
 (epstopdf)                    size: 16580 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/pseudofu
 ncAr-eps-converted-to.pdf figures/pseudopot/pseudofuncAr.eps>
-(epstopdf)             \includegraphics on input line 173.
+(epstopdf)             \includegraphics on input line 283.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/pseudopot/pseudofuncAr-eps-converted-t
 o.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<figures/pseudopot/pseudofuncAr-eps-converted-to.pdf, id=142, 565.11125pt x 436
+<figures/pseudopot/pseudofuncAr-eps-converted-to.pdf, id=146, 565.11125pt x 436
 .63126pt>
 File: figures/pseudopot/pseudofuncAr-eps-converted-to.pdf Graphic file (type pd
 f)
 <use figures/pseudopot/pseudofuncAr-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/pseudofuncAr-eps-converted-to.pdf  u
-sed on input line 173.
+sed on input line 283.
 (pdftex.def)             Requested size: 189.30696pt x 146.27155pt.
+[3 <./figures/pseudopot/pseudopotAr-eps-converted-to.pdf> <./figures/pseudopot/
+pseudofuncAr-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/pseudopot/ZLi.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
 (epstopdf)                    size: 35064 bytes
@@ -456,17 +557,17 @@ Package epstopdf Info: Source file: <figures/pseudopot/ZLi.eps>
 (epstopdf)                    size: 13506 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/ZLi-eps-
 converted-to.pdf figures/pseudopot/ZLi.eps>
-(epstopdf)             \includegraphics on input line 219.
+(epstopdf)             \includegraphics on input line 329.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/pseudopot/ZLi-eps-converted-to.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/pseudopot/ZLi-eps-converted-to.pdf, id=152, 560.0925pt x 428.60126pt>
+<figures/pseudopot/ZLi-eps-converted-to.pdf, id=187, 560.0925pt x 428.60126pt>
 File: figures/pseudopot/ZLi-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/ZLi-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/ZLi-eps-converted-to.pdf  used on in
-put line 219.
+put line 329.
 (pdftex.def)             Requested size: 191.14682pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/pseudopot/ZLik.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -477,20 +578,18 @@ f>
 (epstopdf)                    size: 22265 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/ZLik-eps
 -converted-to.pdf figures/pseudopot/ZLik.eps>
-(epstopdf)             \includegraphics on input line 221.
+(epstopdf)             \includegraphics on input line 331.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/pseudopot/ZLik-eps-converted-to.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/pseudopot/ZLik-eps-converted-to.pdf, id=153, 566.115pt x 428.60126pt>
+<figures/pseudopot/ZLik-eps-converted-to.pdf, id=188, 566.115pt x 428.60126pt>
 File: figures/pseudopot/ZLik-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/ZLik-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/ZLik-eps-converted-to.pdf  used on i
-nput line 221.
+nput line 331.
 (pdftex.def)             Requested size: 193.20216pt x 146.27155pt.
-[3 <./figures/pseudopot/pseudopotAr-eps-converted-to.pdf> <./figures/pseudopot/
-pseudofuncAr-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/pseudopot/funcLi.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
 (epstopdf)                    size: 44552 bytes
@@ -500,7 +599,7 @@ pdf>
 (epstopdf)                    size: 18408 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/funcLi-e
 ps-converted-to.pdf figures/pseudopot/funcLi.eps>
-(epstopdf)             \includegraphics on input line 256.
+(epstopdf)             \includegraphics on input line 366.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -511,7 +610,7 @@ t>
 File: figures/pseudopot/funcLi-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/funcLi-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/funcLi-eps-converted-to.pdf  used on
- input line 256.
+ input line 366.
 (pdftex.def)             Requested size: 193.88727pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/pseudopot/funckLi.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -522,7 +621,7 @@ Package epstopdf Info: Source file: <figures/pseudopot/funckLi.eps>
 (epstopdf)                    size: 19662 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/funckLi-
 eps-converted-to.pdf figures/pseudopot/funckLi.eps>
-(epstopdf)             \includegraphics on input line 258.
+(epstopdf)             \includegraphics on input line 368.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -533,11 +632,10 @@ pdfTeX warning: pdflatex (file ./figures/pseudopot/funckLi-eps-converted-to.pdf
 File: figures/pseudopot/funckLi-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/funckLi-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/funckLi-eps-converted-to.pdf  used o
-n input line 258.
+n input line 368.
 (pdftex.def)             Requested size: 191.48938pt x 146.27155pt.
 [4 <./figures/pseudopot/ZLi-eps-converted-to.pdf> <./figures/pseudopot/ZLik-eps
--converted-to.pdf> <./figures/pseudopot/funcLi-eps-converted-to.pdf> <./figures
-/pseudopot/funckLi-eps-converted-to.pdf>]
+-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/pseudopot/LicontA.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
 (epstopdf)                    size: 28364 bytes
@@ -547,18 +645,18 @@ Package epstopdf Info: Source file: <figures/pseudopot/LicontA.eps>
 (epstopdf)                    size: 12605 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/LicontA-
 eps-converted-to.pdf figures/pseudopot/LicontA.eps>
-(epstopdf)             \includegraphics on input line 291.
+(epstopdf)             \includegraphics on input line 401.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/pseudopot/LicontA-eps-converted-to.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/pseudopot/LicontA-eps-converted-to.pdf, id=238, 555.07375pt x 428.6012
+<figures/pseudopot/LicontA-eps-converted-to.pdf, id=221, 555.07375pt x 428.6012
 6pt>
 File: figures/pseudopot/LicontA-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/LicontA-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/LicontA-eps-converted-to.pdf  used o
-n input line 291.
+n input line 401.
 (pdftex.def)             Requested size: 189.43402pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/pseudopot/LicontB.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -569,21 +667,167 @@ Package epstopdf Info: Source file: <figures/pseudopot/LicontB.eps>
 (epstopdf)                    size: 9632 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/LicontB-
 eps-converted-to.pdf figures/pseudopot/LicontB.eps>
-(epstopdf)             \includegraphics on input line 293.
+(epstopdf)             \includegraphics on input line 403.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/pseudopot/LicontB-eps-converted-to.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/pseudopot/LicontB-eps-converted-to.pdf, id=239, 493.845pt x 428.60126p
+<figures/pseudopot/LicontB-eps-converted-to.pdf, id=222, 493.845pt x 428.60126p
 t>
 File: figures/pseudopot/LicontB-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/LicontB-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/LicontB-eps-converted-to.pdf  used o
-n input line 293.
+n input line 403.
 (pdftex.def)             Requested size: 168.53804pt x 146.27155pt.
-[5 <./figures/pseudopot/LicontA-eps-converted-to.pdf> <./figures/pseudopot/Lico
-ntB-eps-converted-to.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 412.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 412.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\DIFdelincludegraphics' on input line 412.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 412.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 412.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 412.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 412.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 412.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\DIFaddincludegraphics' on input line 412.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 412.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 412.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 412.
+
+[5 <./figures/pseudopot/funcLi-eps-converted-to.pdf> <./figures/pseudopot/funck
+Li-eps-converted-to.pdf> <./figures/pseudopot/LicontA-eps-converted-to.pdf> <./
+figures/pseudopot/LicontB-eps-converted-to.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\DIFdelincludegraphics' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\DIFaddincludegraphics' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\DIFdelincludegraphics' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\DIFaddincludegraphics' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 456.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 456.
+
+[6]
 Package epstopdf Info: Source file: <figures/pseudopot/Hex.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
 (epstopdf)                    size: 16255 bytes
@@ -593,17 +837,17 @@ Package epstopdf Info: Source file: <figures/pseudopot/Hex.eps>
 (epstopdf)                    size: 9954 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/Hex-eps-
 converted-to.pdf figures/pseudopot/Hex.eps>
-(epstopdf)             \includegraphics on input line 450.
+(epstopdf)             \includegraphics on input line 561.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/pseudopot/Hex-eps-converted-to.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/pseudopot/Hex-eps-converted-to.pdf, id=280, 565.11125pt x 429.605pt>
+<figures/pseudopot/Hex-eps-converted-to.pdf, id=292, 565.11125pt x 429.605pt>
 File: figures/pseudopot/Hex-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/Hex-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/Hex-eps-converted-to.pdf  used on in
-put line 450.
+put line 561.
 (pdftex.def)             Requested size: 192.41121pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/pseudopot/Liex.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -614,19 +858,20 @@ f>
 (epstopdf)                    size: 10501 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/Liex-eps
 -converted-to.pdf figures/pseudopot/Liex.eps>
-(epstopdf)             \includegraphics on input line 452.
+(epstopdf)             \includegraphics on input line 563.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/pseudopot/Liex-eps-converted-to.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/pseudopot/Liex-eps-converted-to.pdf, id=281, 565.11125pt x 429.605pt>
+<figures/pseudopot/Liex-eps-converted-to.pdf, id=293, 565.11125pt x 429.605pt>
 File: figures/pseudopot/Liex-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/Liex-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/Liex-eps-converted-to.pdf  used on i
-nput line 452.
+nput line 563.
 (pdftex.def)             Requested size: 192.41121pt x 146.27155pt.
-[6]
+[7 <./figures/pseudopot/Hex-eps-converted-to.pdf> <./figures/pseudopot/Liex-eps
+-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/pseudopot/ionizationH.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
 (epstopdf)                    size: 19458 bytes
@@ -636,20 +881,20 @@ d-to.pdf>
 (epstopdf)                    size: 11602 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/ionizati
 onH-eps-converted-to.pdf figures/pseudopot/ionizationH.eps>
-(epstopdf)             \includegraphics on input line 494.
+(epstopdf)             \includegraphics on input line 606.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/pseudopot/ionizationH-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<figures/pseudopot/ionizationH-eps-converted-to.pdf, id=300, 575.14874pt x 429.
+<figures/pseudopot/ionizationH-eps-converted-to.pdf, id=329, 575.14874pt x 429.
 605pt>
 File: figures/pseudopot/ionizationH-eps-converted-to.pdf Graphic file (type pdf
 )
 <use figures/pseudopot/ionizationH-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/ionizationH-eps-converted-to.pdf  us
-ed on input line 494.
+ed on input line 606.
 (pdftex.def)             Requested size: 191.5812pt x 143.09828pt.
 Package epstopdf Info: Source file: <figures/pseudopot/ionizationLi.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -660,24 +905,21 @@ ed-to.pdf>
 (epstopdf)                    size: 12108 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/ionizati
 onLi-eps-converted-to.pdf figures/pseudopot/ionizationLi.eps>
-(epstopdf)             \includegraphics on input line 496.
+(epstopdf)             \includegraphics on input line 608.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/pseudopot/ionizationLi-eps-converted-t
 o.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<figures/pseudopot/ionizationLi-eps-converted-to.pdf, id=301, 569.12625pt x 430
+<figures/pseudopot/ionizationLi-eps-converted-to.pdf, id=330, 569.12625pt x 430
 .60875pt>
 File: figures/pseudopot/ionizationLi-eps-converted-to.pdf Graphic file (type pd
 f)
 <use figures/pseudopot/ionizationLi-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/ionizationLi-eps-converted-to.pdf  u
-sed on input line 496.
+sed on input line 608.
 (pdftex.def)             Requested size: 189.13223pt x 143.09828pt.
-[7 <./figures/pseudopot/Hex-eps-converted-to.pdf> <./figures/pseudopot/Liex-eps
--converted-to.pdf> <./figures/pseudopot/ionizationH-eps-converted-to.pdf> <./fi
-gures/pseudopot/ionizationLi-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/pseudopot/captureH.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
 (epstopdf)                    size: 16431 bytes
@@ -687,18 +929,18 @@ o.pdf>
 (epstopdf)                    size: 8676 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/captureH
 -eps-converted-to.pdf figures/pseudopot/captureH.eps>
-(epstopdf)             \includegraphics on input line 549.
+(epstopdf)             \includegraphics on input line 661.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/pseudopot/captureH-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/pseudopot/captureH-eps-converted-to.pdf, id=355, 564.1075pt x 429.605p
+<figures/pseudopot/captureH-eps-converted-to.pdf, id=334, 564.1075pt x 429.605p
 t>
 File: figures/pseudopot/captureH-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/captureH-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/captureH-eps-converted-to.pdf  used 
-on input line 549.
+on input line 661.
 (pdftex.def)             Requested size: 192.06944pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/pseudopot/captureLi.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -709,21 +951,21 @@ to.pdf>
 (epstopdf)                    size: 9860 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/captureL
 i-eps-converted-to.pdf figures/pseudopot/captureLi.eps>
-(epstopdf)             \includegraphics on input line 551.
+(epstopdf)             \includegraphics on input line 663.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/pseudopot/captureLi-eps-converted-to.p
 df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/pseudopot/captureLi-eps-converted-to.pdf, id=356, 565.11125pt x 429.60
+<figures/pseudopot/captureLi-eps-converted-to.pdf, id=335, 565.11125pt x 429.60
 5pt>
 File: figures/pseudopot/captureLi-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/captureLi-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/captureLi-eps-converted-to.pdf  used
- on input line 551.
+ on input line 663.
 (pdftex.def)             Requested size: 192.41121pt x 146.27155pt.
-[8 <./figures/pseudopot/captureH-eps-converted-to.pdf> <./figures/pseudopot/cap
-tureLi-eps-converted-to.pdf>]
+[8 <./figures/pseudopot/ionizationH-eps-converted-to.pdf> <./figures/pseudopot/
+ionizationLi-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/pseudopot/photoionH.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
 (epstopdf)                    size: 16881 bytes
@@ -733,18 +975,18 @@ to.pdf>
 (epstopdf)                    size: 9097 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/photoion
 H-eps-converted-to.pdf figures/pseudopot/photoionH.eps>
-(epstopdf)             \includegraphics on input line 606.
+(epstopdf)             \includegraphics on input line 721.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/pseudopot/photoionH-eps-converted-to.p
 df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/pseudopot/photoionH-eps-converted-to.pdf, id=383, 571.13374pt x 429.60
+<figures/pseudopot/photoionH-eps-converted-to.pdf, id=373, 571.13374pt x 429.60
 5pt>
 File: figures/pseudopot/photoionH-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/photoionH-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/photoionH-eps-converted-to.pdf  used
- on input line 606.
+ on input line 721.
 (pdftex.def)             Requested size: 194.46178pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/pseudopot/photoionLi.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -755,21 +997,124 @@ Package epstopdf Info: Source file: <figures/pseudopot/photoionLi.eps>
 (epstopdf)                    size: 9546 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/photoion
 Li-eps-converted-to.pdf figures/pseudopot/photoionLi.eps>
-(epstopdf)             \includegraphics on input line 608.
+(epstopdf)             \includegraphics on input line 723.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/pseudopot/photoionLi-eps-converted-to.
 pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
-<figures/pseudopot/photoionLi-eps-converted-to.pdf, id=384, 571.13374pt x 429.6
+<figures/pseudopot/photoionLi-eps-converted-to.pdf, id=374, 571.13374pt x 429.6
 05pt>
 File: figures/pseudopot/photoionLi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/pseudopot/photoionLi-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/photoionLi-eps-converted-to.pdf  use
-d on input line 608.
+d on input line 723.
 (pdftex.def)             Requested size: 194.46178pt x 146.27155pt.
+[9 <./figures/pseudopot/captureH-eps-converted-to.pdf> <./figures/pseudopot/cap
+tureLi-eps-converted-to.pdf>]
+Overfull \hbox (20.98596pt too wide) in paragraph at lines 730--730
+[]\OT1/cmr/bx/n/12 DIM []|   []   [][]|   []   []of []|   []   |   [][][]|   []
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\DIFdelincludegraphics' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\DIFaddincludegraphics' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\DIFdelincludegraphics' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\DIFaddincludegraphics' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 730.
+
 Package epstopdf Info: Source file: <figures/dimpot/photoN.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
 (epstopdf)                    size: 20151 bytes
@@ -779,17 +1124,17 @@ Package epstopdf Info: Source file: <figures/dimpot/photoN.eps>
 (epstopdf)                    size: 12280 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dimpot/photoN-eps-
 converted-to.pdf figures/dimpot/photoN.eps>
-(epstopdf)             \includegraphics on input line 636.
+(epstopdf)             \includegraphics on input line 752.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/dimpot/photoN-eps-converted-to.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/dimpot/photoN-eps-converted-to.pdf, id=392, 568.1225pt x 429.605pt>
+<figures/dimpot/photoN-eps-converted-to.pdf, id=402, 568.1225pt x 429.605pt>
 File: figures/dimpot/photoN-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/dimpot/photoN-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dimpot/photoN-eps-converted-to.pdf  used on in
-put line 636.
+put line 752.
 (pdftex.def)             Requested size: 193.4365pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/dimpot/photoNe.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -800,27 +1145,21 @@ f>
 (epstopdf)                    size: 22417 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dimpot/photoNe-eps
 -converted-to.pdf figures/dimpot/photoNe.eps>
-(epstopdf)             \includegraphics on input line 638.
+(epstopdf)             \includegraphics on input line 754.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/dimpot/photoNe-eps-converted-to.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/dimpot/photoNe-eps-converted-to.pdf, id=393, 575.14874pt x 429.605pt>
+<figures/dimpot/photoNe-eps-converted-to.pdf, id=403, 575.14874pt x 429.605pt>
 File: figures/dimpot/photoNe-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/dimpot/photoNe-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dimpot/photoNe-eps-converted-to.pdf  used on i
-nput line 638.
+nput line 754.
 (pdftex.def)             Requested size: 195.82881pt x 146.27155pt.
-[9 <./figures/pseudopot/photoionH-eps-converted-to.pdf> <./figures/pseudopot/ph
-otoionLi-eps-converted-to.pdf>]
-Overfull \hbox (5.11731pt too wide) in paragraph at lines 648--653
-\OT1/cmr/m/n/10 The depu-rated in-ver-sion method de-scribed above is ex-tended
- to de-ter-mine ef-fec-tive po-ten-tials for molecules.
- []
-
-[10 <./figures/dimpot/photoN-eps-converted-to.pdf> <./figures/dimpot/photoNe-ep
-s-converted-to.pdf>]
+[10 <./figures/pseudopot/photoionH-eps-converted-to.pdf> <./figures/pseudopot/p
+hotoionLi-eps-converted-to.pdf> <./figures/dimpot/photoN-eps-converted-to.pdf> 
+<./figures/dimpot/photoNe-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/dimpot/1sCGMSS_BS.eps>
 (epstopdf)                    date: 2019-04-13 09:26:30
 (epstopdf)                    size: 33729 bytes
@@ -830,18 +1169,18 @@ Package epstopdf Info: Source file: <figures/dimpot/1sCGMSS_BS.eps>
 (epstopdf)                    size: 16718 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dimpot/1sCGMSS_BS-
 eps-converted-to.pdf figures/dimpot/1sCGMSS_BS.eps>
-(epstopdf)             \includegraphics on input line 719.
+(epstopdf)             \includegraphics on input line 845.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/dimpot/1sCGMSS_BS-eps-converted-to.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/dimpot/1sCGMSS_BS-eps-converted-to.pdf, id=452, 555.07375pt x 429.605p
+<figures/dimpot/1sCGMSS_BS-eps-converted-to.pdf, id=446, 555.07375pt x 429.605p
 t>
 File: figures/dimpot/1sCGMSS_BS-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/dimpot/1sCGMSS_BS-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dimpot/1sCGMSS_BS-eps-converted-to.pdf  used o
-n input line 719.
+n input line 845.
 (pdftex.def)             Requested size: 188.99359pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/dimpot/1sC_oscprof.eps>
 (epstopdf)                    date: 2019-04-13 09:26:30
@@ -852,21 +1191,20 @@ o.pdf>
 (epstopdf)                    size: 13912 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dimpot/1sC_oscprof
 -eps-converted-to.pdf figures/dimpot/1sC_oscprof.eps>
-(epstopdf)             \includegraphics on input line 721.
+(epstopdf)             \includegraphics on input line 847.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/dimpot/1sC_oscprof-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/dimpot/1sC_oscprof-eps-converted-to.pdf, id=453, 565.11125pt x 429.605
+<figures/dimpot/1sC_oscprof-eps-converted-to.pdf, id=447, 565.11125pt x 429.605
 pt>
 File: figures/dimpot/1sC_oscprof-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/dimpot/1sC_oscprof-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dimpot/1sC_oscprof-eps-converted-to.pdf  used 
-on input line 721.
+on input line 847.
 (pdftex.def)             Requested size: 192.41121pt x 146.27155pt.
-[11 <./figures/dimpot/1sCGMSS_BS-eps-converted-to.pdf> <./figures/dimpot/1sC_os
-cprof-eps-converted-to.pdf>]
+[11]
 Package epstopdf Info: Source file: <figures/dimpot/zeff_1sCH4.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
 (epstopdf)                    size: 27819 bytes
@@ -876,18 +1214,18 @@ Package epstopdf Info: Source file: <figures/dimpot/zeff_1sCH4.eps>
 (epstopdf)                    size: 13484 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dimpot/zeff_1sCH4-
 eps-converted-to.pdf figures/dimpot/zeff_1sCH4.eps>
-(epstopdf)             \includegraphics on input line 800.
+(epstopdf)             \includegraphics on input line 935.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/dimpot/zeff_1sCH4-eps-converted-to.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/dimpot/zeff_1sCH4-eps-converted-to.pdf, id=491, 556.0775pt x 429.605pt
+<figures/dimpot/zeff_1sCH4-eps-converted-to.pdf, id=474, 556.0775pt x 429.605pt
 >
 File: figures/dimpot/zeff_1sCH4-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/dimpot/zeff_1sCH4-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dimpot/zeff_1sCH4-eps-converted-to.pdf  used o
-n input line 800.
+n input line 935.
 (pdftex.def)             Requested size: 189.33537pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/dimpot/zeff_2sCH4.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -898,18 +1236,18 @@ Package epstopdf Info: Source file: <figures/dimpot/zeff_2sCH4.eps>
 (epstopdf)                    size: 13810 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dimpot/zeff_2sCH4-
 eps-converted-to.pdf figures/dimpot/zeff_2sCH4.eps>
-(epstopdf)             \includegraphics on input line 802.
+(epstopdf)             \includegraphics on input line 937.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/dimpot/zeff_2sCH4-eps-converted-to.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/dimpot/zeff_2sCH4-eps-converted-to.pdf, id=492, 556.0775pt x 429.605pt
+<figures/dimpot/zeff_2sCH4-eps-converted-to.pdf, id=475, 556.0775pt x 429.605pt
 >
 File: figures/dimpot/zeff_2sCH4-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/dimpot/zeff_2sCH4-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dimpot/zeff_2sCH4-eps-converted-to.pdf  used o
-n input line 802.
+n input line 937.
 (pdftex.def)             Requested size: 189.33537pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/dimpot/zeff_2pCH4.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -920,20 +1258,70 @@ Package epstopdf Info: Source file: <figures/dimpot/zeff_2pCH4.eps>
 (epstopdf)                    size: 17762 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dimpot/zeff_2pCH4-
 eps-converted-to.pdf figures/dimpot/zeff_2pCH4.eps>
-(epstopdf)             \includegraphics on input line 805.
+(epstopdf)             \includegraphics on input line 940.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/dimpot/zeff_2pCH4-eps-converted-to.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/dimpot/zeff_2pCH4-eps-converted-to.pdf, id=493, 556.0775pt x 428.60126
+<figures/dimpot/zeff_2pCH4-eps-converted-to.pdf, id=476, 556.0775pt x 428.60126
 pt>
 File: figures/dimpot/zeff_2pCH4-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/dimpot/zeff_2pCH4-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dimpot/zeff_2pCH4-eps-converted-to.pdf  used o
-n input line 805.
+n input line 940.
 (pdftex.def)             Requested size: 189.77658pt x 146.27155pt.
-[12 <./figures/dimpot/zeff_1sCH4-eps-converted-to.pdf> <./figures/dimpot/zeff_2
+[12 <./figures/dimpot/1sCGMSS_BS-eps-converted-to.pdf> <./figures/dimpot/1sC_os
+cprof-eps-converted-to.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 971.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 971.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\DIFdelincludegraphics' on input line 971.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 971.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 971.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 971.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 971.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 971.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\DIFaddincludegraphics' on input line 971.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 971.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\includegraphics' on input line 971.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 971.
+
+[13 <./figures/dimpot/zeff_1sCH4-eps-converted-to.pdf> <./figures/dimpot/zeff_2
 sCH4-eps-converted-to.pdf> <./figures/dimpot/zeff_2pCH4-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/dimpot/born_ionch4.eps>
 (epstopdf)                    date: 2019-04-13 09:26:30
@@ -944,18 +1332,18 @@ o.pdf>
 (epstopdf)                    size: 8677 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dimpot/born_ionch4
 -eps-converted-to.pdf figures/dimpot/born_ionch4.eps>
-(epstopdf)             \includegraphics on input line 864.
+(epstopdf)             \includegraphics on input line 999.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/dimpot/born_ionch4-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/dimpot/born_ionch4-eps-converted-to.pdf, id=530, 565.11125pt x 429.605
+<figures/dimpot/born_ionch4-eps-converted-to.pdf, id=539, 565.11125pt x 429.605
 pt>
 File: figures/dimpot/born_ionch4-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/dimpot/born_ionch4-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dimpot/born_ionch4-eps-converted-to.pdf  used 
-on input line 864.
+on input line 999.
 (pdftex.def)             Requested size: 192.41121pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/dimpot/photoch4.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -966,43 +1354,49 @@ df>
 (epstopdf)                    size: 12949 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dimpot/photoch4-ep
 s-converted-to.pdf figures/dimpot/photoch4.eps>
-(epstopdf)             \includegraphics on input line 891.
+(epstopdf)             \includegraphics on input line 1030.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/dimpot/photoch4-eps-converted-to.pdf):
  PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/dimpot/photoch4-eps-converted-to.pdf, id=539, 568.1225pt x 429.605pt>
+<figures/dimpot/photoch4-eps-converted-to.pdf, id=548, 568.1225pt x 429.605pt>
 File: figures/dimpot/photoch4-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/dimpot/photoch4-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dimpot/photoch4-eps-converted-to.pdf  used on 
-input line 891.
+input line 1030.
 (pdftex.def)             Requested size: 193.4365pt x 146.27155pt.
-[13 <./figures/dimpot/born_ionch4-eps-converted-to.pdf>] [14 <./figures/dimpot/
-photoch4-eps-converted-to.pdf>] [15]
+[14 <./figures/dimpot/born_ionch4-eps-converted-to.pdf> <./figures/dimpot/photo
+ch4-eps-converted-to.pdf>]
+Underfull \hbox (badness 1460) in paragraph at lines 1145--1147
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
+]   |   []   |   []   |   []
+ []
+
+[15] [16]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ­ in font cmr10!
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1157.
- [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1157.
- (./dimmol.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1157.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1157.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1371.
+ [17]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1371.
+ (./diff1.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1371.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1371.
 
-Package rerunfilecheck Info: File `dimmol.out' has not changed.
+Package rerunfilecheck Info: File `diff1.out' has not changed.
 (rerunfilecheck)             Checksum: 3124AF7CCCC8331C81F99616ED826408;1189.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1157.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1371.
  ) 
 Here is how much of TeX's memory you used:
- 7284 strings out of 494923
- 106641 string characters out of 6180743
- 196495 words of memory out of 5000000
- 10363 multiletter control sequences out of 15000+600000
- 15374 words of font info for 58 fonts, out of 8000000 for 9000
+ 7434 strings out of 494923
+ 108435 string characters out of 6180743
+ 256427 words of memory out of 5000000
+ 10504 multiletter control sequences out of 15000+600000
+ 15480 words of font info for 59 fonts, out of 8000000 for 9000
  18 hyphenation exceptions out of 8191
- 28i,11n,35p,324b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,11n,35p,656b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
@@ -1023,11 +1417,12 @@ fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/symbols/msbm10.pfb>
-Output written on dimmol.pdf (16 pages, 569076 bytes).
+ts/latxfont/lasy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/symbols/msbm10.pfb>
+Output written on diff1.pdf (17 pages, 604683 bytes).
 PDF statistics:
- 683 PDF objects out of 1000 (max. 8388607)
- 561 compressed objects within 6 object streams
- 120 named destinations out of 1000 (max. 500000)
+ 695 PDF objects out of 1000 (max. 8388607)
+ 571 compressed objects within 6 object streams
+ 121 named destinations out of 1000 (max. 500000)
  262 words of extra memory for PDF output out of 10000 (max. 10000000)
 
