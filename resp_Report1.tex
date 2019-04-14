@@ -42,8 +42,9 @@ provided.
  this an approximation? If so, what is its \\ justification?}
  
  The T--matrix of Eq.~(12) involves orbitals rather than 
- N--electron wave--functions because the  one--electron
- approximation is being implemented. The approximations
+ N--electron wave--functions because we are calculating one--electron
+ transitions in a first order approximation, which involves only the
+ initial and final orbitals of the target. The approximations
  employed in our calculations are now clearly stated in 
  Section 1. 
  
@@ -85,15 +86,12 @@ provided.
  originally defined has no polarization \\ functions and hence is 
  unsuitable for calculations on molecules.}
  
- Once again, the referee is correct. The molecular calculations 
+ The referee is correct. The molecular calculations 
  with UGBS should include polarisation functions (at least 
- $d$--functions) as per shown by Refs.~[32,33]. However, to 
- solely isolate the effects of the basis set, we computed the
- atomic oscillation profiles and the molecular orbitals on the 
- same footing. The results obtained without higher angular momenta
- than $L=1$ should be approximated. Regardless, when the potentia
- is being optimised, we can minimise to the mean values of our
- choosing.
+ $d$--functions). We are aware that including these functions increases the accuracy of the molecular energies, as is shown in Refs. [32,33].
+ However, our interest is to understand the effect of the basis set,
+ isolating them, and compute the atomic oscillations profiles as a way 
+ to remedy the big fluctuations in the inverted charges.
  
  \item {\tt The analytic form of the second term of Eq. (31) should
  be justified.}

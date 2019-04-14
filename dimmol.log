@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.4)  13 APR 2019 11:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.4)  14 APR 2019 00:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -412,9 +412,9 @@ tAr-eps-converted-to.pdf figures/pseudopot/pseudopotAr.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/pseudopot/pseudopotAr-eps-converted-to
-.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
-d
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/pseudopot/pseudopotAr-eps-con
+verted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.
+5> allowed
 <figures/pseudopot/pseudopotAr-eps-converted-to.pdf, id=141, 575.14874pt x 428.
 60126pt>
 File: figures/pseudopot/pseudopotAr-eps-converted-to.pdf Graphic file (type pdf
@@ -436,9 +436,9 @@ ncAr-eps-converted-to.pdf figures/pseudopot/pseudofuncAr.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/pseudopot/pseudofuncAr-eps-converted-t
-o.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
-ed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/pseudopot/pseudofuncAr-eps-co
+nverted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1
+.5> allowed
 <figures/pseudopot/pseudofuncAr-eps-converted-to.pdf, id=142, 565.11125pt x 436
 .63126pt>
 File: figures/pseudopot/pseudofuncAr-eps-converted-to.pdf Graphic file (type pd
@@ -456,17 +456,18 @@ Package epstopdf Info: Source file: <figures/pseudopot/ZLi.eps>
 (epstopdf)                    size: 13506 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/ZLi-eps-
 converted-to.pdf figures/pseudopot/ZLi.eps>
-(epstopdf)             \includegraphics on input line 219.
+(epstopdf)             \includegraphics on input line 220.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/pseudopot/ZLi-eps-converted-to.pdf): P
-DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/pseudopot/ZLi-eps-converted-t
+o.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
+ed
 <figures/pseudopot/ZLi-eps-converted-to.pdf, id=152, 560.0925pt x 428.60126pt>
 File: figures/pseudopot/ZLi-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/ZLi-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/ZLi-eps-converted-to.pdf  used on in
-put line 219.
+put line 220.
 (pdftex.def)             Requested size: 191.14682pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/pseudopot/ZLik.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -477,17 +478,18 @@ f>
 (epstopdf)                    size: 22265 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/ZLik-eps
 -converted-to.pdf figures/pseudopot/ZLik.eps>
-(epstopdf)             \includegraphics on input line 221.
+(epstopdf)             \includegraphics on input line 222.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/pseudopot/ZLik-eps-converted-to.pdf): 
-PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/pseudopot/ZLik-eps-converted-
+to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
+wed
 <figures/pseudopot/ZLik-eps-converted-to.pdf, id=153, 566.115pt x 428.60126pt>
 File: figures/pseudopot/ZLik-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/ZLik-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/ZLik-eps-converted-to.pdf  used on i
-nput line 221.
+nput line 222.
 (pdftex.def)             Requested size: 193.20216pt x 146.27155pt.
 [3 <./figures/pseudopot/pseudopotAr-eps-converted-to.pdf> <./figures/pseudopot/
 pseudofuncAr-eps-converted-to.pdf>]
@@ -500,18 +502,19 @@ pdf>
 (epstopdf)                    size: 18408 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/funcLi-e
 ps-converted-to.pdf figures/pseudopot/funcLi.eps>
-(epstopdf)             \includegraphics on input line 256.
+(epstopdf)             \includegraphics on input line 257.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/pseudopot/funcLi-eps-converted-to.pdf)
-: PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/pseudopot/funcLi-eps-converte
+d-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> al
+lowed
 <figures/pseudopot/funcLi-eps-converted-to.pdf, id=191, 568.1225pt x 428.60126p
 t>
 File: figures/pseudopot/funcLi-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/funcLi-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/funcLi-eps-converted-to.pdf  used on
- input line 256.
+ input line 257.
 (pdftex.def)             Requested size: 193.88727pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/pseudopot/funckLi.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -522,18 +525,19 @@ Package epstopdf Info: Source file: <figures/pseudopot/funckLi.eps>
 (epstopdf)                    size: 19662 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/funckLi-
 eps-converted-to.pdf figures/pseudopot/funckLi.eps>
-(epstopdf)             \includegraphics on input line 258.
+(epstopdf)             \includegraphics on input line 259.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/pseudopot/funckLi-eps-converted-to.pdf
-): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/pseudopot/funckLi-eps-convert
+ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
+llowed
 <figures/pseudopot/funckLi-eps-converted-to.pdf, id=192, 561.09625pt x 428.6012
 6pt>
 File: figures/pseudopot/funckLi-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/funckLi-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/funckLi-eps-converted-to.pdf  used o
-n input line 258.
+n input line 259.
 (pdftex.def)             Requested size: 191.48938pt x 146.27155pt.
 [4 <./figures/pseudopot/ZLi-eps-converted-to.pdf> <./figures/pseudopot/ZLik-eps
 -converted-to.pdf> <./figures/pseudopot/funcLi-eps-converted-to.pdf> <./figures
@@ -547,18 +551,19 @@ Package epstopdf Info: Source file: <figures/pseudopot/LicontA.eps>
 (epstopdf)                    size: 12605 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/LicontA-
 eps-converted-to.pdf figures/pseudopot/LicontA.eps>
-(epstopdf)             \includegraphics on input line 291.
+(epstopdf)             \includegraphics on input line 292.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/pseudopot/LicontA-eps-converted-to.pdf
-): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/pseudopot/LicontA-eps-convert
+ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
+llowed
 <figures/pseudopot/LicontA-eps-converted-to.pdf, id=238, 555.07375pt x 428.6012
 6pt>
 File: figures/pseudopot/LicontA-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/LicontA-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/LicontA-eps-converted-to.pdf  used o
-n input line 291.
+n input line 292.
 (pdftex.def)             Requested size: 189.43402pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/pseudopot/LicontB.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -569,18 +574,19 @@ Package epstopdf Info: Source file: <figures/pseudopot/LicontB.eps>
 (epstopdf)                    size: 9632 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/LicontB-
 eps-converted-to.pdf figures/pseudopot/LicontB.eps>
-(epstopdf)             \includegraphics on input line 293.
+(epstopdf)             \includegraphics on input line 294.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/pseudopot/LicontB-eps-converted-to.pdf
-): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/pseudopot/LicontB-eps-convert
+ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
+llowed
 <figures/pseudopot/LicontB-eps-converted-to.pdf, id=239, 493.845pt x 428.60126p
 t>
 File: figures/pseudopot/LicontB-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/LicontB-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/LicontB-eps-converted-to.pdf  used o
-n input line 293.
+n input line 294.
 (pdftex.def)             Requested size: 168.53804pt x 146.27155pt.
 [5 <./figures/pseudopot/LicontA-eps-converted-to.pdf> <./figures/pseudopot/Lico
 ntB-eps-converted-to.pdf>]
@@ -593,17 +599,18 @@ Package epstopdf Info: Source file: <figures/pseudopot/Hex.eps>
 (epstopdf)                    size: 9954 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/Hex-eps-
 converted-to.pdf figures/pseudopot/Hex.eps>
-(epstopdf)             \includegraphics on input line 450.
+(epstopdf)             \includegraphics on input line 451.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/pseudopot/Hex-eps-converted-to.pdf): P
-DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/pseudopot/Hex-eps-converted-t
+o.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
+ed
 <figures/pseudopot/Hex-eps-converted-to.pdf, id=280, 565.11125pt x 429.605pt>
 File: figures/pseudopot/Hex-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/Hex-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/Hex-eps-converted-to.pdf  used on in
-put line 450.
+put line 451.
 (pdftex.def)             Requested size: 192.41121pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/pseudopot/Liex.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -614,17 +621,18 @@ f>
 (epstopdf)                    size: 10501 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/Liex-eps
 -converted-to.pdf figures/pseudopot/Liex.eps>
-(epstopdf)             \includegraphics on input line 452.
+(epstopdf)             \includegraphics on input line 453.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/pseudopot/Liex-eps-converted-to.pdf): 
-PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/pseudopot/Liex-eps-converted-
+to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
+wed
 <figures/pseudopot/Liex-eps-converted-to.pdf, id=281, 565.11125pt x 429.605pt>
 File: figures/pseudopot/Liex-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/Liex-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/Liex-eps-converted-to.pdf  used on i
-nput line 452.
+nput line 453.
 (pdftex.def)             Requested size: 192.41121pt x 146.27155pt.
 [6]
 Package epstopdf Info: Source file: <figures/pseudopot/ionizationH.eps>
@@ -636,20 +644,20 @@ d-to.pdf>
 (epstopdf)                    size: 11602 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/ionizati
 onH-eps-converted-to.pdf figures/pseudopot/ionizationH.eps>
-(epstopdf)             \includegraphics on input line 494.
+(epstopdf)             \includegraphics on input line 495.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/pseudopot/ionizationH-eps-converted-to
-.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
-d
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/pseudopot/ionizationH-eps-con
+verted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.
+5> allowed
 <figures/pseudopot/ionizationH-eps-converted-to.pdf, id=300, 575.14874pt x 429.
 605pt>
 File: figures/pseudopot/ionizationH-eps-converted-to.pdf Graphic file (type pdf
 )
 <use figures/pseudopot/ionizationH-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/ionizationH-eps-converted-to.pdf  us
-ed on input line 494.
+ed on input line 495.
 (pdftex.def)             Requested size: 191.5812pt x 143.09828pt.
 Package epstopdf Info: Source file: <figures/pseudopot/ionizationLi.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -660,20 +668,20 @@ ed-to.pdf>
 (epstopdf)                    size: 12108 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/ionizati
 onLi-eps-converted-to.pdf figures/pseudopot/ionizationLi.eps>
-(epstopdf)             \includegraphics on input line 496.
+(epstopdf)             \includegraphics on input line 497.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/pseudopot/ionizationLi-eps-converted-t
-o.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
-ed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/pseudopot/ionizationLi-eps-co
+nverted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1
+.5> allowed
 <figures/pseudopot/ionizationLi-eps-converted-to.pdf, id=301, 569.12625pt x 430
 .60875pt>
 File: figures/pseudopot/ionizationLi-eps-converted-to.pdf Graphic file (type pd
 f)
 <use figures/pseudopot/ionizationLi-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/ionizationLi-eps-converted-to.pdf  u
-sed on input line 496.
+sed on input line 497.
 (pdftex.def)             Requested size: 189.13223pt x 143.09828pt.
 [7 <./figures/pseudopot/Hex-eps-converted-to.pdf> <./figures/pseudopot/Liex-eps
 -converted-to.pdf> <./figures/pseudopot/ionizationH-eps-converted-to.pdf> <./fi
@@ -687,18 +695,19 @@ o.pdf>
 (epstopdf)                    size: 8676 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/captureH
 -eps-converted-to.pdf figures/pseudopot/captureH.eps>
-(epstopdf)             \includegraphics on input line 549.
+(epstopdf)             \includegraphics on input line 550.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/pseudopot/captureH-eps-converted-to.pd
-f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/pseudopot/captureH-eps-conver
+ted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
+allowed
 <figures/pseudopot/captureH-eps-converted-to.pdf, id=355, 564.1075pt x 429.605p
 t>
 File: figures/pseudopot/captureH-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/captureH-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/captureH-eps-converted-to.pdf  used 
-on input line 549.
+on input line 550.
 (pdftex.def)             Requested size: 192.06944pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/pseudopot/captureLi.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -709,18 +718,19 @@ to.pdf>
 (epstopdf)                    size: 9860 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/captureL
 i-eps-converted-to.pdf figures/pseudopot/captureLi.eps>
-(epstopdf)             \includegraphics on input line 551.
+(epstopdf)             \includegraphics on input line 552.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/pseudopot/captureLi-eps-converted-to.p
-df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/pseudopot/captureLi-eps-conve
+rted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5>
+ allowed
 <figures/pseudopot/captureLi-eps-converted-to.pdf, id=356, 565.11125pt x 429.60
 5pt>
 File: figures/pseudopot/captureLi-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/captureLi-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/captureLi-eps-converted-to.pdf  used
- on input line 551.
+ on input line 552.
 (pdftex.def)             Requested size: 192.41121pt x 146.27155pt.
 [8 <./figures/pseudopot/captureH-eps-converted-to.pdf> <./figures/pseudopot/cap
 tureLi-eps-converted-to.pdf>]
@@ -733,18 +743,19 @@ to.pdf>
 (epstopdf)                    size: 9097 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/photoion
 H-eps-converted-to.pdf figures/pseudopot/photoionH.eps>
-(epstopdf)             \includegraphics on input line 606.
+(epstopdf)             \includegraphics on input line 607.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/pseudopot/photoionH-eps-converted-to.p
-df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/pseudopot/photoionH-eps-conve
+rted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5>
+ allowed
 <figures/pseudopot/photoionH-eps-converted-to.pdf, id=383, 571.13374pt x 429.60
 5pt>
 File: figures/pseudopot/photoionH-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/pseudopot/photoionH-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/photoionH-eps-converted-to.pdf  used
- on input line 606.
+ on input line 607.
 (pdftex.def)             Requested size: 194.46178pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/pseudopot/photoionLi.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -755,20 +766,20 @@ Package epstopdf Info: Source file: <figures/pseudopot/photoionLi.eps>
 (epstopdf)                    size: 9546 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/photoion
 Li-eps-converted-to.pdf figures/pseudopot/photoionLi.eps>
-(epstopdf)             \includegraphics on input line 608.
+(epstopdf)             \includegraphics on input line 609.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/pseudopot/photoionLi-eps-converted-to.
-pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/pseudopot/photoionLi-eps-conv
+erted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
+> allowed
 <figures/pseudopot/photoionLi-eps-converted-to.pdf, id=384, 571.13374pt x 429.6
 05pt>
 File: figures/pseudopot/photoionLi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/pseudopot/photoionLi-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/photoionLi-eps-converted-to.pdf  use
-d on input line 608.
+d on input line 609.
 (pdftex.def)             Requested size: 194.46178pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/dimpot/photoN.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -779,17 +790,18 @@ Package epstopdf Info: Source file: <figures/dimpot/photoN.eps>
 (epstopdf)                    size: 12280 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dimpot/photoN-eps-
 converted-to.pdf figures/dimpot/photoN.eps>
-(epstopdf)             \includegraphics on input line 636.
+(epstopdf)             \includegraphics on input line 637.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/dimpot/photoN-eps-converted-to.pdf): P
-DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/dimpot/photoN-eps-converted-t
+o.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
+ed
 <figures/dimpot/photoN-eps-converted-to.pdf, id=392, 568.1225pt x 429.605pt>
 File: figures/dimpot/photoN-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/dimpot/photoN-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dimpot/photoN-eps-converted-to.pdf  used on in
-put line 636.
+put line 637.
 (pdftex.def)             Requested size: 193.4365pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/dimpot/photoNe.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -800,21 +812,22 @@ f>
 (epstopdf)                    size: 22417 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dimpot/photoNe-eps
 -converted-to.pdf figures/dimpot/photoNe.eps>
-(epstopdf)             \includegraphics on input line 638.
+(epstopdf)             \includegraphics on input line 639.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/dimpot/photoNe-eps-converted-to.pdf): 
-PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/dimpot/photoNe-eps-converted-
+to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
+wed
 <figures/dimpot/photoNe-eps-converted-to.pdf, id=393, 575.14874pt x 429.605pt>
 File: figures/dimpot/photoNe-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/dimpot/photoNe-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dimpot/photoNe-eps-converted-to.pdf  used on i
-nput line 638.
+nput line 639.
 (pdftex.def)             Requested size: 195.82881pt x 146.27155pt.
 [9 <./figures/pseudopot/photoionH-eps-converted-to.pdf> <./figures/pseudopot/ph
 otoionLi-eps-converted-to.pdf>]
-Overfull \hbox (5.11731pt too wide) in paragraph at lines 648--653
+Overfull \hbox (5.11731pt too wide) in paragraph at lines 649--654
 \OT1/cmr/m/n/10 The depu-rated in-ver-sion method de-scribed above is ex-tended
  to de-ter-mine ef-fec-tive po-ten-tials for molecules.
  []
@@ -830,18 +843,19 @@ Package epstopdf Info: Source file: <figures/dimpot/1sCGMSS_BS.eps>
 (epstopdf)                    size: 16718 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dimpot/1sCGMSS_BS-
 eps-converted-to.pdf figures/dimpot/1sCGMSS_BS.eps>
-(epstopdf)             \includegraphics on input line 719.
+(epstopdf)             \includegraphics on input line 720.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/dimpot/1sCGMSS_BS-eps-converted-to.pdf
-): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/dimpot/1sCGMSS_BS-eps-convert
+ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
+llowed
 <figures/dimpot/1sCGMSS_BS-eps-converted-to.pdf, id=452, 555.07375pt x 429.605p
 t>
 File: figures/dimpot/1sCGMSS_BS-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/dimpot/1sCGMSS_BS-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dimpot/1sCGMSS_BS-eps-converted-to.pdf  used o
-n input line 719.
+n input line 720.
 (pdftex.def)             Requested size: 188.99359pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/dimpot/1sC_oscprof.eps>
 (epstopdf)                    date: 2019-04-13 09:26:30
@@ -852,18 +866,19 @@ o.pdf>
 (epstopdf)                    size: 13912 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dimpot/1sC_oscprof
 -eps-converted-to.pdf figures/dimpot/1sC_oscprof.eps>
-(epstopdf)             \includegraphics on input line 721.
+(epstopdf)             \includegraphics on input line 722.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/dimpot/1sC_oscprof-eps-converted-to.pd
-f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/dimpot/1sC_oscprof-eps-conver
+ted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
+allowed
 <figures/dimpot/1sC_oscprof-eps-converted-to.pdf, id=453, 565.11125pt x 429.605
 pt>
 File: figures/dimpot/1sC_oscprof-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/dimpot/1sC_oscprof-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dimpot/1sC_oscprof-eps-converted-to.pdf  used 
-on input line 721.
+on input line 722.
 (pdftex.def)             Requested size: 192.41121pt x 146.27155pt.
 [11 <./figures/dimpot/1sCGMSS_BS-eps-converted-to.pdf> <./figures/dimpot/1sC_os
 cprof-eps-converted-to.pdf>]
@@ -876,18 +891,19 @@ Package epstopdf Info: Source file: <figures/dimpot/zeff_1sCH4.eps>
 (epstopdf)                    size: 13484 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dimpot/zeff_1sCH4-
 eps-converted-to.pdf figures/dimpot/zeff_1sCH4.eps>
-(epstopdf)             \includegraphics on input line 800.
+(epstopdf)             \includegraphics on input line 801.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/dimpot/zeff_1sCH4-eps-converted-to.pdf
-): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/dimpot/zeff_1sCH4-eps-convert
+ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
+llowed
 <figures/dimpot/zeff_1sCH4-eps-converted-to.pdf, id=491, 556.0775pt x 429.605pt
 >
 File: figures/dimpot/zeff_1sCH4-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/dimpot/zeff_1sCH4-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dimpot/zeff_1sCH4-eps-converted-to.pdf  used o
-n input line 800.
+n input line 801.
 (pdftex.def)             Requested size: 189.33537pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/dimpot/zeff_2sCH4.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -898,18 +914,19 @@ Package epstopdf Info: Source file: <figures/dimpot/zeff_2sCH4.eps>
 (epstopdf)                    size: 13810 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dimpot/zeff_2sCH4-
 eps-converted-to.pdf figures/dimpot/zeff_2sCH4.eps>
-(epstopdf)             \includegraphics on input line 802.
+(epstopdf)             \includegraphics on input line 803.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/dimpot/zeff_2sCH4-eps-converted-to.pdf
-): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/dimpot/zeff_2sCH4-eps-convert
+ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
+llowed
 <figures/dimpot/zeff_2sCH4-eps-converted-to.pdf, id=492, 556.0775pt x 429.605pt
 >
 File: figures/dimpot/zeff_2sCH4-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/dimpot/zeff_2sCH4-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dimpot/zeff_2sCH4-eps-converted-to.pdf  used o
-n input line 802.
+n input line 803.
 (pdftex.def)             Requested size: 189.33537pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/dimpot/zeff_2pCH4.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -920,18 +937,19 @@ Package epstopdf Info: Source file: <figures/dimpot/zeff_2pCH4.eps>
 (epstopdf)                    size: 17762 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dimpot/zeff_2pCH4-
 eps-converted-to.pdf figures/dimpot/zeff_2pCH4.eps>
-(epstopdf)             \includegraphics on input line 805.
+(epstopdf)             \includegraphics on input line 806.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/dimpot/zeff_2pCH4-eps-converted-to.pdf
-): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/dimpot/zeff_2pCH4-eps-convert
+ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
+llowed
 <figures/dimpot/zeff_2pCH4-eps-converted-to.pdf, id=493, 556.0775pt x 428.60126
 pt>
 File: figures/dimpot/zeff_2pCH4-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/dimpot/zeff_2pCH4-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dimpot/zeff_2pCH4-eps-converted-to.pdf  used o
-n input line 805.
+n input line 806.
 (pdftex.def)             Requested size: 189.77658pt x 146.27155pt.
 [12 <./figures/dimpot/zeff_1sCH4-eps-converted-to.pdf> <./figures/dimpot/zeff_2
 sCH4-eps-converted-to.pdf> <./figures/dimpot/zeff_2pCH4-eps-converted-to.pdf>]
@@ -944,18 +962,19 @@ o.pdf>
 (epstopdf)                    size: 8677 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dimpot/born_ionch4
 -eps-converted-to.pdf figures/dimpot/born_ionch4.eps>
-(epstopdf)             \includegraphics on input line 864.
+(epstopdf)             \includegraphics on input line 865.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/dimpot/born_ionch4-eps-converted-to.pd
-f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/dimpot/born_ionch4-eps-conver
+ted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
+allowed
 <figures/dimpot/born_ionch4-eps-converted-to.pdf, id=530, 565.11125pt x 429.605
 pt>
 File: figures/dimpot/born_ionch4-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/dimpot/born_ionch4-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dimpot/born_ionch4-eps-converted-to.pdf  used 
-on input line 864.
+on input line 865.
 (pdftex.def)             Requested size: 192.41121pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/dimpot/photoch4.eps>
 (epstopdf)                    date: 2019-04-13 09:26:31
@@ -966,17 +985,18 @@ df>
 (epstopdf)                    size: 12949 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dimpot/photoch4-ep
 s-converted-to.pdf figures/dimpot/photoch4.eps>
-(epstopdf)             \includegraphics on input line 891.
+(epstopdf)             \includegraphics on input line 892.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./figures/dimpot/photoch4-eps-converted-to.pdf):
- PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/dimpot/photoch4-eps-converted
+-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
+owed
 <figures/dimpot/photoch4-eps-converted-to.pdf, id=539, 568.1225pt x 429.605pt>
 File: figures/dimpot/photoch4-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/dimpot/photoch4-eps-converted-to.pdf>
 Package pdftex.def Info: figures/dimpot/photoch4-eps-converted-to.pdf  used on 
-input line 891.
+input line 892.
 (pdftex.def)             Requested size: 193.4365pt x 146.27155pt.
 [13 <./figures/dimpot/born_ionch4-eps-converted-to.pdf>] [14 <./figures/dimpot/
 photoch4-eps-converted-to.pdf>] [15]
@@ -984,21 +1004,21 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ­ in font cmr10!
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1157.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1158.
  [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1157.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1158.
  (./dimmol.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1157.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1157.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1158.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1158.
 
 Package rerunfilecheck Info: File `dimmol.out' has not changed.
 (rerunfilecheck)             Checksum: 3124AF7CCCC8331C81F99616ED826408;1189.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1157.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1158.
  ) 
 Here is how much of TeX's memory you used:
  7284 strings out of 494923
  106641 string characters out of 6180743
- 196495 words of memory out of 5000000
+ 197495 words of memory out of 5000000
  10363 multiletter control sequences out of 15000+600000
  15374 words of font info for 58 fonts, out of 8000000 for 9000
  18 hyphenation exceptions out of 8191
@@ -1024,7 +1044,7 @@ type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/symbols/msbm10.pfb>
-Output written on dimmol.pdf (16 pages, 569076 bytes).
+Output written on dimmol.pdf (16 pages, 569049 bytes).
 PDF statistics:
  683 PDF objects out of 1000 (max. 8388607)
  561 compressed objects within 6 object streams

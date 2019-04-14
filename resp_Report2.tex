@@ -19,16 +19,6 @@ The authors thank the referee for the suggestions and corrections provided.
 
 \begin{enumerate}
 
- \item {\tt The authors develop a simple pseudo-potential (PP) approach
- to complicated \\ processes of electron capture and transfer and
- collisions. They show the best \\ results for inverting a many-electron
- potential to yield effective one-electron \\ charges is by the Depurated
- Inversion Method they previously published.}
- 
- We developed an effective potential approach. The inelastic
- cross sections obtained with it describing the target were compared
- two different pseudopotentials.
-
  \item {\tt The description of numerical difficulties in obtaining 
  the pseudo-charges is \\ detailed, in particular for the 2s AO of the 
  lithium atom. One problem is that a \\ singularity appears due to charge 
@@ -43,13 +33,16 @@ The authors thank the referee for the suggestions and corrections provided.
  
  This uses PPs to replace node-less AOs so it is not a case
  where the arguments \\ developed and illustrated by fid 1 and 2 are
- actually applied.}
+ actually applied.
  
- {\it No entiendo lo que quiere decir. Supongo que cuando dice PP se
- refiere al DIM? (?)}
- 
- \item {\tt In below (3), the claim concerning H-atoms is correct but 
+ In below (3), the claim concerning H-atoms is correct but 
  a physical \\ interpretation of the PP in this case is missing.}
+ 
+ H has only one electron, and it does not seem to have any use to
+ calculate the corresponding pseudopotential.
+ However, there are many different proposals for PP, reproducing
+ with high accuracy the main features of the wavefunctions, even
+ for excited states.
  
  \item {\tt So, for CH4 oscillations in the AO basis are not modified
  by use of a PP. They come from defects in the GTO basis as the authors
@@ -76,17 +69,21 @@ The authors thank the referee for the suggestions and corrections provided.
  Clementi  tables.}
  
  Actually, in our first calculation for a CH4 potential, we employed 
- the SCF OCE MOs given by Moccia (1964), which uses Slaters. The MOs
- showed incorrect cusp behaviour and were not considered. However, it is
- worth inspecting the viability of using CETO.
+ the SCF OCE MOs given by Moccia (1964), which uses Slaters. The
+ inversion of such MOs showed incorrect behaviour  of the charge in the 
+ origin and, therefore, they were not considered. However, it is worth
+ inspecting the viability of employing ETOs in further calculations.
 
  \item {\tt It is well-known that modest GTO basis sets introduce 
  oscillations, since grad[$\rho$]/$\rho$ is not smooth.}
  
- This assertion is correct.
+ This assertion is correct and it is clearly demonstrated in Ref. [28].
  
  \item {\tt The FD finite difference HF seems to cure this and it should 
  be benchmarked \\ against ETOs.}
+ 
+ Yes, the FD method cure the oscillation issue, however, the poles due 
+ to the nodes and asympotic divergences will still be present [5].
 
   \item {\tt I would suggest that NaH would be a nice example, with 
   a 10-electron core PP and \\ comparison to the detailed study of Li 
