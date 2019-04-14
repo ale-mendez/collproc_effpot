@@ -59,7 +59,7 @@ In this context, one bright idea emerges from the pseudopotential
 approximation (PPA), in which all the complexity of the wavefunctions near 
 the core --that usually consumes a huge numerical effort-- is avoided.
 For instance, density functional theory codes using pseudopotentials, 
-such as the {\sc parsec}, for example~\cite{parsecwebpage,Chelikowsky1994}, 
+such as the {\sc parsec} for example~\cite{parsecwebpage,Chelikowsky1994}, 
 permit to use an equally--spaced grid involving a relatively small 
 number of points. 
 Otherwise, the use of realistic potentials describing the nucleus 
@@ -73,7 +73,7 @@ Another interesting approach is the depurated inversion method
 obtaining accurate, effective potentials by substituting the coupled 
 multielectron equations into a Kohn--Sham type equation. 
 In the first step, the potential is obtained through inversion of the 
-one--electron equation. Next, a careful optimisation of the potential is 
+one--electron equation. Next, careful optimisation of the potential is 
 carried on, eliminating poles, and imposing the appropriate boundary 
 conditions analytically. In that way, the DIM potentials are parametrised 
 in simple analytical expressions.
@@ -84,17 +84,19 @@ describe inelastic processes. Mainly, we examine several collisional
 processes involving 
 a single electron transition: photoionisation, excitation, ionisation 
 and electron capture. To this end, several simplifications were made: 
-(1) The calculations are constrained to Hamiltonians describing only
+(1) The calculation is restrained to Hamiltonians describing only
 the moving projectile, the target and the active 
 electron. (2) The transition matrix elements are only considered in  
-first perturbative order. If the first order fails, it would not have 
-any sense to extend the calculation to higher terms of the series.
+first perturbative order. If the first order description fails, 
+indeed it would not have any sense to extend the calculation to 
+higher terms of the series.
 A wide variety of {\it ab initio} methods have been 
 implemented to compute the scattering cross sections for atomic targets, 
 from the early implementations of the first Born 
-approximation (FBA)~\cite{BatesBook,McDowell1961}, to more sophisticated
-fully quantum mechanical methods~\cite{Pindzola2007,Burke2011,Bray2017,Pindzola2016}. 
-For simplicity, we will restrict our calculations only to the FBA framework, 
+approximation (FBA)~\cite{BatesBook,McDowell1961}, to the much 
+more sophisticated time--dependent close--coupling 
+methods~\cite{LeePindzola2011,Pindzola2016}. For simplicity, we will 
+restrict our calculations only to the FBA framework, 
 which is known to give reasonable agreement with 
 the experimental cross section in the intermediate--high projectile 
 energy range. Moreover, within this energy range and approximation 
@@ -137,14 +139,14 @@ potential in the many--electron system Hamiltonian with a smooth
 function so that the electron wavefunctions oscillating rapidly in 
 the core region are replaced by nodeless pseudo--orbitals having the 
 right energy and the same outer range properties.
-In general, the pseudopotentials $V_{\mbox{\tiny PP}}$ can be defined 
-through a pseudo--charge $Z_{\mbox{\tiny PP}}$ as
+In general, the pseudopotentials $V_{\mbox{\tiny PPA}}$ can be defined 
+through a pseudo--charge $Z_{\mbox{\tiny PPA}}$ as
 \begin{equation}
- V_{\mbox{\tiny PP}}(r)=-\frac{Z_{\mbox{\tiny PP}}(r)}{r} \,,
+ V_{\mbox{\tiny PPA}}(r)=-\frac{Z_{\mbox{\tiny PPA}}(r)}{r} \,,
  \label{eq:pseudopotential}
 \end{equation}
 \begin{equation}
- Z_{\mbox{\tiny PP}}(r)=\bigg\{
+ Z_{\mbox{\tiny PPA}}(r)=\bigg\{
  \begin{array}{cl}
   f(r), & r\leq r_c \\
   1, & r>r_c 
@@ -157,7 +159,7 @@ from the valence region, $r>r_c$, of the target and $f(r)$ is a
 continuous function with a constant value at the origin.
 Fig.~\ref{fig:pseudoLi} illustrates a pseudopotential (solid line)
 and its corresponding pseudo--wavefunction for the $3s$ orbital of 
-argon. Notice that the pseudopotential behaves as $-r^{-1}$ (dot--dash 
+argon. Notice that the pseudopotential behaves as $-1/r$ (dot--dash 
 line) in the valence region, as defined in Eqs. (\ref{eq:pseudopotential})
 and (\ref{eq:pseudocharge}).
 The one--electron Hartree--Fock wavefunction is included
@@ -748,16 +750,17 @@ is given in the following Section.
 \label{sec:dimmethane}
 
 In order to illustrate the implementation of the DIM for molecules, 
-we considered CH$_4$, which is a highly symmetric, and therefore, can
-be described with an angular averaged potential~\cite{Granados2016}.
+we considered CH$_4$, which is a highly symmetric 
+molecule. Furthermore, the spherical symmetry of the methane molecule
+allows the system to be successfully described, for high energies, 
+with a angular averaged potential \cite{Granados2016}.
 We computed the HF molecular orbitals and energies of CH$_4$ employing 
-the UGBS basis sets of carbon and hydrogen, which considers angular momenta
-up to $L=1$.
-Methane calculations with this basis set should include polarisation functions
-(at least d--functions) to increase the accuracy of the molecular energies
-\cite{Rothenberg1971,Hariharan1972}. However, to isolate the effects of the
-basis set, we computed the atomic oscillation profiles and the molecular
-orbitals on the same footing. 
+the UGBS basis sets of carbon and hydrogen. Previous works 
+\cite{Rothenberg1971,Hariharan1972} have shown that accurate molecular 
+orbitals for methane require the inclusion of further polarisation 
+functions to represent the distortion of the atoms. However, to solely 
+isolate the effects of the basis set, we computed the atomic oscillation 
+profiles and the molecular orbitals on the same footing. 
 The charges obtained by direct inversion are given in 
 Fig.~\ref{fig:ch4zeff} with dashed lines. 
 Since the molecular orbitals are given by LCAO of carbon and 
@@ -833,10 +836,10 @@ direct inversion (dashed line) and depurated inverted (solid line).}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Collisional Processes}
 
-The orientation of the molecular targets is important for determining
-the cross sections of collisional processes. However, it is generally not 
-pre--established in the experiments. Thus, the spherically averaged 
-description of the system, 
+The orientation of the molecular targets is crucial for determining
+the cross sections of collisional processes. However, the molecular 
+orientations in most collisional experiments are generally not 
+pre--established. Thus, the spherically averaged description of the system, 
 assumed by the DIM potential is a valid approximation. In the 
 following, we examine two collisional processes in the first--order 
 approximation: proton--impact ionisation 
@@ -981,25 +984,11 @@ McDowell, M. R. C.; Peach, G.
 Ionization of Lithium by Fast Protons and Electrons.
 {\it Phys. Rev.} {\bf 1961}, 121, 1383--1387.
 
-\bibitem{Pindzola2007}
-Pindzola, M. S.; Robicheaux, F.; Loch, S. D.; Berengut,  J. C.; Topcu, T.; Colgan, J.; Foster, M.; Griffin, D. C.; Ballance, C. P.; Schultz, D. R.;
-Minami, T.; Badnell, N. R.; Witthoeft, M. C.; Plante, D. R.; Mitnik, D. M.; 
-Ludlow, J. A.; Kleiman, U.
-The time-dependent close-coupling method for  atomic and molecular collision
-processes.
-{\it J. Phys. B}, {\bf 2007}, 40, R39-R60.
-
-\bibitem{Burke2011}
-Burke, P. G.
-{\it R--Matrix Theory of Atomic Collisions.}
-Springer--Verlag Berlin Heidelberg, 2011.
-
-\bibitem{Bray2017}
-Bray, I; Abdurakhmanov, I. B.; Bailey, J. J.; Bray, A. W.; Fursa, D. V.;
-Kadyrov, A. S.; Rawlins, C. M.; Savage, J. S.; Stelbovics, A. T.; Zammit, M. C.
-Convergent close--coupling approach to light and heavy projectile scattering 
-on atomic and molecular hydrogen.
-{\it J. Phy. B}, {\bf 2017}, 50, 202001. 
+\bibitem{LeePindzola2011}
+Lee, T.-G.; Pindzola, M. S.
+Proton-impact excitation of lithium using a time--dependent 
+close--coupling method.
+{\it Phys. Rev. A} {\bf 2011}, 84, 052712.
 
 \bibitem{Pindzola2016}
 Pindzola, M. S.; Colgan, J.; Robicheaux, F.; Lee, T.-G.; Ciappina, M. F.;

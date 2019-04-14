@@ -3,9 +3,9 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: dimmol.aux
 I found no \bibdata command---while reading file dimmol.aux
 I found no \bibstyle command---while reading file dimmol.aux
-You've used 38 entries,
+You've used 40 entries,
             0 wiz_defined-function locations,
-            157 strings with 1298 characters,
+            161 strings with 1326 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0
