@@ -105,7 +105,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Fri Apr  5 17:58:21 2019"
+@timestamp def "Mon Apr 29 18:23:37 2019"
 @with string
 @    string on
 @    string loctype view
@@ -185,7 +185,7 @@
 @    xaxis  bar color 1
 @    xaxis  bar linestyle 1
 @    xaxis  bar linewidth 1.0
-@    xaxis  label "Proton velocity (keV)"
+@    xaxis  label "Proton energy (keV)"
 @    xaxis  label layout para
 @    xaxis  label place auto
 @    xaxis  label char size 1.750000

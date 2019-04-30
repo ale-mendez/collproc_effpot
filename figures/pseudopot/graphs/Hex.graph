@@ -105,7 +105,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Fri Apr  5 15:57:35 2019"
+@timestamp def "Mon Apr 29 20:33:31 2019"
 @with string
 @    string on
 @    string loctype view
@@ -119,23 +119,23 @@
 @with string
 @    string on
 @    string loctype view
-@    string 0.348039215687, 0.696078431373
+@    string 0.42524509804, 0.718137254902
 @    string color 1
 @    string rot 0
 @    string font 1
 @    string just 0
 @    string char size 1.500000
-@    string def "n=2"
+@    string def "f\s1"
 @with string
 @    string on
 @    string loctype view
-@    string 0.381127450981, 0.533088235294
+@    string 0.442401960785, 0.537990196078
 @    string color 1
 @    string rot 0
 @    string font 1
 @    string just 0
 @    string char size 1.500000
-@    string def "n=3"
+@    string def "f\s2"
 @r0 off
 @link r0 to g0
 @r0 type above

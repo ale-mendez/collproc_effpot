@@ -104,7 +104,7 @@
 @timestamp rot 0
 @timestamp font 0
 @timestamp char size 1.000000
-@timestamp def "Tue Feb 26 17:18:02 2019"
+@timestamp def "Mon Apr 29 18:41:53 2019"
 @with string
 @    string on
 @    string loctype world
@@ -320,9 +320,9 @@
 @    s0 type xy
 @    s0 symbol 0
 @    s0 symbol size 1.000000
-@    s0 symbol color 2
+@    s0 symbol color 1
 @    s0 symbol pattern 1
-@    s0 symbol fill color 2
+@    s0 symbol fill color 1
 @    s0 symbol fill pattern 0
 @    s0 symbol linewidth 1.0
 @    s0 symbol linestyle 1
@@ -330,9 +330,9 @@
 @    s0 symbol char font 0
 @    s0 symbol skip 0
 @    s0 line type 1
-@    s0 line linestyle 1
-@    s0 line linewidth 3.0
-@    s0 line color 2
+@    s0 line linestyle 2
+@    s0 line linewidth 1.0
+@    s0 line color 1
 @    s0 line pattern 1
 @    s0 baseline type 0
 @    s0 baseline off
@@ -354,7 +354,7 @@
 @    s0 avalue offset 0.000000 , 0.000000
 @    s0 errorbar on
 @    s0 errorbar place both
-@    s0 errorbar color 2
+@    s0 errorbar color 1
 @    s0 errorbar pattern 1
 @    s0 errorbar size 1.000000
 @    s0 errorbar linewidth 1.0
@@ -364,7 +364,7 @@
 @    s0 errorbar riser clip off
 @    s0 errorbar riser clip length 0.100000
 @    s0 comment "/home/ale/potenciales/results/carbon/checkHF/fort.667"
-@    s0 legend  "DIM"
+@    s0 legend  ""
 @    s1 hidden false
 @    s1 type xy
 @    s1 symbol 0
@@ -463,13 +463,13 @@
 @    s2 errorbar riser clip length 0.100000
 @    s2 comment "/home/alejandra/moleculas/SiH4/mocciaSiH4/potentialmoccia/zinv005.dat"
 @    s2 legend  "UGBS"
-@    s3 hidden true
+@    s3 hidden false
 @    s3 type xy
 @    s3 symbol 0
 @    s3 symbol size 1.000000
-@    s3 symbol color 13
+@    s3 symbol color 2
 @    s3 symbol pattern 1
-@    s3 symbol fill color 13
+@    s3 symbol fill color 2
 @    s3 symbol fill pattern 0
 @    s3 symbol linewidth 1.0
 @    s3 symbol linestyle 1
@@ -477,9 +477,9 @@
 @    s3 symbol char font 0
 @    s3 symbol skip 0
 @    s3 line type 1
-@    s3 line linestyle 7
-@    s3 line linewidth 6.0
-@    s3 line color 13
+@    s3 line linestyle 1
+@    s3 line linewidth 3.0
+@    s3 line color 2
 @    s3 line pattern 1
 @    s3 baseline type 0
 @    s3 baseline off
@@ -501,7 +501,7 @@
 @    s3 avalue offset 0.000000 , 0.000000
 @    s3 errorbar on
 @    s3 errorbar place both
-@    s3 errorbar color 13
+@    s3 errorbar color 2
 @    s3 errorbar pattern 1
 @    s3 errorbar size 1.000000
 @    s3 errorbar linewidth 1.0
