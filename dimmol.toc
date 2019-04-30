@@ -1,17 +1,17 @@
 \contentsline {section}{\numberline {1}Outline}{1}{section.1}
-\contentsline {section}{\numberline {2}Theory}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Pseudopotential Approximation}{2}{subsection.2.1}
+\contentsline {section}{\numberline {2}Theory}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Pseudopotential Approximation}{3}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Depurated Inversion Method Potentials}{5}{subsection.2.2}
-\contentsline {section}{\numberline {3}Collisional Processes in Atoms}{5}{section.3}
+\contentsline {section}{\numberline {3}Collisional Processes in Atoms}{6}{section.3}
 \contentsline {subsection}{\numberline {3.1}Proton--Impact Excitation}{6}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Proton--Impact Ionisation}{7}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Proton--Impact Charge Exchange}{8}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Photoionisation}{8}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}DIM Photoionisation of Many--electron Atoms}{9}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.4}Photoionisation}{9}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}DIM Photoionisation of Many--electron Atoms}{10}{subsection.3.5}
 \contentsline {section}{\numberline {4}Depurated Inversion Method for Molecules}{10}{section.4}
-\contentsline {subsection}{\numberline {4.1}Theory}{10}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Example: Methane}{11}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.1}Theory}{11}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Example: Methane}{12}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Collisional Processes}{13}{subsection.4.3}
 \contentsline {subsubsection}{\numberline {4.3.1}Proton--Impact Ionisation}{13}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Photoionisation}{13}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2}Photoionisation}{14}{subsubsection.4.3.2}
 \contentsline {section}{\numberline {5}Concluding remarks}{14}{section.5}
