@@ -1,0 +1,113 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{authblk}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage[margin=1.1in]{geometry}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\noindent
+{\bf Referee 2:} 
+
+\vspace{0.2cm}
+The authors thank the referee for the suggestions and corrections provided.
+
+\begin{enumerate}
+
+ \item {\tt The description of numerical difficulties in obtaining 
+ the pseudo-charges is \\ detailed, in particular for the 2s AO of the 
+ lithium atom. One problem is that a \\ singularity appears due to charge 
+ repulsion at around r=1 au. This resembles an \\ electron-electron cusp 
+ and could be interpreted physically, because the charges \\ have been 
+ defined (although an orbital may be empty) and could be averted by 
+ \\ explicit correlation factors.}
+ 
+ The referee is correct.
+ 
+ \item {\tt Let me comment the CH4 application.
+ 
+ This uses PPs to replace node-less AOs so it is not a case
+ where the arguments \\ developed and illustrated by fid 1 and 2 are
+ actually applied.
+ 
+ In below (3), the claim concerning H-atoms is correct but 
+ a physical \\ interpretation of the PP in this case is missing.}
+ 
+ H has only one electron, and it does not seem to have any use to
+ calculate the corresponding pseudopotential.
+ However, there are many different proposals for PP, reproducing
+ with high accuracy the main features of the wavefunctions, even
+ for excited states.
+ 
+ \item {\tt So, for CH4 oscillations in the AO basis are not modified
+ by use of a PP. They come from defects in the GTO basis as the authors
+ mention. }
+ 
+ We did not make use of PPs in the CH4 calculation.
+ 
+ \item {\tt A-why not use an ETO basis? The first term of eq (31) is 
+ like an LCAO of Is ETOs.
+ The n=2 shell could be compared with simple semi-cartesian Sturmians:
+
+ S(1) = N (s+x+y+z) A(r) 
+
+ S(2) = N (s-x-y+z) A(r) 
+ 
+ S(3) = N (s-x+y-z) A(r) 
+
+ S(4) = N (s+x-y-z) A(r) 
+
+ Here N=1/2 for othonormal functions,  A(r) = exp(-($Z_{eff}$ r)/2 
+ s= (2/a -r) and x,y,\\z are just the Cartesian functions. They are 
+ bases for the Irreps a2 (S(1)) and \\ t1 (S(2), S(3), S(4)) 
+ $Z_{eff}$ is to be optimised and could be given a value from the \\
+ Clementi  tables.}
+ 
+ Actually, in our first calculation for a CH4 potential, we employed 
+ the SCF OCE MOs given by Moccia (1964), which uses Slaters. The
+ inversion of such MOs showed incorrect behaviour  of the charge in the 
+ origin and, therefore, they were not considered. However, it is worth
+ inspecting the viability of employing ETOs in further calculations.
+
+ \item {\tt It is well-known that modest GTO basis sets introduce 
+ oscillations, since grad[$\rho$]/$\rho$ is not smooth.}
+ 
+ This assertion is correct and it is clearly demonstrated in Ref. [28].
+ 
+ \item {\tt The FD finite difference HF seems to cure this and it should 
+ be benchmarked \\ against ETOs.}
+ 
+ Yes, the FD method cure the oscillation issue, however, the poles due 
+ to the nodes and asympotic divergences will still be present [5].
+
+  \item {\tt I would suggest that NaH would be a nice example, with 
+  a 10-electron core PP and \\ comparison to the detailed study of Li 
+  and H.}
+  
+  This molecule suggestion will be taken into account for further 
+  calculations.
+
+ \item {\tt However, the desired properties are obtained quite well.
+ 
+ A small point is that a PP is not the same as ‘GGA’ which is 
+ a family of  functionals. The ABINIT GGA is PBE by default and the PP 
+ is calculated within that framework. \\ The important point it that it 
+ is ‘norm-conserving’.}
+ 
+ The referee is right. 
+ 
+ \item {\tt The English is rather poor.} 
+ 
+ Misprints have been corrected, and awkward sentences have been
+ rephrased.
+ 
+ 
+\end{enumerate}
+
+ 
+\end{document}
