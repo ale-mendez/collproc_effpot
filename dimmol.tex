@@ -83,18 +83,22 @@ In the present work, we explore the possibility of implementing an
 effective potential approximation in the atomic collision theory to 
 describe inelastic processes. In particular, we examine several 
 collisional processes involving a single electron transition: 
-photoionisation, excitation, ionisation and electron capture. To this 
-end, several simplifications are made: (1) The calculations are 
-constrained to Hamiltonians describing only the moving projectile, 
-the target and the active electron; (2) The transition matrix 
-elements are only considered in first perturbative order. If the 
-first order fails, it would not make any sense to extend the 
-calculation to higher terms of the series. A wide variety of {\it ab 
-initio} methods have been implemented to compute scattering cross 
-sections for atomic targets, from the early implementations of the 
-first Born approximation (FBA)~\cite{Bates1962,McDowell1961}, to more 
-sophisticated fully quantum mechanical methods, e.g., 
-\cite{Pindzola2007,Burke2011,Bray2017,Pindzola2016}. For simplicity, 
+photoionisation, excitation, ionisation and electron capture. 
+A wide variety of {\it ab initio} methods have been implemented to
+compute scattering cross sections for atomic targets, from the 
+early implementations of the first Born approximation 
+(FBA)~\cite{Bates1962,McDowell1961}, to more sophisticated fully
+quantum mechanical methods, e.g., 
+\cite{Pindzola2007,Burke2011,Bray2017,Pindzola2016}. 
+Whether for atoms or molecules, we shall present cross sections and 
+compare with some experimental data. We do not wish, here, to present 
+a detailed comparison with other existing calculations. The main 
+purpose is to illustrate the effective use of the DIM in collision 
+applications. To this end, several simplifications are made: (1) The calculations are constrained to Hamiltonians describing only the 
+moving projectile, the target and the active electron; (2) The 
+transition matrix elements are only considered in first perturbative 
+order. If the first order fails, it would not make any sense to 
+extend the calculation to higher terms of the series. For simplicity, 
 we will restrict our calculations only to the FBA framework, which is 
 known to give reasonable agreement with the experimental cross 
 section in the intermediate--high projectile energy range. Moreover, 
@@ -123,11 +127,6 @@ description is once again tested by examination of its performance in
 first--order collisional processes, and the methane molecule being 
 taken as an example.
 
-Whether for atoms or molecules, we shall present cross sections and 
-compare with some experimental data. We do not wish, here, to present 
-a detailed comparison with other existing calculations. The main 
-purpose is to illustrate the effective use of the DIM in collision 
-applications.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Theory}
@@ -274,7 +273,7 @@ parameter, $\sigma_l$ is the Coulomb phase shift and $\delta_l$ is
 the wave phase shift with respect to the Coulomb wave.
 
 Comparisons between the DIM (solid line) and the pseudo (dashed)
-continuum wavefunctions for lithium are shown in 
+continuum $ks$ wavefunctions for lithium are shown in 
 Fig.~\ref{fig:contLi}, close to the origin (left) and asymptotically 
 (right). The pseudo and DIM wavefunctions behave similarly far away 
 from the nucleus. The asymptotic phase shift $\Delta$ accounts for 
@@ -290,9 +289,9 @@ region.
 \includegraphics[height=0.23\textheight]{figures/pseudopot/LicontA.eps}
 % \hspace{0.01cm}
 \includegraphics[height=0.23\textheight]{figures/pseudopot/LicontB.eps}
- \caption{Continuum wavefunctions with energies $E$ near the origin 
- (left) and in the asymptotic region (right), calculated with the 
- DIM potential (solid line) and the {\sc abinit} pseudopotential 
+ \caption{Continuum $ks$ wavefunctions with energies $E$ near the
+ origin (left) and in the asymptotic region (right), calculated with
+ the DIM potential (solid line) and the {\sc abinit} pseudopotential 
  (dashed line).}
  \label{fig:contLi}
 \end{figure}
@@ -577,7 +576,7 @@ element of the photoionisation process is given by
  \psi_{i}(\mathbf{r})}\,,
 \end{equation}
 where $\hat{\boldsymbol{\varepsilon}}_\lambda$ is the polarisation 
-vector and $\mathbf{k}_{\!f}=\sqrt{2(\omega+\varepsilon_i)}$, as 
+versor and $\mathbf{k}_{\!f}=\sqrt{2(\omega+\varepsilon_i)}$, as 
 imposed by energy conservation.
 
 The first--order photoionisation cross sections of hydrogen and 
@@ -790,8 +789,7 @@ In contrast to the approximation proposed for
 atoms~(\ref{eq:atomiczDIM}), a second term has been added to the 
 formula to account for the presence of the hydrogens. This expression 
 allows us to conveniently adjust both the location and width of the 
-screened hydrogenic potential while keeping the correct charge value 
-at the origin. 
+screened hydrogenic potential without affecting the correct charge value at the origin.
 The optimised parameters for the methane molecule are given in 
 Table~\ref{tab:ch4parameters}, and the corresponding DIM charges are 
 shown in Fig.~\ref{fig:ch4zeff}, with solid lines. The orbital 
@@ -1168,7 +1166,7 @@ Low--energy X--ray interaction coefficients: Photoabsorption, scattering, and re
 
 \bibitem{Samson1989}
 Samson, J. A. R.; Haddad, G. N.; Masuoka, T.; Pareek, P. N.; Kilcoyne, D. A. L.
-Ionization yields, total absorption, and dissociative photoionization cross sections of CH4 from 110 to 950 \AA.
+Ionization yields, total absorption, and dissociative photoionization cross sections of CH$_4$ from 110 to 950 \AA.
 {\it J. Chem. Phys.} {\bf 1989}, 90, 6925--6932.
 
 \end{thebibliography}
