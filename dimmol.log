@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2019.2.15)  2 MAY 2019 11:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2019.2.15)  3 MAY 2019 12:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -295,20 +295,20 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (./dimmol.aux)
 \openout1 = `dimmol.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count117
@@ -372,7 +372,7 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 14.
+Package hyperref Info: Link coloring OFF on input line 15.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -381,20 +381,20 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count123
 )
-LaTeX Info: Redefining \ref on input line 14.
-LaTeX Info: Redefining \pageref on input line 14.
-LaTeX Info: Redefining \nameref on input line 14.
+LaTeX Info: Redefining \ref on input line 15.
+LaTeX Info: Redefining \pageref on input line 15.
+LaTeX Info: Redefining \nameref on input line 15.
 
 (./dimmol.out) (./dimmol.out)
 \@outlinefile=\write3
 \openout3 = `dimmol.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 28.
+LaTeX Font Info:    Try loading font information for U+msa on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 28.
+LaTeX Font Info:    Try loading font information for U+msb on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -415,7 +415,7 @@ d-to.pdf>
 (epstopdf)                    size: 11668 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/pseudopo
 tAr-eps-converted-to.pdf figures/pseudopot/pseudopotAr.eps>
-(epstopdf)             \includegraphics on input line 170.
+(epstopdf)             \includegraphics on input line 174.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -429,7 +429,7 @@ File: figures/pseudopot/pseudopotAr-eps-converted-to.pdf Graphic file (type pdf
 )
  <use figures/pseudopot/pseudopotAr-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/pseudopotAr-eps-converted-to.pdf use
-d on input line 170.
+d on input line 174.
 (pdftex.def)             Requested size: 196.28517pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/pseudopot/pseudofuncAr.eps>
 (epstopdf)                    date: 2019-04-04 17:16:12
@@ -440,7 +440,7 @@ ed-to.pdf>
 (epstopdf)                    size: 16580 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/pseudofu
 ncAr-eps-converted-to.pdf figures/pseudopot/pseudofuncAr.eps>
-(epstopdf)             \includegraphics on input line 172.
+(epstopdf)             \includegraphics on input line 176.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -454,7 +454,7 @@ File: figures/pseudopot/pseudofuncAr-eps-converted-to.pdf Graphic file (type pd
 f)
  <use figures/pseudopot/pseudofuncAr-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/pseudofuncAr-eps-converted-to.pdf us
-ed on input line 172.
+ed on input line 176.
 (pdftex.def)             Requested size: 189.30696pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/pseudopot/ZLi.eps>
 (epstopdf)                    date: 2019-04-04 17:22:42
@@ -465,7 +465,7 @@ Package epstopdf Info: Source file: <figures/pseudopot/ZLi.eps>
 (epstopdf)                    size: 13506 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/ZLi-eps-
 converted-to.pdf figures/pseudopot/ZLi.eps>
-(epstopdf)             \includegraphics on input line 218.
+(epstopdf)             \includegraphics on input line 222.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -477,7 +477,7 @@ File: figures/pseudopot/ZLi-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/pseudopot/ZLi-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/ZLi-eps-converted-to.pdf used on inp
-ut line 218.
+ut line 222.
 (pdftex.def)             Requested size: 191.14682pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/pseudopot/ZLik.eps>
 (epstopdf)                    date: 2019-04-04 17:22:47
@@ -488,7 +488,7 @@ f>
 (epstopdf)                    size: 22265 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/ZLik-eps
 -converted-to.pdf figures/pseudopot/ZLik.eps>
-(epstopdf)             \includegraphics on input line 220.
+(epstopdf)             \includegraphics on input line 224.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -500,7 +500,7 @@ File: figures/pseudopot/ZLik-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/pseudopot/ZLik-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/ZLik-eps-converted-to.pdf used on in
-put line 220.
+put line 224.
 (pdftex.def)             Requested size: 193.20216pt x 146.27155pt.
  [3 <./figures/pseudopot/pseudopotAr-eps-converted-to.pdf> <./figures/pseudopot
 /pseudofuncAr-eps-converted-to.pdf>]
@@ -513,7 +513,7 @@ pdf>
 (epstopdf)                    size: 18408 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/funcLi-e
 ps-converted-to.pdf figures/pseudopot/funcLi.eps>
-(epstopdf)             \includegraphics on input line 254.
+(epstopdf)             \includegraphics on input line 258.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -525,7 +525,7 @@ t>
 File: figures/pseudopot/funcLi-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/pseudopot/funcLi-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/funcLi-eps-converted-to.pdf used on 
-input line 254.
+input line 258.
 (pdftex.def)             Requested size: 193.88727pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/pseudopot/funckLi.eps>
 (epstopdf)                    date: 2019-04-04 17:24:56
@@ -536,7 +536,7 @@ Package epstopdf Info: Source file: <figures/pseudopot/funckLi.eps>
 (epstopdf)                    size: 19662 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/funckLi-
 eps-converted-to.pdf figures/pseudopot/funckLi.eps>
-(epstopdf)             \includegraphics on input line 256.
+(epstopdf)             \includegraphics on input line 260.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -548,7 +548,7 @@ pdfTeX warning: pdflatex (file ./figures/pseudopot/funckLi-eps-converted-to.pdf
 File: figures/pseudopot/funckLi-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/pseudopot/funckLi-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/funckLi-eps-converted-to.pdf used on
- input line 256.
+ input line 260.
 (pdftex.def)             Requested size: 191.48938pt x 146.27155pt.
  [4 <./figures/pseudopot/ZLi-eps-converted-to.pdf> <./figures/pseudopot/ZLik-ep
 s-converted-to.pdf> <./figures/pseudopot/funcLi-eps-converted-to.pdf> <./figure
@@ -562,7 +562,7 @@ Package epstopdf Info: Source file: <figures/pseudopot/LicontA.eps>
 (epstopdf)                    size: 12605 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/LicontA-
 eps-converted-to.pdf figures/pseudopot/LicontA.eps>
-(epstopdf)             \includegraphics on input line 289.
+(epstopdf)             \includegraphics on input line 293.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -574,7 +574,7 @@ pdfTeX warning: pdflatex (file ./figures/pseudopot/LicontA-eps-converted-to.pdf
 File: figures/pseudopot/LicontA-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/pseudopot/LicontA-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/LicontA-eps-converted-to.pdf used on
- input line 289.
+ input line 293.
 (pdftex.def)             Requested size: 189.43402pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/pseudopot/LicontB.eps>
 (epstopdf)                    date: 2019-02-14 18:07:27
@@ -585,7 +585,7 @@ Package epstopdf Info: Source file: <figures/pseudopot/LicontB.eps>
 (epstopdf)                    size: 9632 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/LicontB-
 eps-converted-to.pdf figures/pseudopot/LicontB.eps>
-(epstopdf)             \includegraphics on input line 291.
+(epstopdf)             \includegraphics on input line 295.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -597,7 +597,7 @@ t>
 File: figures/pseudopot/LicontB-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/pseudopot/LicontB-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/LicontB-eps-converted-to.pdf used on
- input line 291.
+ input line 295.
 (pdftex.def)             Requested size: 168.53804pt x 146.27155pt.
  [5 <./figures/pseudopot/LicontA-eps-converted-to.pdf> <./figures/pseudopot/Lic
 ontB-eps-converted-to.pdf>] [6]
@@ -610,7 +610,7 @@ Package epstopdf Info: Source file: <figures/pseudopot/Hex.eps>
 (epstopdf)                    size: 9854 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/Hex-eps-
 converted-to.pdf figures/pseudopot/Hex.eps>
-(epstopdf)             \includegraphics on input line 450.
+(epstopdf)             \includegraphics on input line 454.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -621,7 +621,7 @@ File: figures/pseudopot/Hex-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/pseudopot/Hex-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/Hex-eps-converted-to.pdf used on inp
-ut line 450.
+ut line 454.
 (pdftex.def)             Requested size: 192.41121pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/pseudopot/Liex.eps>
 (epstopdf)                    date: 2019-04-29 20:31:33
@@ -632,7 +632,7 @@ f>
 (epstopdf)                    size: 10306 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/Liex-eps
 -converted-to.pdf figures/pseudopot/Liex.eps>
-(epstopdf)             \includegraphics on input line 452.
+(epstopdf)             \includegraphics on input line 456.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -644,7 +644,7 @@ File: figures/pseudopot/Liex-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/pseudopot/Liex-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/Liex-eps-converted-to.pdf used on in
-put line 452.
+put line 456.
 (pdftex.def)             Requested size: 192.41121pt x 146.27155pt.
 Package epstopdf Info: Source file: <figures/pseudopot/ionizationH.eps>
 (epstopdf)                    date: 2019-04-05 17:57:22
@@ -655,7 +655,7 @@ d-to.pdf>
 (epstopdf)                    size: 11602 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/ionizati
 onH-eps-converted-to.pdf figures/pseudopot/ionizationH.eps>
-(epstopdf)             \includegraphics on input line 494.
+(epstopdf)             \includegraphics on input line 498.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -669,7 +669,7 @@ File: figures/pseudopot/ionizationH-eps-converted-to.pdf Graphic file (type pdf
 )
  <use figures/pseudopot/ionizationH-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/ionizationH-eps-converted-to.pdf use
-d on input line 494.
+d on input line 498.
 (pdftex.def)             Requested size: 191.5812pt x 143.09828pt.
 Package epstopdf Info: Source file: <figures/pseudopot/ionizationLi.eps>
 (epstopdf)                    date: 2019-04-05 18:06:29
@@ -680,7 +680,7 @@ ed-to.pdf>
 (epstopdf)                    size: 12108 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pseudopot/ionizati
 onLi-eps-converted-to.pdf figures/pseudopot/ionizationLi.eps>
-(epstopdf)             \includegraphics on input line 496.
+(epstopdf)             \includegraphics on input line 500.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -694,7 +694,7 @@ File: figures/pseudopot/ionizationLi-eps-converted-to.pdf Graphic file (type pd
 f)
  <use figures/pseudopot/ionizationLi-eps-converted-to.pdf>
 Package pdftex.def Info: figures/pseudopot/ionizationLi-eps-converted-to.pdf us
-ed on input line 496.
+ed on input line 500.
 (pdftex.def)             Requested size: 189.13223pt x 143.09828pt.
  [7 <./figures/pseudopot/Hex-eps-converted-to.pdf> <./figures/pseudopot/Liex-ep
 s-converted-to.pdf>]
@@ -963,12 +963,12 @@ Package pdftex.def Info: figures/dimpot/zeff_2pCH4-eps-converted-to.pdf used on
 (pdftex.def)             Requested size: 189.77658pt x 146.27155pt.
  [12]
 Package epstopdf Info: Source file: <figures/dimpot/born_ionch4.eps>
-(epstopdf)                    date: 2019-04-05 18:04:34
-(epstopdf)                    size: 13655 bytes
+(epstopdf)                    date: 2019-05-02 13:35:24
+(epstopdf)                    size: 13653 bytes
 (epstopdf)             Output file: <figures/dimpot/born_ionch4-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2019-04-05 18:05:15
-(epstopdf)                    size: 8677 bytes
+(epstopdf)                    date: 2019-05-03 12:26:21
+(epstopdf)                    size: 8718 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dimpot/born_ionch4
 -eps-converted-to.pdf figures/dimpot/born_ionch4.eps>
 (epstopdf)             \includegraphics on input line 861.
@@ -1025,10 +1025,10 @@ Package rerunfilecheck Info: File `dimmol.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1174.
  ) 
 Here is how much of TeX's memory you used:
- 7324 strings out of 494966
- 106604 string characters out of 6179559
- 201277 words of memory out of 5000000
- 10296 multiletter control sequences out of 15000+600000
+ 7325 strings out of 494966
+ 106612 string characters out of 6179559
+ 201293 words of memory out of 5000000
+ 10297 multiletter control sequences out of 15000+600000
  15374 words of font info for 58 fonts, out of 8000000 for 9000
  44 hyphenation exceptions out of 8191
  29i,11n,35p,328b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1053,7 +1053,7 @@ type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/symbols/msbm10.pfb>
-Output written on dimmol.pdf (17 pages, 571604 bytes).
+Output written on dimmol.pdf (17 pages, 572545 bytes).
 PDF statistics:
  691 PDF objects out of 1000 (max. 8388607)
  568 compressed objects within 6 object streams
