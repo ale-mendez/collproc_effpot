@@ -6,7 +6,6 @@
 \usepackage{xcolor}
 \usepackage[margin=1.1in]{geometry}
 \usepackage{hyperref}
-\providecommand{\keywords}[1]{\textbf{Keywords:} #1}
 
 
 \hyphenation{pseudo-charges pseudo-potential mo-men-tum lith-ium}
@@ -37,14 +36,11 @@ approximation, we demonstrate the inconveniences of this approach.
 Instead, we advocate use of effective potentials obtained with 
 the depurated inversion method (DIM). In this contribution, we 
 extend this method to molecular systems. Calculations of 
-single first--order photoionisation and proton--impact ionisation 
-using the DIM show fair agreement with experimental results for both 
-atoms and molecules.
+single first--order photoionisation and proton--impact ionisation with 
+DIM show good agreement with experimental results for both atoms and
+molecules.
 \end{abstract}
 
-\keywords{Atomic effective potential, Molecular effective potential,
-Depurated inversion method, Inverted Hartree--Fock wave functions, 
-Pseudopotentials, Inelastic Collisions}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Outline}
@@ -55,7 +51,7 @@ The hypothetical existence of an effective one--electron local
 potential accounting for these states would allow more direct
 generation of the orthogonal wavefunctions for the interacting 
 particles. This approach should include individual $nl$--orbital 
-potentials, a feature missing from most of the standard density 
+potentials, a feature missing in most of the standard density 
 functional methods. The idea of replacing a many--body, nonlocal 
 interaction by an effective one--electron equation opens up the 
 possibility of studying extremely complex systems with high accuracy. 
@@ -96,7 +92,7 @@ quantum mechanical methods, e.g.,
 \cite{Pindzola2007,Burke2011,Bray2017,Pindzola2016}. 
 Whether for atoms or molecules, we shall present cross sections and 
 compare with some experimental data. We do not wish, here, to present 
-a detailed comparison with existing calculations. The main 
+a detailed comparison with other existing calculations. The main 
 purpose is to illustrate the effective use of the DIM in collision 
 applications. To this end, several simplifications are made: (1) The calculations are constrained to Hamiltonians describing only the 
 moving projectile, the target and the active electron; (2) The 
@@ -209,7 +205,7 @@ transform
 \end{equation}
 The pseudo--charges from~(\ref{eq:pseudosources}) for the $2s$ 
 orbital of lithium are illustrated in Fig.~\ref{fig:ZLi}. For 
-comparison, we include the potential obtained from implementing the 
+comparison, we include the potential attained from implementing the 
 depurated inversion method described in Section~\ref{sec:DIM}. The 
 pseudo--charges vanish at the origin, avoiding the divergence of the 
 Coulomb potential. However, this feature comes at a price: the 
@@ -279,7 +275,7 @@ the wave phase shift with respect to the Coulomb wave.
 Comparisons between the DIM (solid line) and the pseudo (dashed)
 continuum $ks$ wavefunctions for lithium are shown in 
 Fig.~\ref{fig:contLi}, close to the origin (left) and asymptotically 
-(right). The pseudo and DIM wavefunctions behave similarly away 
+(right). The pseudo and DIM wavefunctions behave similarly far away 
 from the nucleus. The asymptotic phase shift $\Delta$ accounts for 
 the differences between the potentials. As the energy of the free 
 electron increases, $\Delta$ diminishes. However, the orbitals in the 
@@ -350,7 +346,7 @@ reproduce the HF values accurately.
 \label{sec:colproc}
 
 The most significant advantage of the pseudopotential method is its 
-simplicity. However, it is worth determining the validity of this 
+simplicity. However, it is worth to determine the validity of this 
 approach when used for computing collisional processes. In this 
 Section, we perform a thorough examination of the pseudo--potentials 
 for hydrogen and lithium by comparing the cross sections of four 
@@ -499,7 +495,7 @@ calculations.
  \hspace{0.2cm}
  \includegraphics[height=0.225\textheight]{figures/pseudopot/ionizationLi.eps}
  \caption{Single differential proton--impact ionisation cross 
- section from the ground state of hydrogen and lithium at 
+ section from the ground state for hydrogen and lithium at 
  \mbox{$v_p=1$\, a.u..}}
  \label{fig:ionHLi}
 \end{figure}
@@ -546,6 +542,10 @@ to describe the electron capture correctly at low and high velocities.
 For low and high $v_p$ values, the momentum transfer vector becomes 
 large, and therefore, the cross sections calculated with 
 pseudopotentials disagree completely for most of the energy values.
+% the cross sections are erroneously calculated 
+% with pseudopotentials. The results disagree completely for most of 
+% the energy values, except for a minimal range of velocities around 
+% $v\simeq0.77$\,a.u..
 \begin{figure}[H]
 \centering
  \includegraphics[height=0.23\textheight]{figures/pseudopot/captureH.eps}
@@ -566,7 +566,7 @@ The single photoionisation is defined as
 \end{eqnarray}
 Considering a perturbative photon field, the initial bound $\psi_{i}$ 
 and final continuum $\psi_{\mathbf{k}_{\!f}}^-$ states of the target 
-are not significantly distorted; therefore, the relevant matrix 
+are not considerably distorted; therefore, the relevant matrix 
 element of the photoionisation process is given by
 \begin{equation}
  T_{\mathbf{k}}^{\mbox{\tiny Ph}} = \int{
@@ -624,7 +624,7 @@ experimental values.
 The first order photoionisation cross section of nitrogen and neon 
 are shown in Fig.~\ref{fig:photoDIM}. Experimental data 
 from~\cite{Henke1993,Samson1990,Samson2002,Stolte2016} is illustrated 
-with hollow symbols. The DIM photoionisation cross sections
+with hollow symbols. The DIM photoionisation cross section
 of these atoms agree excellently with the experimental values for 
 low, medium and high photon--energies. For neon, discrepancies start 
 to be noticeable for low and intermediate energy. An accurate 
@@ -711,7 +711,7 @@ oscillations are now circumscribed near the nucleus.
 Finally, the differential Hartree--Fock equations for the carbon 
 atom were solved using the finite--differences (FD) method. 
 The $1s$ inverted charge obtained with this procedure, 
-$Z_{nl}^{\mbox{\scriptsize FD}}$ (solid line) shows 
+$Z_{nl}^{\mbox{\scriptsize FD}}$ (solid line), shows 
 no oscillations since no basis sets have been used to construct the 
 orbital; however, the charge still 
 diverges for $r>1\,$a.u., as it usually does for all HF calculations.
@@ -838,7 +838,7 @@ direct inversion (dashed line) and depurated inverted (solid line).}
 The orientation of the molecular targets is important for determining
 the cross sections of collisional processes. However, it is generally 
 not pre--established in the experiments. Thus, the spherically 
-averaged description of the system assumed by the DIM potential 
+averaged description of the system, assumed by the DIM potential 
 makes sense. In the following, we examine two collisional processes 
 in the first--order approximation: proton--impact ionisation and 
 single photoionisation. 
@@ -852,7 +852,7 @@ states of the molecule needed for the T--matrix computation
 (Eq.~(\ref{eq:transition-matrix})) were calculated with the DIM 
 potentials from Section~\ref{sec:dimmethane}. The ionisation cross 
 section for high and intermediate energies shows good agreement with 
-the experimental results. The failure at low energies is ascribed 
+the experimental results. The failure at low energies is attributed 
 to the validity of the first Born approximation and not to our DIM 
 approach.
 
